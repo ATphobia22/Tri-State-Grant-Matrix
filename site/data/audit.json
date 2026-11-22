@@ -1,0 +1,7 @@
+{
+  "schema": "tristate.grants.link-audit.v1",
+  "last_run": null,
+  "links": {},
+  "changes": [],
+  "note": "Waiting for first GitHub Actions source-monitor run. No link statuses asserted."
+}
