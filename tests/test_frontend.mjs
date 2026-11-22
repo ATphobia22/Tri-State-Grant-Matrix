@@ -10,6 +10,9 @@ const page = readFileSync(resolve(root, "site/index.html"), "utf8");
 const catalog = JSON.parse(readFileSync(resolve(root, "site/data/catalog.json"), "utf8"));
 const audit = JSON.parse(readFileSync(resolve(root, "site/data/audit.json"), "utf8"));
 const serviceWorker = readFileSync(resolve(root, "site/service-worker.js"), "utf8");
+const commandSource = readFileSync(resolve(root, "site/command-center.js"), "utf8");
+const commandCss = readFileSync(resolve(root, "site/command-center.css"), "utf8");
+new vm.Script(commandSource, { filename: "site/command-center.js" });
 const source = page.match(/<script>([\s\S]*?)<\/script>/)?.[1];
 assert.ok(source, "Expected inline application script");
 new vm.Script(source, { filename: "site/index.html" });
@@ -47,6 +50,7 @@ class Element {
   cloneNode() { const out = new Element(this.tagName, this.id); out.value = this.value; out.textContent = this.textContent; return out; }
   setAttribute(name, value) { this.attrs[name] = value; }
   scrollIntoView() {}
+  focus() {}
   remove() {}
   click() { this.dispatch("click"); }
 }
@@ -69,7 +73,7 @@ async function createApp() {
     el.dataset.tab = match[1];
     tabs.push(el);
   }
-  assert.equal(tabs.length, 4);
+  assert.equal(tabs.length, 7);
   elements.get("doc-type").value = "City / town";
   const drafts = [...tags].filter(([id, tag]) => id.startsWith("doc-") && ["input", "textarea"].includes(tag)).map(([id]) => elements.get(id));
   const requests = [], downloads = [], alerts = [], blobs = [], errors = [];
@@ -86,6 +90,7 @@ async function createApp() {
   const document = {
     body,
     createElement: tag => new Element(tag),
+    getElementById: id => elements.get(id) || null,
     querySelector: selector => elements.get(selector.slice(1)) || null,
     querySelectorAll: selector => selector === ".tab" ? tabs : selector === "#view-draft input,#view-draft textarea" ? drafts : []
   };
@@ -93,7 +98,7 @@ async function createApp() {
     setItem: (key, value) => stored.set(key, value),
     getItem: key => stored.get(key) || null
   };
-  const window = { print: () => { window.printed = true; }, localStorage };
+  const window = { print: () => { window.printed = true; }, confirm: () => true, localStorage };
   const fetch = async url => {
     requests.push(url);
     if (url === "./data/catalog.json") return { ok: true, json: async () => catalog };
@@ -112,6 +117,7 @@ async function createApp() {
     console: { error: (...args) => errors.push(args.map(String).join(" ")) },
     setTimeout: () => 0
   });
+  vm.runInContext(commandSource, context, { timeout: 5000 });
   vm.runInContext(source, context, { timeout: 5000 });
   await new Promise(done => setImmediate(done));
   await new Promise(done => setImmediate(done));
@@ -130,6 +136,8 @@ test("catalog, static links and scripts have safe basic structure", () => {
   for (const resource of catalog.resources) assert.equal(new URL(resource.url).protocol, "https:");
   assert.match(serviceWorker, /\.\/data\/catalog\.json/);
   assert.match(serviceWorker, /\.\/data\/audit\.json/);
+  assert.match(serviceWorker, /command-center\.js/);
+  assert.match(commandCss, /prefers-reduced-motion/);
 });
 
 test("all visible application controls are bound to working handlers", async () => {
@@ -156,13 +164,23 @@ test("all visible application controls are bound to working handlers", async () 
   assert.equal(app.elements.get("card-list").children.length, 24);
   app.elements.get("county-list").children[0].dispatch("click");
   assert.equal(app.elements.get("county").value, "18129");
+  app.elements.get("jurisdiction").value = "IN";
+  app.elements.get("jurisdiction").dispatch("change");
+  assert.ok(app.elements.get("card-list").children.length > 0);
+  app.elements.get("reset").dispatch("click");
+  assert.equal(app.elements.get("jurisdiction").value, "");
+  const grantCard = app.elements.get("card-list").children[0];
+  const controls = grantCard.children.find(n => n.className === "card-actions");
+  controls.children.find(n => n.textContent === "Track for a county").dispatch("click");
+  assert.equal(app.elements.get("view-pipeline").hidden, false);
+  assert.ok(app.elements.get("pipeline-note").textContent.includes("county"));
   assert.equal(app.errors.length, 0);
 });
 
 test("document generation, persistence, export and print actions work", async () => {
   const app = await createApp();
   const el = id => app.elements.get(id);
-  app.tabs[2].dispatch("click");
+  app.tabs.find(t => t.dataset.tab === "draft").dispatch("click");
   el("doc-applicant").value = "City of Mount Vernon";
   el("doc-title").value = "Drainage assessment";
   el("doc-cost").value = "12000";
@@ -210,4 +228,88 @@ test("every named button appears in the tested application", async () => {
     assert.ok(el, match[1]);
     assert.ok(el.events.get("click")?.length, "Missing click handler: " + match[1]);
   }
+});
+
+test("application pipeline requires an explicit county and preserves checklists and stage locally", async () => {
+  const app = await createApp();
+  const el = id => app.elements.get(id);
+  assert.equal(el("pipeline-board").children.length, 4);
+  assert.equal(el("tracked-count").textContent, "0");
+  el("pipeline-program").value = catalog.programs[0].id;
+  el("pipeline-add").dispatch("click");
+  assert.equal(el("tracked-count").textContent, "0", "must not assume a county");
+  el("pipeline-county").value = "18129";
+  el("pipeline-add").dispatch("click");
+  assert.equal(el("tracked-count").textContent, "1");
+  assert.equal(JSON.parse(app.stored.get("tristate-grant-pipeline-v1"))[0].county_fips, "18129");
+  el("pipeline-add").dispatch("click");
+  assert.equal(el("tracked-count").textContent, "1", "must avoid duplicate local records");
+  let card = el("pipeline-board").children[0].children.find(n => n.className === "pipeline-card");
+  assert.ok(card);
+  const details = card.children.find(n => n.tagName === "DETAILS");
+  assert.ok(details.children.length > 2, "planning document checklist must render");
+  const checkbox = details.children.find(n => n.tagName === "LABEL").children[0];
+  checkbox.checked = true;
+  checkbox.dispatch("change");
+  assert.deepEqual(JSON.parse(app.stored.get("tristate-grant-pipeline-v1"))[0].done, [0]);
+  card = el("pipeline-board").children[0].children.find(n => n.className === "pipeline-card");
+  const stageSelect = card.children.find(n => n.className === "control-label").children[0];
+  stageSelect.value = "Submitted";
+  stageSelect.dispatch("change");
+  assert.equal(el("pipeline-board").children[3].children.filter(n => n.className === "pipeline-card").length, 1);
+  el("pipeline-export").dispatch("click");
+  assert.ok(app.downloads.some(d => d.filename === "Tri-State-Local-Grant-Pipeline.json"));
+  card = el("pipeline-board").children[3].children.find(n => n.className === "pipeline-card");
+  const remove = card.children.find(n => n.className === "card-actions").children.find(n => n.textContent === "Remove");
+  remove.dispatch("click");
+  assert.equal(el("tracked-count").textContent, "0");
+});
+
+test("official portal directory uses real catalog URLs and jurisdiction/search filters", async () => {
+  const app = await createApp();
+  const el = id => app.elements.get(id);
+  assert.equal(el("portal-grid").children.length, catalog.resources.length);
+  el("portal-scope").value = "KY";
+  el("portal-scope").dispatch("change");
+  assert.ok(el("portal-grid").children.length > 0);
+  for (const c of el("portal-grid").children) {
+    const link = c.children.find(n => n.tagName === "A");
+    assert.ok(link);
+    assert.ok(catalog.resources.some(r => r.url === link.href));
+    assert.equal(new URL(link.href).protocol, "https:");
+  }
+  el("portal-scope").value = "";
+  el("portal-q").value = "flood";
+  el("portal-q").dispatch("input");
+  assert.ok(el("portal-grid").children.length > 0 && el("portal-grid").children.length < catalog.resources.length);
+  assert.match(el("portal-count").textContent, /official resource links/);
+});
+
+test("cost share model conserves cents and flags invalid allocations", async () => {
+  const app = await createApp();
+  const el = id => app.elements.get(id);
+  assert.equal(el("match-fed-value").textContent, "$750,000.00");
+  assert.equal(el("match-state-value").textContent, "$0.00");
+  assert.equal(el("match-local-value").textContent, "$250,000.00");
+  el("match-total").value = "0.01";
+  el("match-federal").value = "50";
+  el("match-state").value = "50";
+  el("match-state").dispatch("input");
+  const amounts = ["match-fed-value", "match-state-value", "match-local-value"].map(k =>
+    Number(el(k).textContent.replace(/[$,]/g, "")));
+  assert.equal(amounts.reduce((a, b) => a + b, 0), 0.01);
+  assert.ok(amounts.every(n => n >= 0), "no negative local share after rounding");
+  el("match-federal").value = "80";
+  el("match-state").value = "40";
+  el("match-federal").dispatch("input");
+  assert.equal(el("match-fed-value").textContent, "—");
+  assert.match(el("match-error").textContent, /no greater than 100%/);
+  el("match-reset").dispatch("click");
+  assert.equal(el("match-local-value").textContent, "$250,000.00");
+});
+
+test("new interface exposes no hard-coded sample project award totals", () => {
+  assert.doesNotMatch(page, /14,850,000|3,325,000|Verified Entity Readiness|SAM UEI Active/);
+  assert.match(page, /User-tracked|My application pipeline/);
+  assert.match(commandSource, /NOFO/);
 });
