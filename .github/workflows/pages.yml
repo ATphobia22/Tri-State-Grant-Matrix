@@ -28,6 +28,10 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node --test tests/test_frontend.mjs
       - run: python -m unittest discover -s tests -v
       - uses: actions/configure-pages@v5
         with:
