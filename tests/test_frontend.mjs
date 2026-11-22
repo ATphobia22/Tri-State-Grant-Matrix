@@ -58,7 +58,7 @@ class Element {
 async function createApp() {
   const elements = new Map();
   const tags = new Map();
-  for (const match of page.matchAll(/<(button|input|select|textarea|section|div|b|span)\b[^>]*?\bid="([^"]+)"[^>]*>/g)) {
+  for (const match of page.matchAll(/<(button|input|select|textarea|section|div|b|span|p)\b[^>]*?\bid="([^"]+)"[^>]*>/g)) {
     const [, tag, id] = match;
     const el = new Element(tag, id);
     const value = match[0].match(/\bvalue="([^"]*)"/);
