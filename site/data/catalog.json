@@ -1183,14 +1183,14 @@
       "name": "FRA Rail Infrastructure and Safety Grants",
       "scope": "FED",
       "sector": "Transportation",
-      "official": "https://railroads.dot.gov/grants-loans/grant-programs/consolidated-rail-infrastructure-and-safety-improvements-crisi-program",
-      "documents": "https://railroads.dot.gov/grants-loans/grant-programs/consolidated-rail-infrastructure-and-safety-improvements-crisi-program",
+      "official": "https://railroads.dot.gov/grants-loans/consolidated-rail-infrastructure-and-safety-improvements-crisi-program",
+      "documents": "https://railroads.dot.gov/grants-loans/consolidated-rail-infrastructure-and-safety-improvements-crisi-program",
       "deadline": null,
       "status": "Program pathway — verify current notice",
       "funding_type": "See agency requirements",
       "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
       "reviewed": null,
-      "notes": "Official program or administering-agency reference; no current award or local eligibility is implied."
+      "notes": "Verified agency overview link updated 2026-11-22; no current grant competition or eligibility is implied."
     },
     {
       "id": "FED-USDA-EQIP",
@@ -1309,14 +1309,14 @@
       "name": "DOE Energy Efficiency and Conservation Block Grant",
       "scope": "FED",
       "sector": "Economic development",
-      "official": "https://www.energy.gov/scep/energy-efficiency-and-conservation-block-grant-program",
-      "documents": "https://www.energy.gov/scep/energy-efficiency-and-conservation-block-grant-program",
+      "official": "https://www.energy.gov/cmei/scep/office-state-and-community-energy-programs",
+      "documents": "https://www.energy.gov/cmei/scep/office-state-and-community-energy-programs",
       "deadline": null,
       "status": "Program pathway — verify current notice",
       "funding_type": "See agency requirements",
       "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
       "reviewed": null,
-      "notes": "Official program or administering-agency reference; no current award or local eligibility is implied."
+      "notes": "Verified agency overview link updated 2026-11-22; no current grant competition or eligibility is implied."
     },
     {
       "id": "FED-EPA-EC",
@@ -1551,8 +1551,8 @@
       "url": "https://msc.fema.gov/portal/home"
     },
     {
-      "label": "HUD ACS low/moderate-income area data",
-      "url": "https://www.hudexchange.info/programs/acs-low-mod-summary-data/"
+      "label": "HUD low-to-moderate income block-group data — official data.gov entry",
+      "url": "https://catalog.data.gov/dataset/low-to-moderate-income-population-by-block-group"
     },
     {
       "label": "USDA rural eligibility mapping",
