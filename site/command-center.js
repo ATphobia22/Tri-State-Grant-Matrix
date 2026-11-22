@@ -73,7 +73,8 @@ function initCommandCenter(data) {
         article.appendChild(node("span", "pill scope-" + p.scope.toLowerCase(), names[p.scope]));
         article.appendChild(node("h4", "", p.name));
         article.appendChild(node("p", "small", c.name + " County, " + c.state + " · " + p.id));
-        article.appendChild(node("p", "small", done.length + " of " + docs.length + " planning items marked reviewed"));
+        const progressNote = node("p", "small", done.length + " of " + docs.length + " planning items marked reviewed");
+        article.appendChild(progressNote);
         const meter = node("progress", "pipeline-meter");
         meter.max = docs.length || 1;
         meter.value = done.length;
@@ -102,7 +103,10 @@ function initCommandCenter(data) {
           tick.setAttribute("aria-label", "Mark reviewed: " + docs[i]);
           tick.addEventListener("change", () => {
             r.done = tick.checked ? [...new Set([...r.done, i])].sort((a, b) => a - b) : r.done.filter(x => x !== i);
-            saveRecords(); renderPipeline();
+            saveRecords();
+            const reviewed = r.done.filter(j => j < docs.length).length;
+            progressNote.textContent = reviewed + " of " + docs.length + " planning items marked reviewed";
+            meter.value = reviewed;
             note("Checklist updated locally; verify official requirements independently.");
           });
           label.appendChild(tick);

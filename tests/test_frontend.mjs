@@ -252,6 +252,8 @@ test("application pipeline requires an explicit county and preserves checklists 
   checkbox.checked = true;
   checkbox.dispatch("change");
   assert.deepEqual(JSON.parse(app.stored.get("tristate-grant-pipeline-v1"))[0].done, [0]);
+  assert.equal(el("pipeline-board").children[0].children.find(n => n.className === "pipeline-card"), card,
+    "Checking a document must not collapse or replace the expanded checklist.");
   card = el("pipeline-board").children[0].children.find(n => n.className === "pipeline-card");
   const stageSelect = card.children.find(n => n.className === "control-label").children[0];
   stageSelect.value = "Submitted";

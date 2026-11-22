@@ -10,6 +10,7 @@ header a{color:#1d4ed8}
 .panel,.grant-card,.stat{border-color:var(--line)}
 .panel{border-radius:14px}
 .stat{box-shadow:var(--shadow)}
+.stat-grid{grid-template-columns:repeat(auto-fit,minmax(185px,1fr))}
 .tabs{background:#edf3fa;padding:6px;border:1px solid var(--line);border-radius:13px;gap:5px}
 .tab{border-radius:9px;min-height:44px;background:transparent}
 .tab.active{background:#fff;color:#1d4ed8;border-color:#cfdbeb;box-shadow:0 2px 5px #0f172a12}
