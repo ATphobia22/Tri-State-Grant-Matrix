@@ -8,7 +8,7 @@ data=root/"site/data"
 def allowed(url):
     try:
         x=urllib.parse.urlsplit(url);h=(x.hostname or "").lower()
-        return x.scheme=="https" and not x.username and not x.password and not x.port and (h.endswith((".gov",".us",".org")) or h in ("indianareadi.com","www.indianareadi.com"))
+        return x.scheme=="https" and not x.username and not x.password and not x.port and (h.endswith((".gov",".us",".org",".mil")) or h in ("indianareadi.com","www.indianareadi.com"))
     except (ValueError,TypeError): return False
 class SafeRedirect(urllib.request.HTTPRedirectHandler):
     def redirect_request(self,req,fp,code,msg,headers,newurl):
