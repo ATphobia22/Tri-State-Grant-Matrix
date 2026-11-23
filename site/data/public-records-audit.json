@@ -1,9 +1,59 @@
 {
-  "changes": [],
+  "changes": [
+    {
+      "details": {
+        "current_sha256": "9eb21b1acca31b84c06cde40db8f47650fd5e5857584d525b3e6a56ea4c78ba1",
+        "note": "Page content changed; no individual document or grant facts verified.",
+        "previous_sha256": "b52d0c0f467e2253bb08473f862abca77d14de275dab0f5c822f854cc55db827"
+      },
+      "detected_at": "2026-11-23T12:58:35+00:00",
+      "id": "0154e1d6479e7cd3e982c9e3",
+      "requires_human_review": true,
+      "source_id": "posey-area-plan",
+      "type": "INDEX_CONTENT_CHANGED"
+    },
+    {
+      "details": {
+        "current_sha256": "a2deb9587262e63c7992e8461fc23edbc0fc6844dd204bae19a8cdb0a5033411",
+        "note": "Page content changed; no individual document or grant facts verified.",
+        "previous_sha256": "8d4418ae74a67e9df2445cf266b33af0d46781838b15444d74cb0b63c095fdf9"
+      },
+      "detected_at": "2026-11-23T12:58:35+00:00",
+      "id": "7fb0666733971f97ef980b2b",
+      "requires_human_review": true,
+      "source_id": "henderson-fiscal",
+      "type": "INDEX_CONTENT_CHANGED"
+    }
+  ],
   "counties_with_official_archives": 8,
   "covered_counties": 9,
-  "events": [],
-  "last_run": "2026-11-23T12:52:26+00:00",
+  "events": [
+    {
+      "details": {
+        "current_sha256": "9eb21b1acca31b84c06cde40db8f47650fd5e5857584d525b3e6a56ea4c78ba1",
+        "note": "Page content changed; no individual document or grant facts verified.",
+        "previous_sha256": "b52d0c0f467e2253bb08473f862abca77d14de275dab0f5c822f854cc55db827"
+      },
+      "detected_at": "2026-11-23T12:58:35+00:00",
+      "id": "0154e1d6479e7cd3e982c9e3",
+      "requires_human_review": true,
+      "source_id": "posey-area-plan",
+      "type": "INDEX_CONTENT_CHANGED"
+    },
+    {
+      "details": {
+        "current_sha256": "a2deb9587262e63c7992e8461fc23edbc0fc6844dd204bae19a8cdb0a5033411",
+        "note": "Page content changed; no individual document or grant facts verified.",
+        "previous_sha256": "8d4418ae74a67e9df2445cf266b33af0d46781838b15444d74cb0b63c095fdf9"
+      },
+      "detected_at": "2026-11-23T12:58:35+00:00",
+      "id": "7fb0666733971f97ef980b2b",
+      "requires_human_review": true,
+      "source_id": "henderson-fiscal",
+      "type": "INDEX_CONTENT_CHANGED"
+    }
+  ],
+  "last_run": "2026-11-23T12:58:35+00:00",
   "policy": "Source-index HTTP and SHA-256 observation only; not verification of grant eligibility, amounts, meeting actions, or document contents. Failed requests preserve previous evidence as stale.",
   "registry_reviewed_on": "2026-11-23",
   "schema": "tristate.public-records-audit.v1",
@@ -11,7 +61,7 @@
     "gallatin-board": {
       "authority": "official_county",
       "cached_evidence_only": true,
-      "checked_at": "2026-11-23T12:52:26+00:00",
+      "checked_at": "2026-11-23T12:58:35+00:00",
       "content_sha256": null,
       "county_fips": "17059",
       "document_index_truncated": false,
@@ -27,12 +77,9 @@
     },
     "gibson-council": {
       "authority": "official_county",
-      "cached_evidence_only": false,
-      "checked_at": "2026-11-23T12:52:26+00:00",
-      "content_hash_scope": "complete_response",
+      "cached_evidence_only": true,
+      "checked_at": "2026-11-23T12:58:35+00:00",
       "content_sha256": "dd47ae00028d78f1433b0488d82d4c9a588378a55696f072ebd8e01a841b091e",
-      "content_truncated": false,
-      "content_type": "text/html",
       "county_fips": "18051",
       "document_index_truncated": false,
       "document_links_sha256": "01a676aff8c306c950e939a815796b389164a2d487d8242d71fea003befdf839",
@@ -187,10 +234,10 @@
         }
       ],
       "etag": null,
-      "final_url": "https://gibsoncounty-in.gov/council/cl-documents/",
-      "http_status": 200,
+      "http_status": 304,
       "last_modified": "Mon, 23 Nov 2026 08:07:46 GMT",
       "last_success_at": "2026-11-23T12:52:26+00:00",
+      "observation": "NOT_MODIFIED",
       "source_id": "gibson-council",
       "status": "REACHABLE",
       "title": "Gibson County Council documents",
@@ -198,12 +245,9 @@
     },
     "gibson-public": {
       "authority": "official_county",
-      "cached_evidence_only": false,
-      "checked_at": "2026-11-23T12:52:26+00:00",
-      "content_hash_scope": "complete_response",
+      "cached_evidence_only": true,
+      "checked_at": "2026-11-23T12:58:35+00:00",
       "content_sha256": "8a7b205695575f50524708e9cb02d3d61a8ce277cb81859693824131f20fe1a3",
-      "content_truncated": false,
-      "content_type": "text/html",
       "county_fips": "18051",
       "document_index_truncated": false,
       "document_links_sha256": "c110578afb83b8b733f2162da314cb958b3ab2a250babd847db06bf37fddfadf",
@@ -234,10 +278,10 @@
         }
       ],
       "etag": null,
-      "final_url": "https://gibsoncounty-in.gov/public-meetings/",
-      "http_status": 200,
+      "http_status": 304,
       "last_modified": "Mon, 23 Nov 2026 07:53:35 GMT",
       "last_success_at": "2026-11-23T12:52:26+00:00",
+      "observation": "NOT_MODIFIED",
       "source_id": "gibson-public",
       "status": "REACHABLE",
       "title": "Gibson County public meetings",
@@ -246,9 +290,9 @@
     "henderson-fiscal": {
       "authority": "official_county",
       "cached_evidence_only": false,
-      "checked_at": "2026-11-23T12:52:26+00:00",
+      "checked_at": "2026-11-23T12:58:35+00:00",
       "content_hash_scope": "complete_response",
-      "content_sha256": "8d4418ae74a67e9df2445cf266b33af0d46781838b15444d74cb0b63c095fdf9",
+      "content_sha256": "a2deb9587262e63c7992e8461fc23edbc0fc6844dd204bae19a8cdb0a5033411",
       "content_truncated": false,
       "content_type": "text/html",
       "county_fips": "21101",
@@ -504,7 +548,7 @@
       "final_url": "https://www.hendersoncountyky.gov/AgendaCenter/Fiscal-Court-2",
       "http_status": 200,
       "last_modified": null,
-      "last_success_at": "2026-11-23T12:52:26+00:00",
+      "last_success_at": "2026-11-23T12:58:35+00:00",
       "source_id": "henderson-fiscal",
       "status": "REACHABLE",
       "title": "Henderson County Fiscal Court Agenda Center",
@@ -513,9 +557,9 @@
     "posey-area-plan": {
       "authority": "official_county",
       "cached_evidence_only": false,
-      "checked_at": "2026-11-23T12:52:26+00:00",
+      "checked_at": "2026-11-23T12:58:35+00:00",
       "content_hash_scope": "complete_response",
-      "content_sha256": "b52d0c0f467e2253bb08473f862abca77d14de275dab0f5c822f854cc55db827",
+      "content_sha256": "9eb21b1acca31b84c06cde40db8f47650fd5e5857584d525b3e6a56ea4c78ba1",
       "content_truncated": false,
       "content_type": "text/html",
       "county_fips": "18129",
@@ -1831,7 +1875,7 @@
       "final_url": "https://www.poseycountyin.gov/county-offices/area-plan-commission/",
       "http_status": 200,
       "last_modified": null,
-      "last_success_at": "2026-11-23T12:52:26+00:00",
+      "last_success_at": "2026-11-23T12:58:35+00:00",
       "source_id": "posey-area-plan",
       "status": "REACHABLE",
       "title": "Posey Area Plan Commission minutes and agendas",
@@ -1839,12 +1883,9 @@
     },
     "posey-meetings": {
       "authority": "official_county",
-      "cached_evidence_only": false,
-      "checked_at": "2026-11-23T12:52:26+00:00",
-      "content_hash_scope": "complete_response",
+      "cached_evidence_only": true,
+      "checked_at": "2026-11-23T12:58:35+00:00",
       "content_sha256": "0d356821d37617796574da2d7c89280ea10d0af40de518ee0d04af9d04cf641f",
-      "content_truncated": false,
-      "content_type": "text/html",
       "county_fips": "18129",
       "document_index_truncated": false,
       "document_links_sha256": "4075350f3848e0a6e6559775481dad281ba52ab286a376cf13b20f00db783172",
@@ -3303,10 +3344,10 @@
         }
       ],
       "etag": "\"136422-1795410044;;;\"",
-      "final_url": "https://www.poseycountyin.gov/meetings/",
-      "http_status": 200,
+      "http_status": 304,
       "last_modified": null,
       "last_success_at": "2026-11-23T12:52:26+00:00",
+      "observation": "NOT_MODIFIED",
       "source_id": "posey-meetings",
       "status": "REACHABLE",
       "title": "Posey County Commissioners and Council Minutes",
@@ -3315,7 +3356,7 @@
     "union-fiscal": {
       "authority": "official_county",
       "cached_evidence_only": true,
-      "checked_at": "2026-11-23T12:52:26+00:00",
+      "checked_at": "2026-11-23T12:58:35+00:00",
       "content_sha256": null,
       "county_fips": "21225",
       "document_index_truncated": false,
@@ -3331,7 +3372,7 @@
     "vanderburgh-granicus": {
       "authority": "official_delegated",
       "cached_evidence_only": false,
-      "checked_at": "2026-11-23T12:52:26+00:00",
+      "checked_at": "2026-11-23T12:58:35+00:00",
       "content_hash_scope": "complete_response",
       "content_sha256": "db098381bf8da14935173db3234b2a76f777d08305ec1ed7d25b2037e4010c5f",
       "content_truncated": false,
@@ -3349,7 +3390,7 @@
       "final_url": "https://evansville.granicus.com/ViewPublisher.php?view_id=1",
       "http_status": 200,
       "last_modified": null,
-      "last_success_at": "2026-11-23T12:52:26+00:00",
+      "last_success_at": "2026-11-23T12:58:35+00:00",
       "source_id": "vanderburgh-granicus",
       "status": "REACHABLE",
       "title": "City of Evansville and Vanderburgh County archived meetings",
@@ -3358,7 +3399,7 @@
     "warrick-commissioners": {
       "authority": "official_county",
       "cached_evidence_only": false,
-      "checked_at": "2026-11-23T12:52:26+00:00",
+      "checked_at": "2026-11-23T12:58:35+00:00",
       "content_hash_scope": "complete_response",
       "content_sha256": "b92810a63bc8912c876a0029b9f66f75a54b388654fcbbeb5fea0f953a0a0418",
       "content_truncated": false,
@@ -3464,7 +3505,7 @@
       "final_url": "https://www.warrickcounty.gov/commissioners",
       "http_status": 200,
       "last_modified": null,
-      "last_success_at": "2026-11-23T12:52:26+00:00",
+      "last_success_at": "2026-11-23T12:58:35+00:00",
       "source_id": "warrick-commissioners",
       "status": "REACHABLE",
       "title": "Warrick County Commissioners and official meeting-archive referral",
@@ -3472,12 +3513,9 @@
     },
     "warrick-records": {
       "authority": "official_delegated",
-      "cached_evidence_only": false,
-      "checked_at": "2026-11-23T12:52:26+00:00",
-      "content_hash_scope": "complete_response",
+      "cached_evidence_only": true,
+      "checked_at": "2026-11-23T12:58:35+00:00",
       "content_sha256": "eedec0d20ff04afcd2ff6018b1e99de2e64edee6be106218fa1273957322f633",
-      "content_truncated": false,
-      "content_type": "text/html",
       "county_fips": "18173",
       "document_index_truncated": false,
       "document_links_sha256": "423564554aa36dbfa5cff7ccb5802416496f788b3f874ccae3eb6f2fd812b383",
@@ -4356,10 +4394,10 @@
         }
       ],
       "etag": null,
-      "final_url": "https://warrickcountymeetings.vivabove.com/commissioner.html",
-      "http_status": 200,
+      "http_status": 304,
       "last_modified": "Fri, 20 Nov 2026 19:06:03 GMT",
       "last_success_at": "2026-11-23T12:52:26+00:00",
+      "observation": "NOT_MODIFIED",
       "source_id": "warrick-records",
       "status": "REACHABLE",
       "title": "Warrick Commissioners minutes and agendas (county-linked vendor)",
@@ -4368,7 +4406,7 @@
     "white-agendas": {
       "authority": "official_county",
       "cached_evidence_only": false,
-      "checked_at": "2026-11-23T12:52:26+00:00",
+      "checked_at": "2026-11-23T12:58:35+00:00",
       "content_hash_scope": "complete_response",
       "content_sha256": "7f36e3890c88dba114a0345f2f26d6d884f8a061c362bf6c194ca15ce5ecea57",
       "content_truncated": false,
@@ -4582,7 +4620,7 @@
       "final_url": "https://www.whitecounty-il.gov/agendas",
       "http_status": 200,
       "last_modified": null,
-      "last_success_at": "2026-11-23T12:52:26+00:00",
+      "last_success_at": "2026-11-23T12:58:35+00:00",
       "source_id": "white-agendas",
       "status": "REACHABLE",
       "title": "White County Board Agendas",
@@ -4591,7 +4629,7 @@
     "white-minutes": {
       "authority": "official_county",
       "cached_evidence_only": false,
-      "checked_at": "2026-11-23T12:52:26+00:00",
+      "checked_at": "2026-11-23T12:58:35+00:00",
       "content_hash_scope": "complete_response",
       "content_sha256": "5faefce2262a107b498841790885b781bd92ca0a7dc6bf6a83bd5f312ad8bbc8",
       "content_truncated": false,
@@ -4853,11 +4891,11 @@
           "url": "https://www.whitecounty-il.gov/white-county-budget"
         }
       ],
-      "etag": null,
+      "etag": "W/\"-1723323041\"",
       "final_url": "https://www.whitecounty-il.gov/minutes",
       "http_status": 200,
       "last_modified": null,
-      "last_success_at": "2026-11-23T12:52:26+00:00",
+      "last_success_at": "2026-11-23T12:58:35+00:00",
       "source_id": "white-minutes",
       "status": "REACHABLE",
       "title": "White County Board Minutes",
