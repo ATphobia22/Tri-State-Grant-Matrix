@@ -163,3 +163,12 @@ A successful GitHub Actions database test is not a live deployment; it proves th
 ## Cloudflare agent development setup (2026-11-23)
 
 Following [Cloudflare's official agent-setup instructions](https://developers.cloudflare.com/agent-setup/prompt.md), this repository includes an OAuth-based MCP endpoint configuration for **VS Code/GitHub Copilot** (`.mcp.json` and `.vscode/mcp.json`) and **Cursor** (`.cursor/mcp.json`). See [Cloudflare agent setup](docs/cloudflare-agent-setup.md) for the official Codex CLI/skills commands, supported agents, permissions and free-tier deployment boundaries. No cloud account, D1 database, Worker, model server, credential, or external MCP authorization was created as part of the repository setup. Cloudflare's optional beta `cf` CLI is not installed. The live static website and its no-login fallback are unchanged.
+
+
+## Cloudflare Workers + D1 Free alternative
+
+Cloudflare-native backend source is checked in under cloudflare/, with D1 SQLite migration, exact nine-county/101-program seed generator, no-login GET API, scheduled audit receipt import, GitHub CI and Wrangler deployment configuration. This is runnable code, not proof that a Cloudflare database was already created.
+
+For your existing Cloudflare account with GitHub access, follow the iPhone-friendly one-time deployment steps in docs/cloudflare-free-deployment.md: create D1 database named tri-state-grant-matrix, replace the UUID placeholder in cloudflare/wrangler.jsonc, and import this GitHub repository as a Worker with root cloudflare, name tri-state-grants-api, and deploy command npm run deploy. No extra GitHub account is needed.
+
+site/data/backend.json intentionally has no live API URL until the Worker passes /readyz with nine counties and 101 programs. GitHub Pages and daily official-source audit snapshots remain usable independently.

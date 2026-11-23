@@ -38,7 +38,7 @@
     async getCatalog(){
       const data=await apiGet("/v1/catalog");
       if(data?.counties?.length===9&&data.programs?.length>=100){
-        label("Live PostgreSQL catalog connected · eligibility requires agency review");
+        label("Live verified database catalog connected · eligibility requires agency review");
         return {ok:true,json:async()=>data};
       }
       label("Static audited catalog · live database not connected");
