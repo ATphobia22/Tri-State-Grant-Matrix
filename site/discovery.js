@@ -18,9 +18,28 @@
       }
     } catch { failed.push(keyword); }
   }));
+  const cached = [];
+  if (failed.length) {
+    try {
+      const response = await fetch("./data/discovery.json", {cache: "no-store"});
+      if (!response.ok) throw Error("Snapshot unavailable");
+      const snapshot = await response.json();
+      for (const topic of failed) {
+        const saved = snapshot[topic];
+        if (!Array.isArray(saved?.hits)) continue;
+        for (const hit of saved.hits) {
+          if (/^\d+$/.test(hit.id) && hit.title && !results.has(String(hit.id))) {
+            results.set(String(hit.id), {...hit, checked: saved.checked});
+          }
+        }
+        cached.push(topic + " (" + saved.checked.slice(0, 10) + ")");
+      }
+    } catch { /* The catalog remains usable without a search snapshot. */ }
+  }
   const summary = document.createElement("p");
   summary.textContent = results.size + " distinct federal listings returned across four searches (up to 25 per topic). County eligibility requires review." +
     (failed.length ? " Live search unavailable for " + failed.join(", ") + ". The published catalog remains available." : "");
+  if (cached.length) summary.textContent += " Showing saved results for " + cached.join(", ") + ".";
   panel.replaceChildren(summary);
   const list = document.createElement("ul");
   for (const hit of [...results.values()].sort((a,b) => a.title.localeCompare(b.title))) {
@@ -28,8 +47,8 @@
     const link = document.createElement("a");
     link.href = "https://www.grants.gov/search-results-detail/" + hit.id;
     link.textContent = hit.title;
-    item.append(link, " · " + (hit.agencyName || hit.agencyCode || "See agency notice") +
-      " · Closing date " + (hit.closeDate || "unspecified"));
+    item.append(link, " · " + (hit.agency || hit.agencyName || hit.agencyCode || "See agency notice") +
+      " · Closing date " + (hit.closeDate || "unspecified") + (hit.checked ? " · Saved " + hit.checked.slice(0, 10) : ""));
     list.appendChild(item);
   }
   panel.appendChild(list);
