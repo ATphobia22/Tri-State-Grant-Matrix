@@ -389,7 +389,9 @@ test("backend integration preserves public offline fallback without browser Gran
   const config=JSON.parse(readFileSync(resolve(root,"site/data/backend.json"),"utf8"));
   new vm.Script(disc);
   new vm.Script(client);
-  assert.equal(config.api_base_url,"");
+  assert.equal(config.api_base_url,"https://tri-state-grants-api.atphobia22.workers.dev");
+  assert.equal(new URL(config.api_base_url).protocol,"https:");
+  assert.doesNotMatch(client,/X-Admin-Token|SYNC_ADMIN_TOKEN|LLM_API_KEY/);
   assert.doesNotMatch(disc,/fetch\(\s*["']https:\/\/api\.grants\.gov/);
   assert.match(disc,/data\/discovery\.json/);
   assert.match(page,/backend-status/);

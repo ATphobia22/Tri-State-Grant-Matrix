@@ -1,5 +1,5 @@
 {
   "schema": "tristate.backend-config.v1",
-  "api_base_url": "",
-  "notes": "Empty until a real, independently tested HTTPS backend is deployed. Static audited snapshots remain available."
+  "api_base_url": "https://tri-state-grants-api.atphobia22.workers.dev",
+  "notes": "Public Cloudflare Worker and D1 verified on 2026-11-23: /readyz returned status ready, 9 counties, 101 programs; county API and source registry accessible. Read-only API; browser falls back to static audited data on failure. Does not imply NOFO eligibility verification."
 }
