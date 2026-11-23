@@ -61,3 +61,7 @@ Free-tier limits (checked Nov. 23, 2026): Workers Free 100,000 requests/day, 10 
 - backend/ — existing FastAPI/PostgreSQL alternative remains separate.
 
 The code and GitHub tests do not prove the Cloudflare-hosted Worker is already live. The one-time database creation, UUID configuration and Cloudflare Git-import action occur in your Cloudflare dashboard. No personal grant application drafts or credentials are sent to D1.
+
+## Incident 2026-11-23: D1 remote seed transaction rejection
+
+The first Cloudflare build successfully migrated `0001_init.sql` but failed during `wrangler d1 execute GRANTS_DB --remote --file=generated/seed.sql` because the seed generator emitted `BEGIN TRANSACTION;` and `COMMIT;`. D1 manages SQL-file import transactions and rejects explicit transaction control. The generator now produces only idempotent INSERT/UPSERT statements and the Node test suite fails on any reintroduced BEGIN/COMMIT/SAVEPOINT/RELEASE statement. The original D1 database and completed migration should be retained; retry the build after this commit. See https://developers.cloudflare.com/d1/best-practices/import-export-data/ .

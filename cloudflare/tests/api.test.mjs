@@ -52,6 +52,8 @@ test("D1 migration and idempotent source-controlled seed have exactly nine count
   sources.counties.reduce((n,c)=>n+c.sources.length,0));
  assert.equal(catalog.programs.length,101);
  const seed=readFileSync(resolve(cfRoot,"generated/seed.sql"),"utf8");
+ assert.doesNotMatch(seed,/^\s*(?:BEGIN(?:\s+TRANSACTION)?|COMMIT|SAVEPOINT|RELEASE)\b/gim,
+  "Cloudflare D1 remote SQL import prohibits explicit transaction statements");
  env.sqlite.exec(seed);
  assert.equal(env.sqlite.prepare("SELECT count(*) AS n FROM programs").get().n,101);
  assert.equal(env.sqlite.prepare("SELECT count(*) AS n FROM counties").get().n,9);
@@ -145,4 +147,15 @@ test("configuration cannot imply Cloudflare database has already been created",(
  assert.match(cfg.d1_databases[0].database_id,/REPLACE_WITH_REAL_D1_UUID/);
  assert.equal(cfg.vars.PUBLIC_ORIGIN,"https://atphobia22.github.io");
  assert.ok(cfg.triggers.crons.length>0);
+});
+
+test("D1 Wrangler seed avoids explicit transactions even after regeneration",()=>{
+ const out=execFileSync(process.execPath,["scripts/generate-seed.mjs"],{cwd:cfRoot,encoding:"utf8"});
+ assert.match(out,/9 counties, 101 programs/);
+ const sql=readFileSync(resolve(cfRoot,"generated/seed.sql"),"utf8");
+ assert.doesNotMatch(sql,/^\s*(?:BEGIN(?:\s+TRANSACTION)?|COMMIT|SAVEPOINT|RELEASE)\b/gim);
+ assert.match(sql,/INSERT INTO counties/);
+ assert.match(sql,/INSERT INTO programs/);
+ assert.match(sql,/INSERT INTO county_sources/);
+ assert.equal((sql.match(/INSERT INTO programs/g)||[]).length,101);
 });
