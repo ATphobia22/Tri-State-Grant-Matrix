@@ -1,0 +1,622 @@
+{
+  "flood mitigation": {
+    "checked": "2026-11-23T00:56:05.864544+00:00",
+    "hits": [
+      {
+        "id": "364124",
+        "title": "Fiscal Year 2026 Flood Mitigation Assistance",
+        "agency": "Department of Homeland Security - FEMA",
+        "closeDate": "02/26/2027"
+      },
+      {
+        "id": "354620",
+        "title": "Fiscal Year 2024 Flood Mitigation Assistance Swift Current",
+        "agency": "Department of Homeland Security - FEMA",
+        "closeDate": "12/30/2026"
+      },
+      {
+        "id": "363151",
+        "title": "Fiscal Year 2026 Flood Mitigation Assistance Swift Current",
+        "agency": "Department of Homeland Security - FEMA",
+        "closeDate": "01/31/2028"
+      },
+      {
+        "id": "363699",
+        "title": "F26AS00105 National Fish Passage Program",
+        "agency": "Fish and Wildlife Service",
+        "closeDate": "04/30/2027"
+      },
+      {
+        "id": "356561",
+        "title": "RESTORE Act Direct Component - Non-Construction Activities",
+        "agency": "U.S. Dept. of Treasury RESTORE Act Program",
+        "closeDate": "10/31/2027"
+      },
+      {
+        "id": "356562",
+        "title": "RESTORE Act Direct Component &ndash; Construction and Real Property Acquisition Activities",
+        "agency": "U.S. Dept. of Treasury RESTORE Act Program",
+        "closeDate": "10/31/2027"
+      },
+      {
+        "id": "363958",
+        "title": "Advancing coastal flood protection through public-private partnerships, innovative insurance products, and improved sediment management.",
+        "agency": "DOC NOAA - ERA Production",
+        "closeDate": "02/12/2027"
+      },
+      {
+        "id": "103313",
+        "title": "Climate Program Office for FY 2012",
+        "agency": "Department of Commerce",
+        "closeDate": ""
+      },
+      {
+        "id": "359225",
+        "title": "EDA FY25 Disaster Supplemental",
+        "agency": "Economic Development Administration",
+        "closeDate": ""
+      },
+      {
+        "id": "364226",
+        "title": "Cooperative Agreement for affiliated Partner with Rocky Mountain Cooperative Ecosystem Studies Unit",
+        "agency": "Geological Survey",
+        "closeDate": "12/07/2026"
+      },
+      {
+        "id": "364160",
+        "title": "Climate Program Office FY 2027 - Super Intelligence/Machine Learning Innovation to Advance NOAA's Earth System Science and Support Hazard Resilience",
+        "agency": "DOC NOAA - ERA Production",
+        "closeDate": "02/09/2027"
+      },
+      {
+        "id": "352741",
+        "title": "NRL Long Range Broad Agency Announcement (BAA) for Basic and Applied Research",
+        "agency": "Naval Research Laboratory",
+        "closeDate": "12/30/2026"
+      },
+      {
+        "id": "364196",
+        "title": "USGS Cooperative Landslide Hazard Mapping and Assessment Program Announcement for Fiscal Year 2027",
+        "agency": "Geological Survey",
+        "closeDate": "02/01/2027"
+      },
+      {
+        "id": "356623",
+        "title": "SEEDING CRITICAL ADVANCES FOR LEADING ENERGY TECHNOLOGIES WITH UNTAPPED POTENTIAL (SCALEUP) READY",
+        "agency": "Advanced Research Projects Agency Energy ",
+        "closeDate": "09/29/2029"
+      },
+      {
+        "id": "364177",
+        "title": "Cooperative Agreement for affiliated Partner with the Great Plains Cooperative Ecosystem Studies Unit",
+        "agency": "Geological Survey",
+        "closeDate": "11/30/2026"
+      },
+      {
+        "id": "348830",
+        "title": "DoW&rsquo;s Energy, Installations, and Environment Innovation Partners Programs",
+        "agency": "Washington Headquarters Services",
+        "closeDate": "01/08/2028"
+      },
+      {
+        "id": "347414",
+        "title": "FY 2023 Disaster Supplemental",
+        "agency": "Economic Development Administration",
+        "closeDate": ""
+      },
+      {
+        "id": "349804",
+        "title": "Defense Security Cooperation University - Research Grants",
+        "agency": "Washington Headquarters Services",
+        "closeDate": "08/07/2028"
+      },
+      {
+        "id": "358100",
+        "title": "Advanced Nuclear Energy Licensing Cost-Share Grant Program",
+        "agency": "Idaho Field Office",
+        "closeDate": "01/31/2027"
+      },
+      {
+        "id": "362715",
+        "title": "Outdoor Recreation Legacy Partnership Program (ORLP) Recurring Notice 5 Year",
+        "agency": "National Park Service",
+        "closeDate": "11/01/2030"
+      },
+      {
+        "id": "362395",
+        "title": "WaterSMART: Desalination Construction Projects",
+        "agency": "Bureau of Reclamation",
+        "closeDate": "08/26/2027"
+      },
+      {
+        "id": "362396",
+        "title": "Title XVI Water Reclamation and Reuse Projects",
+        "agency": "Bureau of Reclamation",
+        "closeDate": "08/26/2027"
+      },
+      {
+        "id": "58617",
+        "title": "State Veterans Home Construction Grant Program",
+        "agency": "Construction of State Home Facilities",
+        "closeDate": ""
+      },
+      {
+        "id": "346815",
+        "title": "FY 2025 EDA Public Works and Economic Adjustment Assistance Programs",
+        "agency": "Economic Development Administration",
+        "closeDate": ""
+      },
+      {
+        "id": "364206",
+        "title": "FY 2027 Build to Scale Notice of Funding Opportunity",
+        "agency": "Economic Development Administration",
+        "closeDate": "02/26/2027"
+      }
+    ]
+  },
+  "water infrastructure": {
+    "checked": "2026-11-23T00:56:08.956393+00:00",
+    "hits": [
+      {
+        "id": "362394",
+        "title": "WaterSMART Enhancing Water Resources Projects",
+        "agency": "Bureau of Reclamation",
+        "closeDate": "09/08/2027"
+      },
+      {
+        "id": "364180",
+        "title": "Cooperative Agreement for affiliated Partner with the Great Lakes-Northern Forest Cooperative Ecosystem Studies Unit",
+        "agency": "Geological Survey",
+        "closeDate": "11/30/2026"
+      },
+      {
+        "id": "364181",
+        "title": "Cooperative Agreement for affiliated Partner with the Colorado Plateau Cooperative Ecosystem Studies Unit",
+        "agency": "Geological Survey",
+        "closeDate": "11/30/2026"
+      },
+      {
+        "id": "364178",
+        "title": "Cooperative Agreement for affiliated Partner with the Californian Cooperative Ecosystem Studies Unit",
+        "agency": "Geological Survey",
+        "closeDate": "11/30/2026"
+      },
+      {
+        "id": "364179",
+        "title": "Cooperative Agreement for affiliated Partner with the Chesapeake Watershed Cooperative Ecosystem Studies Unit",
+        "agency": "Geological Survey",
+        "closeDate": "11/30/2026"
+      },
+      {
+        "id": "363699",
+        "title": "F26AS00105 National Fish Passage Program",
+        "agency": "Fish and Wildlife Service",
+        "closeDate": "04/30/2027"
+      },
+      {
+        "id": "364265",
+        "title": "The State Component of the National Cooperative Geologic Mapping Program",
+        "agency": "Geological Survey",
+        "closeDate": "02/17/2027"
+      },
+      {
+        "id": "364235",
+        "title": "Cooperative Agreement for affiliated Partner with Californian Cooperative Ecosystem Studies Unit",
+        "agency": "Geological Survey",
+        "closeDate": "12/07/2026"
+      },
+      {
+        "id": "361080",
+        "title": "ERDC Broad Agency Announcement",
+        "agency": "Engineer Research and Development Center",
+        "closeDate": "01/01/2027"
+      },
+      {
+        "id": "364177",
+        "title": "Cooperative Agreement for affiliated Partner with the Great Plains Cooperative Ecosystem Studies Unit",
+        "agency": "Geological Survey",
+        "closeDate": "11/30/2026"
+      },
+      {
+        "id": "364278",
+        "title": "WATER RESOURCES RESEARCH ACT PROGRAM ANNUAL BASE GRANTS",
+        "agency": "Geological Survey",
+        "closeDate": "12/30/2026"
+      },
+      {
+        "id": "362396",
+        "title": "Title XVI Water Reclamation and Reuse Projects",
+        "agency": "Bureau of Reclamation",
+        "closeDate": "08/26/2027"
+      },
+      {
+        "id": "362395",
+        "title": "WaterSMART: Desalination Construction Projects",
+        "agency": "Bureau of Reclamation",
+        "closeDate": "08/26/2027"
+      },
+      {
+        "id": "362755",
+        "title": "WaterSMART Cooperative Watershed Management Program",
+        "agency": "Bureau of Reclamation",
+        "closeDate": "02/15/2028"
+      },
+      {
+        "id": "359325",
+        "title": "Community Infrastructure for Research in Computer and Information Science and Engineering (CIRC)",
+        "agency": "U.S. National Science Foundation",
+        "closeDate": "09/10/2027"
+      },
+      {
+        "id": "58617",
+        "title": "State Veterans Home Construction Grant Program",
+        "agency": "Construction of State Home Facilities",
+        "closeDate": ""
+      },
+      {
+        "id": "356129",
+        "title": "Mid-scale Research Infrastructure-1",
+        "agency": "U.S. National Science Foundation",
+        "closeDate": "02/08/2027"
+      },
+      {
+        "id": "328573",
+        "title": "Mathematical Sciences Infrastructure Program",
+        "agency": "U.S. National Science Foundation",
+        "closeDate": "02/02/2027"
+      },
+      {
+        "id": "362715",
+        "title": "Outdoor Recreation Legacy Partnership Program (ORLP) Recurring Notice 5 Year",
+        "agency": "National Park Service",
+        "closeDate": "11/01/2030"
+      },
+      {
+        "id": "364019",
+        "title": "Technical Assistance and Training Grant Program",
+        "agency": "Rural Utilities Service",
+        "closeDate": "12/31/2026"
+      },
+      {
+        "id": "364234",
+        "title": "Cooperative Agreement for affiliated Partner with Great Rivers Cooperative Ecosystem Studies Unit",
+        "agency": "Geological Survey",
+        "closeDate": "12/07/2026"
+      },
+      {
+        "id": "346203",
+        "title": "Growing Research Access for Nationally Transformative Economic Development (GRANTED)",
+        "agency": "U.S. National Science Foundation",
+        "closeDate": "10/02/2076"
+      },
+      {
+        "id": "347680",
+        "title": "Infrastructure Innovation for Biological Research (Innovation)",
+        "agency": "U.S. National Science Foundation",
+        "closeDate": "10/30/2076"
+      },
+      {
+        "id": "363481",
+        "title": "U.S. National Science Foundation State and Regional Artificial Intelligence Infrastructure Hubs:",
+        "agency": "U.S. National Science Foundation",
+        "closeDate": "11/03/2027"
+      },
+      {
+        "id": "364263",
+        "title": "Fiscal Year 2026 Great American Digital Corridors (GADC) Program",
+        "agency": "DOT Federal Highway Administration ",
+        "closeDate": "12/28/2026"
+      }
+    ]
+  },
+  "community facilities": {
+    "checked": "2026-11-23T00:56:16.400366+00:00",
+    "hits": [
+      {
+        "id": "359701",
+        "title": "Development of Collaborative Research Facilities or Research-Resource Facilities (C06 Clinical Trial Not Allowed)",
+        "agency": "National Institutes of Health",
+        "closeDate": "01/25/2028"
+      },
+      {
+        "id": "275109",
+        "title": "National Facilities",
+        "agency": "U.S. National Science Foundation",
+        "closeDate": ""
+      },
+      {
+        "id": "254073",
+        "title": "Ocean Drilling Program",
+        "agency": "U.S. National Science Foundation",
+        "closeDate": ""
+      },
+      {
+        "id": "356129",
+        "title": "Mid-scale Research Infrastructure-1",
+        "agency": "U.S. National Science Foundation",
+        "closeDate": "02/08/2027"
+      },
+      {
+        "id": "356530",
+        "title": "BRAIN Initiative: Reagent Resources for Brain Cell Type-Specific Access to Broaden Distribution of Enabling Technologies for Neuroscience (U24 Clinical Trial Not Allowed)",
+        "agency": "National Institutes of Health",
+        "closeDate": "06/15/2027"
+      },
+      {
+        "id": "360947",
+        "title": "Limited Competition: NIGMS Mature Synchrotron Resources (MSR) for Structural Biology (P30 - Clinical Trial Not Allowed)",
+        "agency": "National Institutes of Health",
+        "closeDate": "10/02/2028"
+      },
+      {
+        "id": "339728",
+        "title": "Tactical Behaviors for Autonomous Maneuver",
+        "agency": "Dept of the Army -- Materiel Command",
+        "closeDate": ""
+      },
+      {
+        "id": "364276",
+        "title": "Evidence-Informed Practices in the Management of Women&rsquo;s Prisons",
+        "agency": "National Institute of Corrections",
+        "closeDate": "12/16/2026"
+      },
+      {
+        "id": "346815",
+        "title": "FY 2025 EDA Public Works and Economic Adjustment Assistance Programs",
+        "agency": "Economic Development Administration",
+        "closeDate": ""
+      },
+      {
+        "id": "364018",
+        "title": "Solid Waste Management Grant Program",
+        "agency": "Rural Utilities Service",
+        "closeDate": "12/31/2026"
+      },
+      {
+        "id": "358859",
+        "title": "BRAIN Initiative: Research Resource Grants for Technology Integration and Dissemination (U24 Clinical Trial Not Allowed)",
+        "agency": "National Institutes of Health",
+        "closeDate": "10/06/2028"
+      },
+      {
+        "id": "357725",
+        "title": "EPSCoR Research Infrastructure Improvement Program: EPSCoR Collaborations for Optimizing Research Ecosystems (E-CORE)",
+        "agency": "U.S. National Science Foundation",
+        "closeDate": "07/20/2027"
+      },
+      {
+        "id": "362715",
+        "title": "Outdoor Recreation Legacy Partnership Program (ORLP) Recurring Notice 5 Year",
+        "agency": "National Park Service",
+        "closeDate": "11/01/2030"
+      },
+      {
+        "id": "363804",
+        "title": "MPPEP Phase 3 Invasive Wild-Caught Catfish",
+        "agency": "Rural Business-Cooperative Service ",
+        "closeDate": "12/07/2026"
+      },
+      {
+        "id": "362395",
+        "title": "WaterSMART: Desalination Construction Projects",
+        "agency": "Bureau of Reclamation",
+        "closeDate": "08/26/2027"
+      },
+      {
+        "id": "358934",
+        "title": "NIGMS National and Regional Resources (R24 - Clinical Trial Not Allowed)",
+        "agency": "National Institutes of Health",
+        "closeDate": "06/14/2027"
+      },
+      {
+        "id": "357121",
+        "title": "Environmental Health Sciences Core Centers Program (P30 Clinical Trials Optional)",
+        "agency": "National Institutes of Health",
+        "closeDate": "04/20/2027"
+      },
+      {
+        "id": "351923",
+        "title": "EPSCoR Research Infrastructure Improvement (RII): EPSCoR Research Fellows",
+        "agency": "U.S. National Science Foundation",
+        "closeDate": "04/13/2027"
+      },
+      {
+        "id": "363614",
+        "title": "Engineering (ENG): Civil, Mechanical and Manufacturing Innovation (CMMI)",
+        "agency": "U.S. National Science Foundation",
+        "closeDate": "11/04/2076"
+      },
+      {
+        "id": "344715",
+        "title": "Oceanographic Facilities and Equipment Support",
+        "agency": "U.S. National Science Foundation",
+        "closeDate": "01/11/2027"
+      },
+      {
+        "id": "356623",
+        "title": "SEEDING CRITICAL ADVANCES FOR LEADING ENERGY TECHNOLOGIES WITH UNTAPPED POTENTIAL (SCALEUP) READY",
+        "agency": "Advanced Research Projects Agency Energy ",
+        "closeDate": "09/29/2029"
+      },
+      {
+        "id": "58617",
+        "title": "State Veterans Home Construction Grant Program",
+        "agency": "Construction of State Home Facilities",
+        "closeDate": ""
+      },
+      {
+        "id": "364019",
+        "title": "Technical Assistance and Training Grant Program",
+        "agency": "Rural Utilities Service",
+        "closeDate": "12/31/2026"
+      },
+      {
+        "id": "363992",
+        "title": "F26AS00023 FY2026 Prescott Marine Mammal Rescue and Response Grant Program",
+        "agency": "Fish and Wildlife Service",
+        "closeDate": "11/30/2026"
+      },
+      {
+        "id": "363929",
+        "title": "John H. Prescott Marine Mammal Rescue Assistance Grant",
+        "agency": "DOC NOAA - ERA Production",
+        "closeDate": "12/01/2026"
+      }
+    ]
+  },
+  "rural broadband": {
+    "checked": "2026-11-23T00:56:19.868309+00:00",
+    "hits": [
+      {
+        "id": "364018",
+        "title": "Solid Waste Management Grant Program",
+        "agency": "Rural Utilities Service",
+        "closeDate": "12/31/2026"
+      },
+      {
+        "id": "364145",
+        "title": "Landscape Scale Restoration Grant Program for Tribes",
+        "agency": "Forest Service",
+        "closeDate": "01/26/2027"
+      },
+      {
+        "id": "364144",
+        "title": "Landscape Scale Restoration Grant Program for Non-Federal Lands",
+        "agency": "Forest Service",
+        "closeDate": "01/26/2027"
+      },
+      {
+        "id": "360205",
+        "title": "Agriculture and Food Research Initiative Competitive Grants Program Foundational and Applied Science Program",
+        "agency": "National Institute of Food and Agriculture",
+        "closeDate": "12/31/2026"
+      },
+      {
+        "id": "363804",
+        "title": "MPPEP Phase 3 Invasive Wild-Caught Catfish",
+        "agency": "Rural Business-Cooperative Service ",
+        "closeDate": "12/07/2026"
+      },
+      {
+        "id": "363111",
+        "title": "Teaching Health Center Graduate Medical Education (THCGME) Program",
+        "agency": "Health Resources and Services Administration",
+        "closeDate": "12/11/2026"
+      },
+      {
+        "id": "364164",
+        "title": "Harvest to Hallways: National School Lunch Program, Equipment Assistance Grants",
+        "agency": "Food and Nutrition Service",
+        "closeDate": "01/11/2027"
+      },
+      {
+        "id": "357524",
+        "title": "Accelerating Solutions to Improve Access and Quality of Empirically-Supported Practices for Youth Mental Health (R01 Clinical Trial Optional)",
+        "agency": "National Institutes of Health",
+        "closeDate": "01/07/2027"
+      },
+      {
+        "id": "308873",
+        "title": "Crosscutting Activities in Materials Research",
+        "agency": "U.S. National Science Foundation",
+        "closeDate": ""
+      },
+      {
+        "id": "357498",
+        "title": "NSF Scholarships in Science, Technology, Engineering, and Mathematics (S-STEM)",
+        "agency": "U.S. National Science Foundation",
+        "closeDate": "03/02/2027"
+      },
+      {
+        "id": "364180",
+        "title": "Cooperative Agreement for affiliated Partner with the Great Lakes-Northern Forest Cooperative Ecosystem Studies Unit",
+        "agency": "Geological Survey",
+        "closeDate": "11/30/2026"
+      },
+      {
+        "id": "346815",
+        "title": "FY 2025 EDA Public Works and Economic Adjustment Assistance Programs",
+        "agency": "Economic Development Administration",
+        "closeDate": ""
+      },
+      {
+        "id": "364206",
+        "title": "FY 2027 Build to Scale Notice of Funding Opportunity",
+        "agency": "Economic Development Administration",
+        "closeDate": "02/26/2027"
+      },
+      {
+        "id": "347414",
+        "title": "FY 2023 Disaster Supplemental",
+        "agency": "Economic Development Administration",
+        "closeDate": ""
+      },
+      {
+        "id": "352741",
+        "title": "NRL Long Range Broad Agency Announcement (BAA) for Basic and Applied Research",
+        "agency": "Naval Research Laboratory",
+        "closeDate": "12/30/2026"
+      },
+      {
+        "id": "363729",
+        "title": "SEFSC Bluefin Tuna Research Program",
+        "agency": "DOC NOAA - ERA Production",
+        "closeDate": "12/31/2026"
+      },
+      {
+        "id": "364069",
+        "title": "FY 2027-2028 NESDIS Broad Agency Announcement (BAA)",
+        "agency": "DOC NOAA - ERA Production",
+        "closeDate": "09/30/2028"
+      },
+      {
+        "id": "364142",
+        "title": "FY 2026 - 2028 Broad Agency Announcement (BAA), National Ocean Service",
+        "agency": "DOC NOAA - ERA Production",
+        "closeDate": "09/30/2028"
+      },
+      {
+        "id": "364130",
+        "title": "FY 2027 - 2029 Broad Agency Announcement (BAA), Oceanic and Atmospheric Research (OAR)",
+        "agency": "DOC NOAA - ERA Production",
+        "closeDate": "09/30/2029"
+      },
+      {
+        "id": "364099",
+        "title": "FY 2027 &ndash; 2029 Broad Agency Announcement (BAA), National Marine Fisheries Service",
+        "agency": "DOC NOAA - ERA Production",
+        "closeDate": "09/30/2028"
+      },
+      {
+        "id": "359225",
+        "title": "EDA FY25 Disaster Supplemental",
+        "agency": "Economic Development Administration",
+        "closeDate": ""
+      },
+      {
+        "id": "363958",
+        "title": "Advancing coastal flood protection through public-private partnerships, innovative insurance products, and improved sediment management.",
+        "agency": "DOC NOAA - ERA Production",
+        "closeDate": "02/12/2027"
+      },
+      {
+        "id": "363692",
+        "title": "National Bycatch Reduction Engineering Program (BREP) - FY2026/27",
+        "agency": "DOC NOAA - ERA Production",
+        "closeDate": "01/22/2027"
+      },
+      {
+        "id": "363929",
+        "title": "John H. Prescott Marine Mammal Rescue Assistance Grant",
+        "agency": "DOC NOAA - ERA Production",
+        "closeDate": "12/01/2026"
+      },
+      {
+        "id": "364019",
+        "title": "Technical Assistance and Training Grant Program",
+        "agency": "Rural Utilities Service",
+        "closeDate": "12/31/2026"
+      }
+    ]
+  }
+}
