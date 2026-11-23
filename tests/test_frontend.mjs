@@ -380,5 +380,22 @@ test("grant and county archive links navigate same-tab with visible source addre
         "show archive URL for copying when embedded browser blocks a source");
     }
   }
-  assert.match(serviceWorker, /links-v6/);
+  assert.match(serviceWorker, /backend-v7/);
+});
+
+test("backend integration preserves public offline fallback without browser Grants.gov POST", () => {
+  const disc=readFileSync(resolve(root,"site/discovery.js"),"utf8");
+  const client=readFileSync(resolve(root,"site/backend-client.js"),"utf8");
+  const config=JSON.parse(readFileSync(resolve(root,"site/data/backend.json"),"utf8"));
+  new vm.Script(disc);
+  new vm.Script(client);
+  assert.equal(config.api_base_url,"");
+  assert.doesNotMatch(disc,/fetch\(\s*["']https:\/\/api\.grants\.gov/);
+  assert.match(disc,/data\/discovery\.json/);
+  assert.match(page,/backend-status/);
+  assert.match(page,/backend-client\.js/);
+  assert.match(client,/\/v1\/catalog/);
+  assert.match(client,/\/v1\/discover/);
+  assert.match(serviceWorker,/backend-client\.js/);
+  assert.match(serviceWorker,/backend\.json/);
 });

@@ -1,0 +1,15 @@
+.git
+.github
+.env
+.env.*
+!backend/.env.example
+**/__pycache__
+**/.pytest_cache
+**/*.pyc
+backend/tests
+tests
+postman
+*.backup
+*.dump
+*.sqlite
+node_modules
