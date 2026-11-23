@@ -19,7 +19,9 @@ const sqlvalue=x=>x==null?"NULL":"'"+String(x).replaceAll("'","''")+"'";
 const statement=(table,cols,values,tail="")=>
  "INSERT INTO "+table+"("+cols.join(",")+") VALUES("+
  values.map(sqlvalue).join(",")+") "+tail+";\n";
-// Wrangler D1 executes SQL files within its own managed transaction. Explicit\n// BEGIN/COMMIT statements are rejected by D1 remote imports.\nlet sql="-- Generated from the canonical source catalog; do not edit by hand.\n";
+// Wrangler D1 executes SQL files within its own managed transaction. Explicit
+// BEGIN/COMMIT statements are rejected by D1 remote imports.
+let sql="-- Generated from the canonical source catalog; do not edit by hand.\n";
 for(const county of catalog.counties){
  sql+=statement("counties",["fips","name","state","communities"],
  [county.fips,county.name,county.state,county.communities],
