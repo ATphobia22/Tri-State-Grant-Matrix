@@ -4,7 +4,7 @@ on:
     branches: [main]
     paths: ['site/data/catalog.json','scripts/monitor.py','.github/workflows/monitor.yml']
   schedule:
-    - cron: '15 13 * * 1,4'
+    - cron: '15 13 * * *'
   workflow_dispatch:
 permissions:
   contents: write
