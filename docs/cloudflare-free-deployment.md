@@ -1,5 +1,7 @@
 # Cloudflare Free deployment — iPhone steps
 
+> **Deployment status update — November 23, 2026:** The Cloudflare Worker at [tri-state-grants-api.atphobia22.workers.dev](https://tri-state-grants-api.atphobia22.workers.dev/readyz) is **live** and was independently observed returning **ready / 9 counties / 101 programs**. The GitHub Pages frontend now points to that verified Worker, and its deployment checks passed. The numbered steps below document **initial provisioning and recovery**, not an outstanding setup task. The older statements below about “no deployed Worker,” “empty API URL,” or “UUID placeholder” describe the historical pre-deployment state and should not be used to assess the current installation. Do **not** recreate the production database or overwrite its D1 UUID to follow those historical steps. For current capabilities and limitations, see the [main README](../README.md).
+
 **Status:** Source code and CI for Cloudflare Workers and SQLite-based D1 exist in the GitHub repository. No account-owned D1 database or publicly hosted Worker has yet been verified. GitHub permission is not proof of a running Cloudflare service.
 
 Official instructions:

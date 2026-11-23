@@ -1,254 +1,267 @@
 # Tri-State River Valley Grant Matrix
 
-**A free, public grant-research and project-preparation resource for the Ohio–Wabash River Valley communities of Indiana, Illinois, and Kentucky.**
+**Find public funding. Organize a local project. Prepare for an application.**
 
-**[OPEN THE GRANT MATRIX](https://atphobia22.github.io/Tri-State-Grant-Matrix/)** · [See official source checks](https://atphobia22.github.io/Tri-State-Grant-Matrix/data/audit.json) · [Browse county meeting sources](https://atphobia22.github.io/Tri-State-Grant-Matrix/#records) · [Check database status](https://tri-state-grants-api.atphobia22.workers.dev/readyz)
+A **free, public grant-research and project-planning website** for local governments, public-service organizations, and communities in the Ohio–Wabash tri-state region of **Indiana, Illinois, and Kentucky**.
 
-> **Plain-language summary:** The Grant Matrix helps a city, county, township, water utility, fire department, nonprofit, or resident **find possible funding programs, reach the government agencies responsible for them, organize project information, estimate possible local matching costs, and follow published-source changes**. It is a research and planning tool—not a grant application service, an official government portal, a list of guaranteed awards, or a determination that an applicant qualifies.
+**[Open the Grant Matrix](https://atphobia22.github.io/Tri-State-Grant-Matrix/)** · [Check the public database](https://tri-state-grants-api.atphobia22.workers.dev/readyz) · [Report an error or suggest a source](https://github.com/ATphobia22/Tri-State-Grant-Matrix/issues)
 
-**Public access:** No visitor account, subscription, or paywall. Designed for phones, tablets, and computers. The source code is available under this repository's [GNU GPL version 3 license](LICENSE). Government agency documents and data remain subject to their own terms.
+> **Important:** This is an independent **information and application-preparation tool**, **not** a government grant agency, grant award database, application-submission portal, eligibility certification, or promise of funding. Always rely on the current official agency notice and application system.
 
-## At a glance
+## What is this, in plain language?
 
-| What the system provides | Current scope |
+Local governments often have to search several federal and state websites to find potential funding for roads, water systems, drainage, emergency services, community buildings, broadband, and other public needs. The Grant Matrix brings **starting points, official links, planning tools, and source-check information into one place**.
+
+A town clerk can research programs; a fire department can organize a possible equipment or facility project; a utility can outline a wastewater proposal; and a county official can review the source documents before discussing a potential application. **Selecting a county or seeing a program listed does not mean that applicant or project qualifies.**
+
+The website is open to the public. **No account, payment, or installation is required to browse.** It works on phones, tablets, and computers. Personal planning drafts and tracked projects stay in the browser unless the user chooses to export them.
+
+### At a glance — published scope, November 23, 2026
+
+| Item | What is available |
 | --- | --- |
-| Geographic coverage | **9 counties** across Indiana, Illinois, and Kentucky |
-| Curated catalog | **101 funding pathways** (programs, grants, loans, subsidies, and related financing routes), **not** 101 confirmed open competitions |
-| Official and supporting source directory | **23** links to funding, registration, application guidance, and evidence resources |
-| Public meeting source register | **14** county-linked source entries: **12** monitored official/delegated indexes and **2** Wabash County, IL reference-only sources |
-| Public website | [GitHub Pages](https://atphobia22.github.io/Tri-State-Grant-Matrix/) |
-| Live backend | [Cloudflare Worker + D1 database](https://tri-state-grants-api.atphobia22.workers.dev/readyz), with a static-data fallback |
-| Source review | Scheduled daily grant-link and county-archive audits, dated observations, and review flags |
-| Personal project work | Browser-local application tracker, planning checklist, draft document generator, cost-share scenario calculator, and exports |
+| Geographic coverage | **9 counties in 3 states**, listed below |
+| Funding catalog | **101 curated funding pathways** as of November 22, 2026; not 101 confirmed open competitions |
+| Source directory | **23** government and supporting-data portal links |
+| Federal opportunity discovery | Saved Grants.gov search results for **4 topics**, dated and refreshed by a scheduled process |
+| Public meeting records | Nine county entries; official county meeting archive identified for **8**; Wabash County, Illinois remains a documented gap |
+| Public data service | **Cloudflare Worker + D1 database**, live and connected to the website as of November 23, 2026 |
+| Resilience | Published static catalog and audits remain the fallback if the live database is unavailable |
+| Applicant accounts | **None** for public browsing; local drafts are not uploaded to the public database |
+| Price | **Free public access** |
 
-**Verified service milestone (November 23, 2026):** The public Cloudflare API returned `status: ready` with **9 counties and 101 programs**, and the updated GitHub Pages frontend was published successfully. These numbers demonstrate database coverage; they **do not verify the current status or eligibility of every funding program**. For the current status, open the live links above.
+These are inventory counts, **not counts of eligible applicants, active awards, approved projects, or verified current funding opportunities**.
 
-## Who can use it—and for what?
+## Communities covered
 
-| Community user | Example use |
-| --- | --- |
-| **City and town officials** | Research water, streets, stormwater, housing, parks, public facilities, or revitalization funding before proposing a budget or resolution |
-| **County commissioners, councils, and staff** | Find regional and federal funding routes, official program instructions, and public meeting source records |
-| **Townships, special districts, and utilities** | Prepare a project description, develop a preliminary cost-share scenario, and collect possible required-document prompts |
-| **Fire, EMS, law-enforcement, and emergency-management agencies** | Explore public-safety, equipment, infrastructure, resilience, and emergency-related programs; confirm agency-specific applicant rules |
-| **Planning, GIS, public works, and engineering teams** | Identify programs where maps, benefit populations, engineering reports, flood data, or environmental documentation may be relevant |
-| **Local nonprofits and community groups** | Search potential funding routes and prepare a preliminary proposal narrative; verify nonprofit eligibility in each official notice |
-| **Residents and community advocates** | Learn where public entities can research potential financing and consult source-linked public meeting records |
-
-A program appearing for a county means it is **geographically relevant to research**. It does *not* mean every municipality, township, utility, department, nonprofit, or person in that county is an eligible applicant.
-
-## The nine-county service area
-
-| State | County | County FIPS | Examples of communities |
-| --- | --- | --- | --- |
-| Indiana | **Posey** | `18129` | Mount Vernon, New Harmony, Cynthiana, Griffin |
-| Indiana | **Vanderburgh** | `18163` | Evansville, Darmstadt |
-| Indiana | **Gibson** | `18051` | Princeton, Fort Branch, Owensville, Oakland City |
-| Indiana | **Warrick** | `18173` | Boonville, Newburgh, Chandler, Elberfeld |
-| Illinois | **White** | `17193` | Carmi, Norris City, Grayville |
-| Illinois | **Wabash** | `17185` | Mount Carmel, Allendale, Bellmont |
-| Illinois | **Gallatin** | `17059` | Shawneetown, Ridgway, Equality |
-| Kentucky | **Henderson** | `21101` | Henderson, Corydon, Robards |
-| Kentucky | **Union** | `21225` | Morganfield, Sturgis, Uniontown, Waverly |
-
-The catalog has **40 federal**, **22 Indiana**, **18 Illinois**, and **21 Kentucky** pathways. Broad research categories include flood protection and resilience; drinking water, wastewater, and utilities; roads and transportation; economic development; parks and conservation; fire, EMS, and public safety; housing; community facilities; broadband; health; and planning/GIS. These are catalog classifications, not the administering agencies' official eligibility decisions.
-
-## Start here: how a community can use it
-
-1. **Open the [public website](https://atphobia22.github.io/Tri-State-Grant-Matrix/).** Choose one of the nine counties or leave the county filter open to browse the whole region.
-2. Select **Find grants**, then search for a need such as “culvert,” “wastewater,” “fire,” or “community facilities.” Narrow by department/purpose, funding stage, or federal/state jurisdiction.
-3. Open **Official program** and **Forms & guidance** for a candidate program. Check the *actual agency notice*, applicant type, deadline (including any earlier state preapplication date), eligible costs, local match, and required registrations.
-4. If it is worth investigating, select **Track for a county**. Use **My pipeline** to make your own planning list and mark possible documents as reviewed.
-5. Open **Cost-share model** for an illustrative funding split. Then use **Document generator** for a first draft of the problem statement, scope, outcomes, budget, and evidence gaps.
-6. **Export** your draft, pipeline, or filtered grant list, and take it to the applicant's clerk, finance officer, project manager, grant administrator, governing board, or other qualified reviewer.
-7. **Apply through the awarding agency's official system.** The Grant Matrix does not transmit grant applications, make board approvals, or file agency forms.
-
-**Example:** A Posey County utility researching a pump-station improvement could filter for Indiana/federal water funding, compare agency requirements, build a *hypothetical* funding split, draft a project narrative, and export a checklist. It must still obtain the governing notice, current financing terms, engineering estimates, and any required public authorization.
-
-## Website features: every major page and control
-
-| Page or feature | What it actually does |
-| --- | --- |
-| **Find grants** | Shows funding-pathway cards with program title, jurisdiction, purpose, status text, published deadline where recorded, official links, and available source-review context |
-| **County selector** | Filters the research list to federal and the selected county's state pathways; **not** a legal applicant-eligibility engine |
-| **Search, department/purpose, funding stage, jurisdiction** | Narrow the 101-pathway catalog; **Clear filters** resets the search and filters |
-| **Show more grants** | Loads additional cards in groups of 24; **Export filtered grant matrix (CSV)** downloads the current selection |
-| **Official program / Forms & guidance** | Opens agency pages in the same browser tab; source URLs are exposed for copying if mobile browsers block navigation |
-| **My pipeline** | Tracks a selected program **and county** through **Prospects → Pre-Qualification → Drafting & Engineering → Submitted**; these are user-managed labels, **not** government application statuses |
-| **Pipeline checklists and progress** | Let a person mark suggested planning documents reviewed; checklist items are examples, not verified mandatory forms |
-| **Remove / Prepare draft / Export my pipeline (JSON)** | Manage personal tracked records, open a preliminary application draft, or download a private backup |
-| **Source directory** | Searches 23 official and supporting portal/resource links by keyword and category, displaying source addresses and available HTTP checks |
-| **Forms & resources** | Explains common **entity/governance**, **financial/matching**, and **project/engineering** documentation; links to official registration, forms, and evidence sources |
-| **Document generator** | Creates an editable project-preparation packet from entered applicant, project, financial, schedule, outcomes, and supporting-evidence fields |
-| **Save draft / Load saved draft / Clear form** | Saves or retrieves the draft **only in the current browser**, or clears the visible form |
-| **Document export** | Downloads **Word-compatible `.doc` (HTML content, not native `.docx`)**, HTML, Markdown, or JSON; **Print / Save as PDF** uses the browser print dialog |
-| **Cost-share model** | Estimates federal, state, and remaining local/other shares from a total project cost and percentages entered by the user |
-| **Public meeting records** | Lists the nine county source registers, available official archive links, index-page observations, and document-link candidates |
-| **Reload committed records snapshot** | Reloads published county archive observations; it does **not** directly crawl agency sites from the visitor's phone |
-| **Live federal opportunity search** | Displays an indexed Grants.gov search snapshot for four research topics; it is **not a guarantee of live agency availability or applicant eligibility** |
-| **Source updates / Reload published results** | Reports latest published link checks, changed pages, unreachable/blocked sources, and review flags |
-| **Export link audit JSON** | Downloads the published technical source-check evidence for independent examination |
-| **View and run update workflow** | Links to the repository's scheduled audit workflow; manually running GitHub Actions requires appropriate repository permissions |
-
-### What goes into a draft packet?
-
-The browser form accepts a county, program, applicant legal name and organization type, project title and service location, estimated cost, requested award, local match, timeline, statement of need, scope of work, measurable outcomes, and source evidence or uncertainties. It produces a preliminary planning document that can be edited or printed.
-
-It **does not** create a verified federal SF-424 package, replace agency certifications, upload attachments to an agency, digitally sign forms, or submit a grant application.
-
-### How the cost-share calculator works
-
-Enter a project total and proposed federal/state percentages. The tool calculates the remaining portion:
-
-`Local or other amount = Total project cost − Federal share − State share`
-
-For an **illustrative** $1,000,000 project with 75% federal and 0% state funding, the displayed remainder is **$250,000 (25%)**. These are example inputs, **not** a promised federal rate, award, or approved local match. The calculator checks that percentages are within 0–100%, their combined share does not exceed 100%, and the three dollar results reconcile to cents. Actual agency rules may prohibit certain match sources, in-kind contributions, expenses, or combinations of programs.
-
-## Official sources and public meeting records
-
-The source directory includes gateways such as:
-
-- [Grants.gov](https://www.grants.gov/) and [Simpler.Grants.gov](https://simpler.grants.gov/search) — federal grant notices and searches.
-- [SAM.gov](https://sam.gov/) — federal entity registration and assistance listings.
-- [Indiana OCRA](https://www.in.gov/ocra/) and [Indiana grant opportunities](https://www.in.gov/sba/grants/state-agency-grant-opportunities/) — relevant state-program information.
-- [Illinois GATA](https://gata.illinois.gov/) — Illinois grant accountability and assistance resources.
-- [Kentucky Department for Local Government](https://dlg.ky.gov/) — Kentucky local-government programs.
-- [FEMA Map Service Center](https://msc.fema.gov/portal/home), [USGS Water Data](https://waterdata.usgs.gov/), [USDA eligibility](https://eligibility.sc.egov.usda.gov/eligibility/), and [EPA ECHO](https://echo.epa.gov/) — examples of supporting evidence sources.
-
-The **Public meeting records** area maintains **14 source entries** associated with the nine counties. Twelve official or explicitly delegated archive/index pages are monitored, while two Wabash County, Illinois references are correctly labeled as **historical state records** or **Mount Carmel municipal records**, **not** a verified current Wabash County board archive. Eight of the nine counties have an identified current official or delegated archive; the Wabash, Illinois county-board archive remains a documented research gap.
-
-The index monitor may show links to agendas, minutes, or attachments. It **does not** download and validate every underlying PDF/Word attachment, establish that a meeting action was legally adopted, or interpret a proposal as an approved grant award. [Read the county-source methods and gaps](docs/public-records.md).
-
-## How the daily updates and audits work
-
-**Important distinction:** The automated service checks *sources*, not every legal condition inside every solicitation. Catalog entries are **not automatically rewritten** when an external page changes.
-
-| Process | Scheduled time (UTC) | Output and limitation |
+| State | Counties | Examples of communities served |
 | --- | --- | --- |
-| **Grant source audit** | **13:15 daily** | Checks catalog and resource URLs, HTTP access, timestamps, and source-content fingerprints; publishes [`audit.json`](site/data/audit.json) and review flags |
-| **Federal opportunity snapshot** | With the grant audit | Runs fixed Grants.gov Search2 topics (**flood mitigation, water infrastructure, community facilities, rural broadband**); retains last successful results in [`discovery.json`](site/data/discovery.json) |
-| **County meeting index audit** | **13:45 daily** | Checks 12 approved archive/index URLs, detects listed-link and index-content changes, records access problems; publishes [`public-records-audit.json`](site/data/public-records-audit.json) |
-| **Cloudflare D1 audit import** | **15:30 daily** | The Worker reads the *published* grant and county snapshots and stores timestamped, deduplicated source-check receipts in D1 |
-| **Public site publishing** | Following approved `main` updates / successful monitor runs | GitHub Actions tests the public interface and publishes the `site/` directory to GitHub Pages |
+| **Indiana** | **Posey, Vanderburgh, Gibson, Warrick** | Mount Vernon, New Harmony, Evansville, Princeton, Boonville, Newburgh |
+| **Illinois** | **White, Wabash, Gallatin** | Carmi, Mount Carmel, Shawneetown |
+| **Kentucky** | **Henderson, Union** | Henderson, Morganfield, Sturgis, Uniontown |
 
-UTC is used for reproducible records; the local clock time in Indiana/Kentucky/Illinois may shift with daylight saving time. Scheduled jobs can fail or run late. Check the actual **last-run timestamp**, not the schedule alone.
+County selection helps show **federal pathways and programs associated with that county's state**. It does not check municipal boundaries, rural eligibility, utility ownership, nonprofit status, census geography, or every program's special conditions. A township, city, county, district, or nonprofit must still verify its own eligibility in the official notice.
 
-Source-monitor signals mean:
+## How to use it: a five-minute introduction
 
-| Indicator | Interpretation |
-| --- | --- |
-| **REACHABLE** | The automated URL request received a successful response. **Not** proof that a grant is open or that a county is eligible |
-| **BLOCKED / ACCESS_RESTRICTED** | The server or protective service rejected automated access, such as HTTP 403. A person might still open the page |
-| **UNAVAILABLE** | This check could not retrieve the page; an outage, timeout, or scanner restriction is possible |
-| **MISSING / LINK_PROBLEM** | A link returned not-found information or needs manual investigation |
-| **CONTENT_CHANGED_REVIEW_REQUIRED** | A source fingerprint changed; a human must determine whether *substantive* program rules changed |
-| **Stale / last known** | Earlier successful observations are retained and must not be confused with a fresh check |
+1. **Open the [public website](https://atphobia22.github.io/Tri-State-Grant-Matrix/)** and select **Find grants**.
+2. **Choose a county**, then search by a need such as flood mitigation, water, fire, transportation, or broadband. Narrow by jurisdiction, department/purpose, or funding stage.
+3. **Open Official program and Forms & guidance** on a promising result. Confirm the actual opportunity is open, the applicant is eligible, and the deadline, match, preapplication, and forms are current.
+4. Select **Track this program** to add a program/county pair to **My pipeline**, or **Prepare application packet** to start a local project draft.
+5. Use the **Cost-share model** to explore a budget, **export** your planning records, and take the official notice and draft to the appropriate local decision-makers. Submit any real application **only through the awarding agency's authorized system**.
 
-The grant monitor can hash successfully retrieved PDF content and normalized page text. The county-record monitor hashes **index pages and observed document URL lists**, not the downloaded bodies of all referenced attachments. Hashes support *change detection and provenance*, not legal interpretation.
+**Example:** A municipal water department in Posey County can search for water and wastewater funding, review agency links, create a project need/scope/budget draft, and track preparation. This does **not** determine whether the department meets a program's legal requirements or apply for funding on its behalf.
 
-**A review flag is a lead, not a factual finding that a grant was awarded, a deadline moved, or a county meeting approved funding.** The official agency notice and the local governing body remain authoritative.
+## Features and functions
 
-## Current technology and availability
+The public site has **eight main sections**:
 
-```text
-PUBLIC, NO-LOGIN EXPERIENCE
-  GitHub Pages — mobile-friendly HTML/CSS/JavaScript
-        │
-        ├── Live read-only API → Cloudflare Worker → D1 (SQLite) database
-        │                               └── county, program, source and audit records
-        │
-        └── Static source-controlled catalog and snapshots (fallback)
-                     ↑
-        GitHub Actions: official-source and county index checks
-                     │
-        Cloudflare daily schedule: imports published audit receipts into D1
-
-PERSONAL WORK (ON EACH USER'S DEVICE)
-  Application pipeline + checklist + draft = browser local storage
-  JSON / CSV / draft document exports = files downloaded by that user
-```
-
-**Currently live:** Public website, populated nine-county Cloudflare D1 catalog, anonymous read-only API, official-source directory, browser-local preparation features, daily GitHub monitoring workflows, published snapshots, and Cloudflare receipt-import schedule. The [API readiness endpoint](https://tri-state-grants-api.atphobia22.workers.dev/readyz) checks database connection and record counts, **not** correctness of every program's terms.
-
-**Database and API reference:** `GET /readyz`; `GET /v1/counties`; `GET /v1/catalog`; `GET /v1/programs` with optional `q`, `county`, `scope`, and `sector` filters; `GET /v1/programs/{id}`; `GET /v1/records`; `GET /v1/audits/latest`; `GET /v1/discover`; `GET /v1/opportunities`; and `GET /v1/evidence/{id}`. The public Worker does not permit catalog modifications by anonymous visitors. [Open a county API example](https://tri-state-grants-api.atphobia22.workers.dev/v1/programs?county=18129).
-
-**Not currently active on the Cloudflare public service:** automatic ingestion of full NOFO PDFs into verified field-by-field grant rules; scanned-document OCR; Qwen/Gemma inference; embedding-based semantic retrieval; a filled D1 federal-opportunities cache; applicant accounts or cross-device draft synchronization; direct government grant submissions; or automatic approval of eligibility, awards, and deadlines. The **federal discovery display uses the dated public snapshot when the D1 discovery table is empty**.
-
-A separate `backend/` implementation provides **FastAPI + PostgreSQL + Docker Compose** as an alternative, with optional AI metadata/evidence modules and vector storage definitions. That code is **not** the public production server. The public service runs under `cloudflare/`; it does not need a GPU or a paid model endpoint. Cloudflare Free quotas and provider availability still apply; free public access is not a guarantee of uninterrupted hosting.
-
-## Privacy, public access, and mobile/offline use
-
-- **No login to browse.** No public application-account database or applicant-identity verification is provided.
-- **Drafts and tracked pipeline stages remain in the browser's local storage.** They are not automatically synced between phones, computers, or browsers. Clearing site data or using private browsing can erase them. **Export copies and store them appropriately**.
-- The public database contains curated funding metadata and public-source observations, **not confidential application files, bank records, passwords, personal identifiers, or draft project budgets**.
-- **Offline fallback:** after the hosted website has successfully installed its service worker and cached the required assets, previously saved public data may be viewable without a connection. This is not a fully self-contained offline installer and cannot refresh official notices without internet service.
-- **iPhone/in-app browser links:** government source links open in the same tab to avoid blocked pop-ups. Use **Back** to return. If a site blocks in-app navigation, expand **“Link not opening? Show and copy addresses”** and open the address in Safari or Chrome.
-- **Independent government portals may require sign-in**, cookies, credentials, an application account, or agency registration. The Grant Matrix's no-login policy does not override those requirements.
-
-## What this platform does **not** do
-
-It does **not** guarantee grant funding, confirm that 101 competitions are open, confer applicant eligibility, automatically submit forms, certify environmental or engineering reviews, make procurement decisions, approve local budget appropriations, or speak for a government agency. Funding notices can have different **federal deadlines, state subapplication dates, local resolutions, project ranking windows, matching rules, and application-specific conditions**. The official current Notice of Funding Opportunity (**NOFO**) and administering agency's instructions govern.
-
-Reviewers should independently confirm applicant type and service-area qualification, deadlines and time zones, required registrations/UEI/SAM status, governing-body approvals, documented match and eligible costs, procurement and prevailing-wage requirements where applicable, engineering and environmental documentation, and required forms. Do not treat the tool's draft or a review-flag count as legal, accounting, financial, grant-administration, or engineering advice.
-
-## Common questions
-
-**Does a county filter mean our town or township is eligible?** No. It limits the research view to statewide and federal pathways. Each program's notice sets applicant types, geographic thresholds, and other restrictions.
-
-**Is the catalog current?** The live database contains a curated catalog last assembled on November 22, 2026, plus newer *source-access* observations. Automatic technical checks do not update program eligibility or notice terms without review. Use the direct government link and check the latest agency notice.
-
-**Can we apply from this site?** No. It helps prepare research and a draft. Apply on the agency's official portal and keep official confirmation and filing records.
-
-**Can our county office share a draft with another employee?** Use the draft and pipeline export features and follow the office's approved information-security procedures. The current system has no shared-account workspace or automatic synchronization.
-
-**Why does a source say blocked or unavailable when I can open it?** Some government systems restrict automated requests or require browser authentication. A failed automated check is not proof that the public record or program was withdrawn.
-
-**Is it completely free?** Browsing and public tools have no fees or registration. Backend hosting uses Cloudflare's free usage tier and GitHub Pages; provider quotas and future service terms can change. There is no paid inference service required for browsing.
-
-**How can a government office verify what the site displays?** Follow the source links, inspect [dated grant-audit evidence](site/data/audit.json) and [county-audit evidence](site/data/public-records-audit.json), and compare the claim against the original agency NOFO or county record. Report mismatches through the [GitHub issue tracker](https://github.com/ATphobia22/Tri-State-Grant-Matrix/issues) with the source URL and observation date; do not include confidential applicant records.
-
-## For IT staff, developers, and public-sector reviewers
-
-### Where information is stored
-
-| Component | Folder or file | Purpose |
+| Section in the website | What it does | Important boundary |
 | --- | --- | --- |
-| Public interface | [`site/index.html`](site/index.html), `site/command-center.js`, `site/public-records.js`, `site/discovery.js` | Search, tracking, drafts, source directories, archive display, discovery |
-| Published public data | [`site/data/catalog.json`](site/data/catalog.json), `audit.json`, `public-record-sources.json`, `public-records-audit.json`, `discovery.json` | Curated catalog and public dated snapshots |
-| Cloudflare API | [`cloudflare/src/index.mjs`](cloudflare/src/index.mjs) | Public read-only Worker and scheduled audit importer |
-| Cloudflare D1 schema | [`cloudflare/migrations/`](cloudflare/migrations/) | SQLite schema and evidence/source tables |
-| Cloudflare setup | [`cloudflare/wrangler.jsonc`](cloudflare/wrangler.jsonc), [deployment instructions](docs/cloudflare-free-deployment.md) | Worker configuration and deployment procedures |
-| Grant-source checks | [`scripts/monitor.py`](scripts/monitor.py), [`scripts/discover.py`](scripts/discover.py) | Link status/content fingerprints and indexed Grants.gov topics |
-| County-source checks | [`scripts/monitor_public_records.py`](scripts/monitor_public_records.py) | Approved county archive indexes and detected listed links |
-| Scheduled automation | [`.github/workflows/`](.github/workflows/) | Grant/records audits, website deployment, frontend/backend tests |
-| Alternate server | [`backend/`](backend/), [`compose.yaml`](compose.yaml) | Optional Docker/FastAPI/PostgreSQL code, not the live Cloudflare backend |
-| AI evaluation | [`docs/ai-tooling-evaluation.md`](docs/ai-tooling-evaluation.md) | Investigated optional open-source models and document tools; no claims of installed inference |
+| **1. Find grants** | Search the 101-pathway catalog; choose among nine counties; filter by federal/IN/IL/KY jurisdiction, department/purpose, and funding stage; show more cards in groups of 24; view official source and form links; see available status/review details; export the filtered matrix as **CSV**. | A catalog entry may be a continuing program, loan, subsidy, or historical pathway rather than an open grant. |
+| **2. My pipeline** | Track a **specific program and county** through **Prospects → Pre-Qualification → Drafting & Engineering → Submitted**; mark optional preparation checklist items reviewed; see progress; prepare a draft; remove an item; export a private **JSON** backup. | These are **user-entered planning stages**, not agency application statuses. Marking “Submitted” does not submit anything. |
+| **3. Source directory** | Search/filter 23 government and supporting-data links by jurisdiction/category; see full copyable URLs, domains, and available link-check results. | A reachable website is not proof that its grant is open or that every form works. |
+| **4. Forms & resources** | Find links to official registration, application, guidance, compliance, and supporting-data sources; review a general preparation checklist. | This is a reference library, **not** a complete program-specific packet. |
+| **5. Document generator** | Enter applicant, county, program, project name/location, costs, requested award, local match, timeline, need, scope, outcomes, and evidence/uncertainties. Generate a draft narrative, budget summary, potential exhibits, and official reference links. Save/load/clear locally; export **Word-compatible .doc, HTML, Markdown, or JSON**; **Print / Save as PDF** through the browser. | Drafts are **not official forms** and are **never automatically filed**. The .doc download contains HTML compatible with Word; it is **not a native .docx** file. |
+| **6. Cost-share model** | Enter total project cost and illustrative federal/state percentages; calculate federal, state, and local/other portions, with a visual breakdown and input validation. | This is arithmetic for planning, **not an approved match rate or funding commitment**. |
+| **7. Public meeting records** | Browse source directories for all nine counties, open official archive indexes and observed document links, see check dates and source-review flags. | Document links are **candidates**, not verified meeting content, votes, grants, or awards. |
+| **8. Source updates** | View dated federal discovery listings, source audit status, and review flags; reload the latest **published** audit data; export audit JSON; open the GitHub Actions workflow. | Reloading a snapshot does **not** start a new live crawl, confirm eligibility, or change an agency deadline. |
 
-### Tests and local review
+### Additional controls and behaviors
+
+- **Search / County / Department / Funding stage / Funding jurisdiction:** combine filters to narrow results; **Clear filters** resets the grant search controls.
+- **Track this program:** opens the local pipeline and requires a county selection before creating a tracked entry. The same program can be tracked separately for different counties.
+- **Application checklists:** checkboxes record only that **you reviewed** a possible item; actual required exhibits depend on the current Notice of Funding Opportunity (NOFO).
+- **Save draft / Load saved draft / Clear form:** use the current browser's storage; export a copy before changing devices or clearing browser data.
+- **Export filtered grant matrix (CSV):** includes the currently displayed filter results, not a certification of grant availability.
+- **Export my pipeline (JSON):** creates a portable local backup of program/county stages and reviewed checklist items.
+- **Export link audit JSON:** makes source observations available for independent review.
+- **External official links:** open in the same tab for better compatibility with mobile/in-app browsers; use **Back** to return. Grant cards include **“Link not opening? Show and copy addresses”**. The directory includes the official [Simpler.Grants.gov search](https://simpler.grants.gov/search) as an alternative to classic Grants.gov search.
+
+### What the application-preparation packet includes
+
+The generator provides an **editable starting document**, using fields supplied by the user:
+
+- Applicant legal name and applicant type (for example, city/town, county, township, utility/district, fire/EMS, law enforcement, nonprofit, or other).
+- Selected county, funding program and official program links.
+- Project title, service area, statement of need, proposed scope of work, measurable outcomes, and schedule.
+- Preliminary project cost, requested award, proposed match, source evidence, risks, and unanswered questions.
+- A possible-document checklist that **must be reconciled with the current agency instructions**.
+
+**No application is submitted, approved, certified, or reviewed by an awarding agency through this tool.** The exported file must be checked, completed, and transferred into the actual application process by the applicant.
+
+### Cost-share calculator example
+
+The **Restore illustrative example** button sets a **$1,000,000 project**, **75% federal**, and **0% state**. The resulting **$250,000 local/other remainder** is **illustrative only**. Actual federal/state shares, eligible match sources, in-kind contributions, caps, and committed funds are determined by the specific notice and governing authorities. Invalid inputs produce a warning, and valid calculations reconcile to whole cents.
+
+## Funding information: what each label means
+
+| Term | Meaning |
+| --- | --- |
+| **Funding pathway / program** | An agency program or potential route to support. It may be a grant, loan, subsidy, or other assistance; it may have **no current competition**. |
+| **Open opportunity / NOFO** | A specific official solicitation with applicant rules, a submission method, dates, and required materials. Check the current original notice. |
+| **Program status** | A catalog description or review note, not a binding agency decision. |
+| **Reviewed / checked date** | When a particular catalog detail or source was last examined; it is not proof that all fields remain current. |
+| **HTTP reachable / blocked / unavailable** | Technical observations about accessing a web address. They do not establish eligibility, funding, record completeness, or legal validity. |
+| **Source change / hash** | Evidence that monitored page content or a set of observed links may have changed; a human must interpret what changed. |
+| **County match** | Geographic/state catalog filtering, **not** a determination of eligibility for a city, township, utility, or nonprofit. |
+| **Pipeline stage** | The user's private planning label, **not** a status from Grants.gov or a state portal. |
+
+Before budgeting or filing, check the **current official notice** for the applicant category, service area, eligible expenses, registration requirements, preapplication and final deadlines (including time zone), match rate and source restrictions, procurement, engineering/environmental reviews, reporting, and award conditions. A program's final application deadline may still be listed after an earlier **mandatory proposal gate** has closed.
+
+## County public meeting archives
+
+The **Public meeting records** section helps officials and residents locate original local-government records rather than relying on summaries. It is a **source index**, not a complete or certified archive of meetings.
+
+| County | Source coverage in the current registry |
+| --- | --- |
+| Posey, IN | Official county meeting source(s) identified |
+| Vanderburgh, IN | Official/delegated meeting source identified |
+| Gibson, IN | Official county meeting source(s) identified |
+| Warrick, IN | Official/delegated meeting source(s) identified |
+| White, IL | Official county meeting source(s) identified |
+| **Wabash, IL** | **Official county-board meeting archive not yet located**; state archives and Mount Carmel municipal sources are labeled **reference only**, not substituted |
+| Gallatin, IL | Official county board source identified |
+| Henderson, KY | Official fiscal court source identified |
+| Union, KY | Official fiscal court source identified |
+
+The registry contains **12 monitored official/delegated source indexes** across the eight counties with identified archives, plus reference-only links for Wabash, Illinois. A monitor checks source-index availability and observed document URLs, with timestamps and SHA-256 fingerprints. It does **not** download and authenticate every PDF/DOCX attachment, confirm a vote, or conclude that a grant was approved. HTTP 403 and network failures are reported as access limitations, not fabricated missing records. The website displays up to the first **20 observed document links per source**, when available.
+
+See [official source inventory](site/data/public-record-sources.json), [latest county record observations](site/data/public-records-audit.json), and [public-records methodology](docs/public-records.md).
+
+## Where the data comes from, and how it updates
+
+The catalog points users to **original federal and state agency sources**, such as [Grants.gov](https://www.grants.gov/), [SAM.gov](https://sam.gov/), [Indiana state grant opportunities](https://www.in.gov/sba/grants/state-agency-grant-opportunities/), [Illinois GATA](https://gata.illinois.gov/grants/csfa.html), and [Kentucky Department for Local Government](https://dlg.ky.gov/grants/federal/Pages/default.aspx). The directory also includes program agencies and supporting-data portals. **The agencies, not this website, determine program rules and awards.**
+
+| Data/process | What currently happens | Typical schedule (UTC) |
+| --- | --- | --- |
+| **Curated catalog** | Source-controlled 101-pathway catalog is published on GitHub Pages and seeded into Cloudflare D1. Material program terms are **not silently rewritten** by link checks. | Editorial updates when reviewed |
+| **Grant link audit** | Checks catalog/resource URLs and records HTTP observations, dates, and page fingerprints; publishes **site/data/audit.json**. | GitHub Actions **daily 13:15** |
+| **Federal discovery** | Server-side Grants.gov discovery produces a **dated saved snapshot** for flood mitigation, water infrastructure, community facilities, and rural broadband. | Included in the **13:15** workflow |
+| **County meeting index audit** | Checks the 12 monitored archive indexes, observed document links, hashes, and access errors; publishes **site/data/public-records-audit.json**. | GitHub Actions **daily 13:45** |
+| **Cloudflare audit receipt import** | Scheduled Worker reads the two **published** audit snapshots and imports bounded, deduplicated observations into D1. It does **not** re-verify each agency notice. | Worker Cron **daily 15:30** |
+| **Public website visit** | Reads the live **read-only** catalog/audit API when available; falls back to the published static data. | Whenever a visitor opens/reloads the page |
+
+Schedules are **configured times**, not guarantees that GitHub, Cloudflare, or an external agency will respond at that exact minute. Check the **last successful observation time** in the site and the [workflow history](https://github.com/ATphobia22/Tri-State-Grant-Matrix/actions). A change in a monitored page is a **review lead**, not a verified change to an award, deadline, or eligibility rule.
+
+**Federal discovery limitation:** The D1 **/v1/discover** collection was empty at the November 23, 2026 verification. The public interface therefore uses the saved federal discovery snapshot when no D1 opportunities are available. The snapshot is **not a live browser-side Grants.gov search** and may include opportunities that have since changed or closed.
+
+**Do not confuse the two kinds of checking:** A URL audit can confirm a technical response; only the current agency NOFO and related official guidance can confirm applicant and project requirements.
+
+## Privacy, access, and offline behavior
+
+- **Public access:** No public login, paywall, applicant registration, or cloud account is needed to browse this site.
+- **Local project information:** Pipeline stages, checklist selections, and saved draft fields are held in **browser local storage**, not in the public D1 catalog. They do not synchronize between devices or constitute an official record.
+- **Backups:** Export your draft and pipeline before changing phones, clearing site data, using private browsing, or sharing a device. Keep exports containing applicant details **private**.
+- **Do not upload confidential information:** Never post bank records, personal identifiers, nonpublic bids, credentials, protected information, or unsubmitted applications to public GitHub issues or repository files.
+- **Offline reading:** After a successful visit over HTTPS and service-worker installation, some published pages and snapshots may remain readable without a network connection. **Live source verification, agency websites, and application submission do not work offline.** Opening the HTML with **file://** is not the supported offline method.
+- **Phones and in-app browsers:** Official links open in the same tab. If an embedded browser blocks a government website, use the displayed full URL in Safari or Chrome. Some agency sites require their own authentication, cookies, or JavaScript.
+- **Provider infrastructure:** The public website is hosted by GitHub Pages and the read-only API by Cloudflare; normal web requests may be processed under those providers' infrastructure and policies. The app does not offer a private hosted applicant account.
+
+## What is running now — and what is not
+
+| Component | Status as verified November 23, 2026 |
+| --- | --- |
+| **GitHub Pages public website** | **Deployed** and reachable |
+| **Cloudflare Worker + D1 SQLite** | **Live**; **/readyz** returned **ready, 9 counties, 101 programs**; public county, catalog, records, filtered program, and audit endpoints responded |
+| **Browser API adapter** | **Connected** to the actual Worker URL with a bounded timeout and static-data fallback |
+| **GitHub Actions frontend verification and Pages deployment** | Passed for the Cloudflare-connected release |
+| **Scheduled grant and county source audits** | Workflows configured and publishing dated snapshots; availability of external websites varies |
+| **Applicant pipeline and draft generator** | Browser-local planning features; no hosted applicant record or submission system |
+| **D1 federal opportunity discovery** | **No items** in the verified D1 discovery collection; dated static discovery fallback is used |
+| **PostgreSQL / FastAPI / Docker alternative** | **Repository code and tests**, **not a separately verified public production deployment** |
+| **Optional AI/model metadata and vector tools** | Research/optional backend code only; **not a deployed grant-eligibility AI**, not installed large model weights, and not an automatic legal or financial reviewer |
+
+This distinction matters: **working source code, a successful test, and a deployed public service are different forms of evidence**. The website should never imply that an optional component is live merely because its files exist.
+
+## Public API and technical overview
+
+The website is lightweight HTML, CSS, and JavaScript served by **GitHub Pages**. Its API client reads a public **Cloudflare Worker** backed by **D1 SQLite**, with local static snapshots for resilience. The browser-local planning tools do **not** send draft applications to D1.
+
+**[API readiness](https://tri-state-grants-api.atphobia22.workers.dev/readyz)** · [Public catalog](https://tri-state-grants-api.atphobia22.workers.dev/v1/catalog) · [County records index](https://tri-state-grants-api.atphobia22.workers.dev/v1/records)
+
+| Read-only endpoint | Purpose |
+| --- | --- |
+| **GET /healthz** | Worker process health |
+| **GET /readyz** | D1 seed/readiness counts |
+| **GET /v1/counties** | Nine county FIPS identifiers and communities |
+| **GET /v1/catalog** | Full curated catalog and resource links |
+| **GET /v1/programs** | Filterable, paginated program list (including county, scope, sector, and search text) |
+| **GET /v1/programs/{id}** | One program record |
+| **GET /v1/records** | Official/delegated county source registry |
+| **GET /v1/opportunities** and **GET /v1/discover** | Saved federal discovery records, if ingested |
+| **GET /v1/audits/latest** | Dated imported source-check observations |
+| **GET /v1/evidence/{id}** | Staged evidence claims, if present; **not eligibility determinations** |
+
+The public Worker exposes **read-only HTTP methods**; it does not accept applicant drafts or public edits to awards, deadlines, or eligibility. The API is **not** a general-purpose replacement for federal or state application portals.
+
+### Repository guide
+
+| Location | Purpose |
+| --- | --- |
+| **site/index.html** | Public pages, filters, application-preparation form, exports |
+| **site/command-center.js** | Browser-local pipeline, official-source directory, cost-share model |
+| **site/public-records.js** | County archive source display |
+| **site/discovery.js** | Dated federal opportunity display and fallback |
+| **site/backend-client.js** and **site/data/backend.json** | Cloudflare API adapter and public endpoint configuration |
+| **site/data/catalog.json** | Curated nine-county catalog, 101 pathways, 23 source links |
+| **site/data/audit.json** and **site/data/public-records-audit.json** | Dated published observations |
+| **site/service-worker.js** | Offline snapshot caching |
+| **cloudflare/** | Live Worker implementation, D1 schema/seed scripts, tests and Wrangler config |
+| **scripts/** | Grant-link, federal-discovery, and county archive monitors |
+| **backend/** and **compose.yaml** | Separate optional FastAPI/PostgreSQL deployment |
+| **tests/** | Frontend, catalog, source registry and configuration regression tests |
+| **.github/workflows/** | CI, Pages deployment, audit schedules, Cloudflare checks |
+
+### Run and test locally
+
+From the repository root, with Python 3 and Node.js installed:
 
 ```bash
-# Frontend behavior, controls, same-tab external links and fallback configuration
-node --test tests/test_frontend.mjs
-
-# Nine-county scope, grants metadata, source registry and monitoring checks
-python -m unittest discover -s tests -v
-
-# Cloudflare Worker/D1 test suite (Node.js 22+, SQLite support)
-node --test cloudflare/tests/*.test.mjs
-
-# Local website inspection (from repository root)
 python -m http.server 8000 --directory site
-# Visit http://localhost:8000/
 ```
 
-GitHub Actions tests the relevant changes before publishing. Cloudflare Git integration deploys the Worker separately. **A green test or successful deploy is not a substitute for checking the public URL and actual data returned by the government sources.** See [GitHub Actions](https://github.com/ATphobia22/Tri-State-Grant-Matrix/actions) and [the API readiness response](https://tri-state-grants-api.atphobia22.workers.dev/readyz).
+Open **http://localhost:8000/**. Serving over HTTP is important: directly opening **site/index.html** using **file://** is not equivalent to a hosted site.
 
-### Review, corrections, and reuse
+```bash
+node --test tests/test_frontend.mjs
+python -m unittest discover -s tests -v
+node --test cloudflare/tests/*.test.mjs
+```
 
-This is an **independent, public-interest community tool**, not a product of FEMA, Grants.gov, the State of Indiana, Illinois, Kentucky, or the counties named above. Public-source references are attributed; each agency retains authority over its own program. Software reuse is governed by the repository's [GPL-3.0 license](LICENSE); it does not transfer rights in external government or third-party documents.
+The Pages workflow runs frontend and Python tests before deployment. Tests verify program structure and local logic; they **cannot guarantee** every third-party link or mobile browser works. Review [Pages deployment](.github/workflows/pages.yml), [frontend checks](.github/workflows/site-smoke.yml), [grant link monitoring](.github/workflows/monitor.yml), [county archive monitoring](.github/workflows/public-records.yml), and [Cloudflare checks](.github/workflows/cloudflare.yml).
 
-To suggest a correction, [open an issue](https://github.com/ATphobia22/Tri-State-Grant-Matrix/issues) with the county, program ID if available, official URL, publication date, what is incorrect, and the suggested revision. **Never include grant applicant passwords, confidential financial records, personal information, or private applications in a public issue.** Corrections to source-linked factual fields should be reviewed against authoritative evidence before they enter the curated catalog.
+For operators: [Cloudflare deployment and maintenance notes](docs/cloudflare-free-deployment.md), [PostgreSQL alternative](backend/README.md), [public records methodology](docs/public-records.md), and [optional AI tooling evaluation](docs/ai-tooling-evaluation.md). Some older setup notes describe the **pre-deployment** state; the **“What is running now”** section above is the current release baseline.
 
----
+## For local officials: recommended review process
 
-**Operating principle: Government agencies and elected or authorized officials make the decisions. This software organizes public information so communities can research, prepare, document, and ask better questions.**
+1. Define the **public need**, service area, responsible agency, project ownership, and intended beneficiaries.
+2. Search the matrix and record the **program ID, agency, official URL, notice date, and review date**.
+3. Open the actual **NOFO** and verify eligibility, preapplication requirements, cost share, allowable costs, procurement rules, and every deadline.
+4. Gather source-backed evidence (for example, engineering reports, utility plans, budgets, maps, service statistics, or adopted plans) as required by the **specific** program.
+5. Use **My pipeline**, the draft generator, and cost-share model to prepare an **internal working packet**; retain local copies.
+6. Obtain any required **council, board, fiscal court, district, or authorized-official approvals** through the normal public process.
+7. Submit through the **agency's official application system** and separately retain the actual confirmation/receipt.
+
+A municipality may use the site for research and internal coordination; it should **not** treat the website's local “Submitted” label, source audit, or generated draft as proof of an agency filing.
+
+## Questions, corrections, and community contributions
+
+**See a broken link, missing county source, incorrect deadline, or a newly published official notice?** [Open a GitHub issue](https://github.com/ATphobia22/Tri-State-Grant-Matrix/issues) with the **program/source name, official agency URL, date observed, county/state, and what appears incorrect**. Please do not include personal applicant data or confidential documents. A correction should be supported by the original agency source; an automated HTTP result alone is not sufficient.
+
+**Frequently asked questions**
+
+- **Does it apply for a grant for me?** No. It helps research, organize, and draft. Applications must go to the official agency.
+- **Are all 101 programs open right now?** No. They are funding pathways, and some may not have an active competition.
+- **Does choosing my county mean I qualify?** No. It filters by geography/state; official eligibility rules still apply.
+- **Are county meeting records complete?** No. Eight county archives are identified, Wabash County, Illinois is a documented gap, and attachment contents are not comprehensively verified.
+- **Will it automatically update when I open it?** It reads the latest available database or published snapshot. **Source crawls occur on scheduled workflows**, not as an unrestricted crawl initiated by every visitor.
+- **Can I use it without internet?** Some previously cached content may work after an online visit; live official sources and applications require internet.
+- **Can I use it on my phone?** Yes. If a government site blocks an embedded browser, copy its displayed URL into Safari or Chrome.
+- **Is it a government website?** No. It links to government sources but is independently operated.
+
+## License and public-interest boundaries
+
+The repository includes the **[GNU General Public License, version 3](LICENSE)**. Official government websites, linked documents, third-party data, and external services retain their own terms and attribution requirements; a link here does not relicense their content.
+
+**Bottom line:** The Tri-State River Valley Grant Matrix helps communities **find potential funding, prepare better-informed project materials, and review original sources**. **Local officials and awarding agencies retain responsibility for eligibility, approvals, submissions, and funding decisions.**
