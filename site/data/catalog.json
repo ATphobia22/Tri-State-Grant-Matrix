@@ -64,13 +64,15 @@
       "scope": "IN",
       "sector": "Water & utilities",
       "official": "https://www.in.gov/ocra/cdbg/cdbg-construction-grants/",
-      "documents": "https://www.in.gov/ocra/cdbg/cdbg-resources/",
+      "documents": "https://www.in.gov/ocra/cdbg/Construction%20Instructions-R2-2026.pdf",
       "deadline": "2026-12-13",
       "status": "Final applications only — proposal gate closed",
       "funding_type": "Grant",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": "2026-11-22",
-      "notes": "October 4, 2026 proposal prerequisite passed. Do not treat December 13 final deadline as available for applicants who missed initial stage."
+      "notes": "Round 2 required an October 4 proposal. Preapproval items are due December 4. Final applications are due December 13 at 11:59 p.m. ET.",
+      "deadline_source": "https://www.in.gov/ocra/cdbg/Construction%20Instructions-R2-2026.pdf",
+      "deadline_checked": "2026-11-22"
     },
     {
       "id": "IN-INDOT-CCMG-FY27",
@@ -82,7 +84,7 @@
       "deadline": null,
       "status": "Program pathway — verify current notice",
       "funding_type": "See agency requirements",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": null,
       "notes": "Official program or administering-agency reference; no current award or local eligibility is implied."
     },
@@ -96,7 +98,7 @@
       "deadline": null,
       "status": "Ongoing — PER/PPL review",
       "funding_type": "Loan / subsidy",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": null,
       "notes": "Official program or administering-agency reference; no current award or local eligibility is implied."
     },
@@ -110,7 +112,7 @@
       "deadline": null,
       "status": "Ongoing — PER/PPL review",
       "funding_type": "Loan / subsidy",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": null,
       "notes": "Official program or administering-agency reference; no current award or local eligibility is implied."
     },
@@ -124,7 +126,7 @@
       "deadline": null,
       "status": "Year-round — funds-dependent",
       "funding_type": "Loan / grant",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": null,
       "notes": "Rural service area population limit generally 20,000; requires eligibility assessment; not every county or city automatically qualifies."
     },
@@ -138,7 +140,7 @@
       "deadline": null,
       "status": "Year-round — funds-dependent",
       "funding_type": "Loan / grant",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": null,
       "notes": "Rural service area population limit generally 10,000; loans plus possible grant component."
     },
@@ -152,9 +154,11 @@
       "deadline": "2027-01-21",
       "status": "Open — federal deadline",
       "funding_type": "Grant",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": "2026-11-22",
-      "notes": "EPA FY2027 ARC program. Assessment, Cleanup and RLF have different eligibility thresholds, site ownership and community consultation requirements."
+      "notes": "EPA FY2027 ARC program. Assessment, Cleanup and RLF have different eligibility thresholds, site ownership and community consultation requirements.",
+      "deadline_source": "https://www.epa.gov/brownfields/fy-2027-brownfields-assessment-revolving-loan-fund-and-cleanup-grant-competition",
+      "deadline_checked": "2026-11-22"
     },
     {
       "id": "EPA-BF-2027-CLEAN",
@@ -166,9 +170,11 @@
       "deadline": "2027-01-21",
       "status": "Open — federal deadline",
       "funding_type": "Grant",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": "2026-11-22",
-      "notes": "EPA FY2027 ARC program. Assessment, Cleanup and RLF have different eligibility thresholds, site ownership and community consultation requirements."
+      "notes": "EPA FY2027 ARC program. Assessment, Cleanup and RLF have different eligibility thresholds, site ownership and community consultation requirements.",
+      "deadline_source": "https://www.epa.gov/brownfields/fy-2027-brownfields-assessment-revolving-loan-fund-and-cleanup-grant-competition",
+      "deadline_checked": "2026-11-22"
     },
     {
       "id": "IN-IBO-BEAD",
@@ -180,7 +186,7 @@
       "deadline": null,
       "status": "State implementation / provider partner",
       "funding_type": "Provider-led",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": null,
       "notes": "Official program or administering-agency reference; no current award or local eligibility is implied."
     },
@@ -194,7 +200,7 @@
       "deadline": null,
       "status": "Program pathway — verify current notice",
       "funding_type": "See agency requirements",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": null,
       "notes": "Official program or administering-agency reference; no current award or local eligibility is implied."
     },
@@ -208,7 +214,7 @@
       "deadline": null,
       "status": "Program pathway — verify current notice",
       "funding_type": "See agency requirements",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": null,
       "notes": "Official program or administering-agency reference; no current award or local eligibility is implied."
     },
@@ -222,7 +228,7 @@
       "deadline": null,
       "status": "Program pathway — verify current notice",
       "funding_type": "See agency requirements",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": null,
       "notes": "Official program or administering-agency reference; no current award or local eligibility is implied."
     },
@@ -236,7 +242,7 @@
       "deadline": null,
       "status": "Next cycle review",
       "funding_type": "Tax credit",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": null,
       "notes": "Official program or administering-agency reference; no current award or local eligibility is implied."
     },
@@ -250,7 +256,7 @@
       "deadline": null,
       "status": "Agency capacity dependent",
       "funding_type": "Technical assistance",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": null,
       "notes": "Official program or administering-agency reference; no current award or local eligibility is implied."
     },
@@ -264,7 +270,7 @@
       "deadline": null,
       "status": "Agency capacity dependent",
       "funding_type": "Technical assistance",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": null,
       "notes": "Official program or administering-agency reference; no current award or local eligibility is implied."
     },
@@ -278,7 +284,7 @@
       "deadline": null,
       "status": "Program pathway — verify current notice",
       "funding_type": "See agency requirements",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": null,
       "notes": "Official program or administering-agency reference; no current award or local eligibility is implied."
     },
@@ -292,7 +298,7 @@
       "deadline": null,
       "status": "Program pathway — verify current notice",
       "funding_type": "See agency requirements",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": null,
       "notes": "Official program or administering-agency reference; no current award or local eligibility is implied."
     },
@@ -306,7 +312,7 @@
       "deadline": null,
       "status": "Program pathway — verify current notice",
       "funding_type": "See agency requirements",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": null,
       "notes": "Official program or administering-agency reference; no current award or local eligibility is implied."
     },
@@ -320,9 +326,11 @@
       "deadline": "2027-01-21",
       "status": "Open — federal deadline",
       "funding_type": "Grant",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": "2026-11-22",
-      "notes": "EPA FY2027 ARC program. Assessment, Cleanup and RLF have different eligibility thresholds, site ownership and community consultation requirements."
+      "notes": "EPA FY2027 ARC program. Assessment, Cleanup and RLF have different eligibility thresholds, site ownership and community consultation requirements.",
+      "deadline_source": "https://www.epa.gov/brownfields/fy-2027-brownfields-assessment-revolving-loan-fund-and-cleanup-grant-competition",
+      "deadline_checked": "2026-11-22"
     },
     {
       "id": "IN-IBO-ICP",
@@ -334,7 +342,7 @@
       "deadline": null,
       "status": "Program pathway — verify current notice",
       "funding_type": "See agency requirements",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": null,
       "notes": "Official program or administering-agency reference; no current award or local eligibility is implied."
     },
@@ -348,7 +356,7 @@
       "deadline": null,
       "status": "Service area / individual eligibility",
       "funding_type": "Individual homeowner assistance",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": null,
       "notes": "Official program or administering-agency reference; no current award or local eligibility is implied."
     },
@@ -362,7 +370,7 @@
       "deadline": null,
       "status": "Disaster-dependent; state route",
       "funding_type": "Disaster grant",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": null,
       "notes": "Official program or administering-agency reference; no current award or local eligibility is implied."
     },
@@ -376,7 +384,7 @@
       "deadline": null,
       "status": "Program pathway — verify current notice",
       "funding_type": "See agency requirements",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": null,
       "notes": "Official program or administering-agency reference; no current award or local eligibility is implied."
     },
@@ -390,7 +398,7 @@
       "deadline": null,
       "status": "Program pathway — verify current notice",
       "funding_type": "See agency requirements",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": null,
       "notes": "Official program or administering-agency reference; no current award or local eligibility is implied."
     },
@@ -404,7 +412,7 @@
       "deadline": null,
       "status": "Program pathway — verify current notice",
       "funding_type": "See agency requirements",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": null,
       "notes": "Official program or administering-agency reference; no current award or local eligibility is implied."
     },
@@ -418,7 +426,7 @@
       "deadline": null,
       "status": "Program pathway — verify current notice",
       "funding_type": "See agency requirements",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": null,
       "notes": "Official program or administering-agency reference; no current award or local eligibility is implied."
     },
@@ -432,7 +440,7 @@
       "deadline": null,
       "status": "Program pathway — verify current notice",
       "funding_type": "See agency requirements",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": null,
       "notes": "Official program or administering-agency reference; no current award or local eligibility is implied."
     },
@@ -446,7 +454,7 @@
       "deadline": null,
       "status": "Program pathway — verify current notice",
       "funding_type": "See agency requirements",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": null,
       "notes": "Official program or administering-agency reference; no current award or local eligibility is implied."
     },
@@ -460,7 +468,7 @@
       "deadline": null,
       "status": "Program pathway — verify current notice",
       "funding_type": "See agency requirements",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": null,
       "notes": "Official program or administering-agency reference; no current award or local eligibility is implied."
     },
@@ -474,9 +482,11 @@
       "deadline": "2026-12-31",
       "status": "2027 cycle — confirm program manual",
       "funding_type": "Grant",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": "2026-11-22",
-      "notes": "State LARE cycle deadline December 31, 2026; eligible sediment nutrient and watershed projects."
+      "notes": "State LARE cycle deadline December 31, 2026; eligible sediment nutrient and watershed projects.",
+      "deadline_source": "https://www.in.gov/dnr/fish-and-wildlife/wildlife-resources/lake-and-river-enhancement/lare-program-manual",
+      "deadline_checked": "2026-11-22"
     },
     {
       "id": "FEMA-FMA-2026",
@@ -488,9 +498,11 @@
       "deadline": "2027-02-26",
       "status": "Open — federal deadline; confirm state subapplicant deadline",
       "funding_type": "Grant",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": "2026-11-22",
-      "notes": "Federal FMA FY2026 competition DHS-26-MT-029-000-98, $400 million; local entities apply via state with NFIP, current approved mitigation plan, BCA and EHP checks."
+      "notes": "Federal FMA FY2026 competition DHS-26-MT-029-000-98, $400 million; local entities apply via state with NFIP, current approved mitigation plan, BCA and EHP checks.",
+      "deadline_source": "https://apply07.grants.gov/grantsws/rest/opportunity/att/download/355308",
+      "deadline_checked": "2026-11-22"
     },
     {
       "id": "IEDC-READI",
@@ -502,7 +514,7 @@
       "deadline": null,
       "status": "Program pathway — verify current notice",
       "funding_type": "See agency requirements",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": null,
       "notes": "Official program or administering-agency reference; no current award or local eligibility is implied."
     },
@@ -516,7 +528,7 @@
       "deadline": null,
       "status": "Program pathway — verify current notice",
       "funding_type": "See agency requirements",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": null,
       "notes": "Official program or administering-agency reference; no current award or local eligibility is implied."
     },
@@ -530,7 +542,7 @@
       "deadline": null,
       "status": "Program pathway — verify current notice",
       "funding_type": "See agency requirements",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": null,
       "notes": "Official program or administering-agency reference; no current award or local eligibility is implied."
     },
@@ -544,7 +556,7 @@
       "deadline": null,
       "status": "Program pathway — verify current notice",
       "funding_type": "See agency requirements",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": null,
       "notes": "Official program or administering-agency reference; no current award or local eligibility is implied."
     },
@@ -558,7 +570,7 @@
       "deadline": null,
       "status": "Program pathway — verify current notice",
       "funding_type": "See agency requirements",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": null,
       "notes": "Official program or administering-agency reference; no current award or local eligibility is implied."
     },
@@ -572,7 +584,7 @@
       "deadline": null,
       "status": "Program pathway — verify current notice",
       "funding_type": "See agency requirements",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": null,
       "notes": "Official program or administering-agency reference; no current award or local eligibility is implied."
     },
@@ -586,7 +598,7 @@
       "deadline": null,
       "status": "Program pathway — verify current notice",
       "funding_type": "See agency requirements",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": null,
       "notes": "Official program or administering-agency reference; no current award or local eligibility is implied."
     },
@@ -600,7 +612,7 @@
       "deadline": null,
       "status": "Program pathway — verify current notice",
       "funding_type": "See agency requirements",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": null,
       "notes": "Official program or administering-agency reference; no current award or local eligibility is implied."
     },
@@ -614,7 +626,7 @@
       "deadline": null,
       "status": "Program pathway — verify current notice",
       "funding_type": "See agency requirements",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": null,
       "notes": "Official program or administering-agency reference; no current award or local eligibility is implied."
     },
@@ -628,9 +640,11 @@
       "deadline": "2026-12-04",
       "status": "2026 local public agency NOFA — deadline noon ET",
       "funding_type": "Grant",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": "2026-11-22",
-      "notes": "Certified Indiana LPA ERC and existing ITAP access required. Road and bridge eligibility depends on NOFA."
+      "notes": "Rural projects only. Within metropolitan planning areas, INDOT requested submission by November 20 for MPO review. Urbanized-area projects are ineligible. The certified LPA representative needs existing ITAP access. Final submission closes at noon EST December 4.",
+      "deadline_source": "https://www.in.gov/indot/files/NOFA%20for%202026%20-%20Posted%20October%202026.pdf",
+      "deadline_checked": "2026-11-22"
     },
     {
       "id": "IN-DNR-LWCF-ALT",
@@ -642,7 +656,7 @@
       "deadline": null,
       "status": "Program pathway — verify current notice",
       "funding_type": "See agency requirements",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": null,
       "notes": "Official program or administering-agency reference; no current award or local eligibility is implied."
     },
@@ -656,7 +670,7 @@
       "deadline": null,
       "status": "Program pathway — verify current notice",
       "funding_type": "See agency requirements",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": null,
       "notes": "Official program or administering-agency reference; no current award or local eligibility is implied."
     },
@@ -670,7 +684,7 @@
       "deadline": null,
       "status": "Program pathway — verify current notice",
       "funding_type": "See agency requirements",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": null,
       "notes": "Official program or administering-agency reference; no current award or local eligibility is implied."
     },
@@ -684,7 +698,7 @@
       "deadline": null,
       "status": "Rolling — subject to funding",
       "funding_type": "Grant",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": "2026-11-22",
       "notes": "Non-entitlement eligible local governments; approximately $13m statewide allocation, award range $250k to $2m. GATA and HUD objectives required."
     },
@@ -698,7 +712,7 @@
       "deadline": null,
       "status": "Program pathway — verify current notice",
       "funding_type": "See agency requirements",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": null,
       "notes": "Official program or administering-agency reference; no current award or local eligibility is implied."
     },
@@ -712,7 +726,7 @@
       "deadline": null,
       "status": "Program pathway — verify current notice",
       "funding_type": "See agency requirements",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": null,
       "notes": "Official program or administering-agency reference; no current award or local eligibility is implied."
     },
@@ -726,7 +740,7 @@
       "deadline": null,
       "status": "Program pathway — verify current notice",
       "funding_type": "See agency requirements",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": null,
       "notes": "Official program or administering-agency reference; no current award or local eligibility is implied."
     },
@@ -740,7 +754,7 @@
       "deadline": null,
       "status": "Program pathway — verify current notice",
       "funding_type": "See agency requirements",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": null,
       "notes": "Official program or administering-agency reference; no current award or local eligibility is implied."
     },
@@ -754,7 +768,7 @@
       "deadline": null,
       "status": "Program pathway — verify current notice",
       "funding_type": "See agency requirements",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": null,
       "notes": "Official program or administering-agency reference; no current award or local eligibility is implied."
     },
@@ -768,7 +782,7 @@
       "deadline": null,
       "status": "Program pathway — verify current notice",
       "funding_type": "See agency requirements",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": null,
       "notes": "Official program or administering-agency reference; no current award or local eligibility is implied."
     },
@@ -782,7 +796,7 @@
       "deadline": null,
       "status": "Ongoing — intended funding list",
       "funding_type": "Loan / subsidy",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": null,
       "notes": "Official program or administering-agency reference; no current award or local eligibility is implied."
     },
@@ -796,7 +810,7 @@
       "deadline": null,
       "status": "Ongoing — intended funding list",
       "funding_type": "Loan / subsidy",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": null,
       "notes": "Official program or administering-agency reference; no current award or local eligibility is implied."
     },
@@ -810,7 +824,7 @@
       "deadline": null,
       "status": "Program pathway — verify current notice",
       "funding_type": "See agency requirements",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": null,
       "notes": "Official program or administering-agency reference; no current award or local eligibility is implied."
     },
@@ -824,7 +838,7 @@
       "deadline": null,
       "status": "Program pathway — verify current notice",
       "funding_type": "See agency requirements",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": null,
       "notes": "Official program or administering-agency reference; no current award or local eligibility is implied."
     },
@@ -838,7 +852,7 @@
       "deadline": null,
       "status": "Program pathway — verify current notice",
       "funding_type": "See agency requirements",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": null,
       "notes": "Official program or administering-agency reference; no current award or local eligibility is implied."
     },
@@ -852,7 +866,7 @@
       "deadline": null,
       "status": "Program pathway — verify current notice",
       "funding_type": "See agency requirements",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": null,
       "notes": "Official program or administering-agency reference; no current award or local eligibility is implied."
     },
@@ -866,7 +880,7 @@
       "deadline": null,
       "status": "Program pathway — verify current notice",
       "funding_type": "See agency requirements",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": null,
       "notes": "Official program or administering-agency reference; no current award or local eligibility is implied."
     },
@@ -880,7 +894,7 @@
       "deadline": null,
       "status": "Program pathway — verify current notice",
       "funding_type": "See agency requirements",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": null,
       "notes": "Official program or administering-agency reference; no current award or local eligibility is implied."
     },
@@ -894,7 +908,7 @@
       "deadline": null,
       "status": "Program pathway — verify current notice",
       "funding_type": "See agency requirements",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": null,
       "notes": "Official program or administering-agency reference; no current award or local eligibility is implied."
     },
@@ -908,7 +922,7 @@
       "deadline": null,
       "status": "Program pathway — verify current notice",
       "funding_type": "See agency requirements",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": null,
       "notes": "Official program or administering-agency reference; no current award or local eligibility is implied."
     },
@@ -922,9 +936,11 @@
       "deadline": "2027-03-01",
       "status": "State CDBG track — check entitlement eligibility",
       "funding_type": "Grant",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": "2026-11-22",
-      "notes": "Official Kentucky DLG Economic Development program page states March 1, 2027. City of Henderson is a direct HUD entitlement grantee; do not assume state CDBG eligibility."
+      "notes": "Official Kentucky DLG Economic Development program page states March 1, 2027. City of Henderson is a direct HUD entitlement grantee; do not assume state CDBG eligibility.",
+      "deadline_source": "https://dlg.ky.gov/grants/federal/cdbg/Pages/Economic-Development.aspx",
+      "deadline_checked": "2026-11-22"
     },
     {
       "id": "KY-DLG-CDBG-HR",
@@ -936,9 +952,11 @@
       "deadline": "2027-02-01",
       "status": "State CDBG track — check entitlement eligibility",
       "funding_type": "Grant",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": "2026-11-22",
-      "notes": "Official Kentucky DLG Housing program page states February 1, 2027. Non-entitlement and local benefit constraints apply."
+      "notes": "Official Kentucky DLG Housing program page states February 1, 2027. Non-entitlement and local benefit constraints apply.",
+      "deadline_source": "https://dlg.ky.gov/grants/federal/cdbg/Pages/Housing-Program.aspx",
+      "deadline_checked": "2026-11-22"
     },
     {
       "id": "KY-DLG-CDBG-CERF",
@@ -950,9 +968,11 @@
       "deadline": "2027-01-31",
       "status": "Emergency-specific state CDBG intake",
       "funding_type": "Grant",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": "2026-11-22",
-      "notes": "Only projects responding to qualifying emergencies; state page lists January 31, 2027."
+      "notes": "Only projects responding to qualifying emergencies; state page lists January 31, 2027.",
+      "deadline_source": "https://dlg.ky.gov/grants/federal/cdbg/Pages/Community-Emergency-Relief-Fund.aspx",
+      "deadline_checked": "2026-11-22"
     },
     {
       "id": "KY-KIA-A",
@@ -964,9 +984,11 @@
       "deadline": "2026-12-15",
       "status": "FY2028 project call — verify WRIS profile",
       "funding_type": "Loan / subsidy",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": "2026-11-22",
-      "notes": "2028 KIA state revolving fund call for project profiles through WRIS; priority list and loan terms govern."
+      "notes": "2028 KIA state revolving fund call for project profiles through WRIS; priority list and loan terms govern.",
+      "deadline_source": "https://kia.ky.gov/Pages/index.aspx",
+      "deadline_checked": "2026-11-22"
     },
     {
       "id": "KY-KIA-F",
@@ -978,9 +1000,11 @@
       "deadline": "2026-12-15",
       "status": "FY2028 project call — verify WRIS profile",
       "funding_type": "Loan / subsidy",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": "2026-11-22",
-      "notes": "2028 KIA state revolving fund call for project profiles through WRIS; priority list and loan terms govern."
+      "notes": "2028 KIA state revolving fund call for project profiles through WRIS; priority list and loan terms govern.",
+      "deadline_source": "https://kia.ky.gov/Pages/index.aspx",
+      "deadline_checked": "2026-11-22"
     },
     {
       "id": "KY-DLG-LWCF",
@@ -992,7 +1016,7 @@
       "deadline": null,
       "status": "Program pathway — verify current notice",
       "funding_type": "See agency requirements",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": null,
       "notes": "Official program or administering-agency reference; no current award or local eligibility is implied."
     },
@@ -1006,7 +1030,7 @@
       "deadline": null,
       "status": "Program pathway — verify current notice",
       "funding_type": "See agency requirements",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": null,
       "notes": "Official program or administering-agency reference; no current award or local eligibility is implied."
     },
@@ -1020,7 +1044,7 @@
       "deadline": null,
       "status": "Program pathway — verify current notice",
       "funding_type": "See agency requirements",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": null,
       "notes": "Official program or administering-agency reference; no current award or local eligibility is implied."
     },
@@ -1034,7 +1058,7 @@
       "deadline": null,
       "status": "Program pathway — verify current notice",
       "funding_type": "See agency requirements",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": null,
       "notes": "Official program or administering-agency reference; no current award or local eligibility is implied."
     },
@@ -1048,7 +1072,7 @@
       "deadline": null,
       "status": "Program pathway — verify current notice",
       "funding_type": "See agency requirements",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": null,
       "notes": "Official program or administering-agency reference; no current award or local eligibility is implied."
     },
@@ -1062,7 +1086,7 @@
       "deadline": null,
       "status": "Program pathway — verify current notice",
       "funding_type": "See agency requirements",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": null,
       "notes": "Official program or administering-agency reference; no current award or local eligibility is implied."
     },
@@ -1076,7 +1100,7 @@
       "deadline": null,
       "status": "Program pathway — verify current notice",
       "funding_type": "See agency requirements",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": null,
       "notes": "Official program or administering-agency reference; no current award or local eligibility is implied."
     },
@@ -1090,7 +1114,7 @@
       "deadline": null,
       "status": "Program pathway — verify current notice",
       "funding_type": "See agency requirements",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": null,
       "notes": "Official program or administering-agency reference; no current award or local eligibility is implied."
     },
@@ -1104,7 +1128,7 @@
       "deadline": null,
       "status": "Program pathway — verify current notice",
       "funding_type": "See agency requirements",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": null,
       "notes": "Official program or administering-agency reference; no current award or local eligibility is implied."
     },
@@ -1118,7 +1142,7 @@
       "deadline": null,
       "status": "Program pathway — verify current notice",
       "funding_type": "See agency requirements",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": null,
       "notes": "Official program or administering-agency reference; no current award or local eligibility is implied."
     },
@@ -1132,7 +1156,7 @@
       "deadline": null,
       "status": "Program pathway — verify current notice",
       "funding_type": "See agency requirements",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": null,
       "notes": "Official program or administering-agency reference; no current award or local eligibility is implied."
     },
@@ -1146,7 +1170,7 @@
       "deadline": null,
       "status": "Program pathway — verify current notice",
       "funding_type": "See agency requirements",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": null,
       "notes": "Official program or administering-agency reference; no current award or local eligibility is implied."
     },
@@ -1160,7 +1184,7 @@
       "deadline": null,
       "status": "Program pathway — verify current notice",
       "funding_type": "See agency requirements",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": null,
       "notes": "Official program or administering-agency reference; no current award or local eligibility is implied."
     },
@@ -1174,7 +1198,7 @@
       "deadline": null,
       "status": "Program pathway — verify current notice",
       "funding_type": "See agency requirements",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": null,
       "notes": "Official program or administering-agency reference; no current award or local eligibility is implied."
     },
@@ -1188,7 +1212,7 @@
       "deadline": null,
       "status": "Program pathway — verify current notice",
       "funding_type": "See agency requirements",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": null,
       "notes": "Verified agency overview link updated 2026-11-22; no current grant competition or eligibility is implied."
     },
@@ -1202,7 +1226,7 @@
       "deadline": null,
       "status": "State-specific ranking deadlines",
       "funding_type": "Producer assistance",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": null,
       "notes": "FY2027 first cutoff December 18, 2026 for Indiana and Illinois; Kentucky first cutoff has passed. Not general municipal grant."
     },
@@ -1216,7 +1240,7 @@
       "deadline": null,
       "status": "Program pathway — verify current notice",
       "funding_type": "See agency requirements",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": null,
       "notes": "Official program or administering-agency reference; no current award or local eligibility is implied."
     },
@@ -1230,7 +1254,7 @@
       "deadline": null,
       "status": "Program pathway — verify current notice",
       "funding_type": "See agency requirements",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": null,
       "notes": "Official program or administering-agency reference; no current award or local eligibility is implied."
     },
@@ -1244,7 +1268,7 @@
       "deadline": null,
       "status": "Competitions pending",
       "funding_type": "Loan / grant via rural utility",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": null,
       "notes": "Official program or administering-agency reference; no current award or local eligibility is implied."
     },
@@ -1258,7 +1282,7 @@
       "deadline": null,
       "status": "Program pathway — verify current notice",
       "funding_type": "See agency requirements",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": null,
       "notes": "Official program or administering-agency reference; no current award or local eligibility is implied."
     },
@@ -1272,7 +1296,7 @@
       "deadline": null,
       "status": "Disaster-dependent",
       "funding_type": "Disaster reimbursement",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": null,
       "notes": "Official program or administering-agency reference; no current award or local eligibility is implied."
     },
@@ -1286,7 +1310,7 @@
       "deadline": null,
       "status": "Program pathway — verify current notice",
       "funding_type": "See agency requirements",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": null,
       "notes": "Official program or administering-agency reference; no current award or local eligibility is implied."
     },
@@ -1300,7 +1324,7 @@
       "deadline": null,
       "status": "Program pathway — verify current notice",
       "funding_type": "See agency requirements",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": null,
       "notes": "Official program or administering-agency reference; no current award or local eligibility is implied."
     },
@@ -1314,7 +1338,7 @@
       "deadline": null,
       "status": "Program pathway — verify current notice",
       "funding_type": "See agency requirements",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": null,
       "notes": "Verified agency overview link updated 2026-11-22; no current grant competition or eligibility is implied."
     },
@@ -1328,7 +1352,7 @@
       "deadline": null,
       "status": "Program pathway — verify current notice",
       "funding_type": "See agency requirements",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": null,
       "notes": "Official program or administering-agency reference; no current award or local eligibility is implied."
     },
@@ -1342,7 +1366,7 @@
       "deadline": null,
       "status": "Program pathway — verify current notice",
       "funding_type": "See agency requirements",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": null,
       "notes": "Official program or administering-agency reference; no current award or local eligibility is implied."
     },
@@ -1356,7 +1380,7 @@
       "deadline": null,
       "status": "District sponsorship review",
       "funding_type": "Civil works partnership",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": null,
       "notes": "Official program or administering-agency reference; no current award or local eligibility is implied."
     },
@@ -1370,7 +1394,7 @@
       "deadline": null,
       "status": "Program pathway — verify current notice",
       "funding_type": "See agency requirements",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": null,
       "notes": "Official program or administering-agency reference; no current award or local eligibility is implied."
     },
@@ -1384,7 +1408,7 @@
       "deadline": null,
       "status": "Program pathway — verify current notice",
       "funding_type": "See agency requirements",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": null,
       "notes": "Official program or administering-agency reference; no current award or local eligibility is implied."
     },
@@ -1398,7 +1422,7 @@
       "deadline": null,
       "status": "Program pathway — verify current notice",
       "funding_type": "See agency requirements",
-      "applicants": "Cities, towns, townships, counties or departments only if program-eligible",
+      "applicants": "Check applicant types in the agency notice.",
       "reviewed": null,
       "notes": "Official program or administering-agency reference; no current award or local eligibility is implied."
     },
@@ -1414,21 +1438,25 @@
       "documents": "https://sfm.illinois.gov/iam/firedepartment/grants-and-loans.html",
       "notes": "Fire departments, districts and eligible nonprofit ambulance services; awards up to $50,000; GATA registration required.",
       "reviewed": "2026-11-22",
-      "applicants": "Agency-specific"
+      "applicants": "Agency-specific",
+      "deadline_source": "https://sfm.illinois.gov/currentfocus/fy-27-small-equipment-grant-.html",
+      "deadline_checked": "2026-11-22"
     },
     {
       "id": "IN-IDHS-SWIFT26",
       "name": "Indiana IDHS Swift Current Preapplication FY2026",
       "scope": "IN",
       "sector": "Flood & resilience",
-      "official": "https://www.in.gov/dhs/grants-management/",
+      "official": "https://www.in.gov/dhs/emergency-management-and-preparedness/mitigation-and-recovery/",
       "deadline": "2026-11-20",
       "status": "Closed — Indiana preapplication",
       "funding_type": "Federal pass-through",
       "documents": "https://www.in.gov/dhs/files/2026%20FMA%20Swift%20Current%20program%20info.pdf",
       "notes": "Indiana state preapplication deadline passed November 20; does not close competitive FY2026 FMA.",
       "reviewed": "2026-11-22",
-      "applicants": "Agency-specific"
+      "applicants": "Agency-specific",
+      "deadline_source": "https://www.in.gov/dhs/emergency-management-and-preparedness/mitigation-and-recovery/",
+      "deadline_checked": "2026-11-22"
     },
     {
       "id": "KY-DLG-FLOOD-MATCH",
@@ -1470,7 +1498,9 @@
       "documents": "https://dlg.ky.gov/grants/federal/cdbg/Pages/CDBG-Guidelines-and-Applications.aspx",
       "notes": "Existing Recovery Kentucky substance-use recovery centers, not general municipal public services.",
       "reviewed": "2026-11-22",
-      "applicants": "Agency-specific"
+      "applicants": "Agency-specific",
+      "deadline_source": "https://dlg.ky.gov/grants/federal/cdbg/RKY/Pages/default.aspx",
+      "deadline_checked": "2026-11-22"
     }
   ],
   "resources": [
