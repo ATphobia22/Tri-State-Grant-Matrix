@@ -16,6 +16,7 @@ KEYWORDS=("flood mitigation","water infrastructure","community facilities","rura
 APPROVED_HOSTS={
     "www.grants.gov","grants.gov","simpler.grants.gov","sam.gov","www.sam.gov",
     "www.hudexchange.info","www.poseycountyin.gov","gibsoncounty-in.gov",
+    "indianareadi.com","www.cityofmtcarmel.com","www.unioncountyky.org",
     "evansville.granicus.com","warrickcountymeetings.vivabove.com",
 }
 MAX_BYTES=8*1024*1024
@@ -60,12 +61,13 @@ def monitor_sources(client,db,run_id):
     scanned=accepted=errors=0
     for url in sorted(urls):
         scanned+=1
-        status=None; digest=None; body_type=None; etag=None; modified=None; changed=False; error=None
+        status=None; digest=None; body_type=None; etag=None; modified=None; changed=False; error=None; http_status=None
         if not safe_url(url):
             status="UNAVAILABLE"; error="Host not in approved source allowlist"; errors+=1
         else:
             try:
                 with client.stream("GET",url,follow_redirects=False) as r:
+                    http_status=r.status_code
                     status=status_for(r.status_code)
                     body_type=r.headers.get("content-type","")[:120]
                     etag=r.headers.get("etag","")[:240]
@@ -93,8 +95,7 @@ def monitor_sources(client,db,run_id):
         db.execute("""INSERT INTO source_checks(run_id,url,http_status,state,content_sha256,
                    content_type,etag,last_modified,changed,error)
                    VALUES(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)""",
-                   (run_id,url,r.status_code if 'r' in locals() and status not in
-                    ("UNAVAILABLE",) else None,status,digest,body_type,etag,modified,changed,error))
+                   (run_id,url,http_status,status,digest,body_type,etag,modified,changed,error))
         db.commit()
     return scanned,accepted,errors
 

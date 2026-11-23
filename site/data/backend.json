@@ -1,0 +1,5 @@
+{
+  "schema": "tristate.backend-config.v1",
+  "api_base_url": "",
+  "notes": "Empty until a real, independently tested HTTPS backend is deployed. Static audited snapshots remain available."
+}
