@@ -139,3 +139,9 @@ The first [public records audit](site/data/public-records-audit.json) ran at **2
 
 To examine the results, open the **Public meeting records** tab of the live site, select a county archive, and review its last successful check and direct official source links. The new audit runs at **13:45 UTC on Mondays and Thursdays**, or by manual [GitHub Actions dispatch](https://github.com/ATphobia22/Tri-State-Grant-Matrix/actions/workflows/public-records.yml). No personal applicant data is collected. For acquisition, model selection, metadata, security and remaining source gaps, see [the audit implementation notes](docs/public-records.md).
 
+
+## External official links on iOS, Android, tablets and in-app browsers
+
+**Navigation repair (November 23, 2026):** Official grant, form, source directory and county meeting archive links now navigate in the **same browser tab**, instead of requesting a new popup tab. Use your browser's **Back** button to return to the Grant Matrix. This is intended to avoid in-app mobile-browser new-tab restrictions; every device must still be tested independently. The source directory and all county archives display complete, selectable source addresses. Each grant card also has **Link not opening? Show and copy addresses**. Touch and hold the address, copy it, and open in Safari or Chrome when an embedded browser blocks a third-party site.
+
+For classic Grants.gov search problems, the directory offers the separate official [Simpler.Grants.gov search](https://simpler.grants.gov/search). Some government pages require JavaScript, authentication, cookies or third-party security checks. An automated HTTP 403 is not necessarily a broken public website. This fix does not bypass source restrictions, and independently verified web links may still fail in some in-app browsers.

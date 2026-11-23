@@ -10,7 +10,7 @@
   };
   function externalLink(url, title) {
     const a = elt("a", title, "action");
-    a.href = url; a.target = "_blank"; a.rel = "noopener noreferrer";
+    a.href = url; a.rel = "noreferrer";
     return a;
   }
   const hasSource = (a, id) => a && a.sources && a.sources[id];
@@ -30,6 +30,7 @@
       for (const source of county.sources) {
         const section = elt("div", undefined, "record-source");
         section.appendChild(externalLink(source.url, source.title));
+        section.appendChild(elt("p", source.url, "source-url"));
         const observation = hasSource(audit, source.id);
         const note = !source.monitor ? "Reference only — not monitored as a county archive" :
           !audit || !audit.last_run ? "Not audited yet" :
@@ -46,6 +47,7 @@
           for (const doc of observation.documents.slice(0, 20)) {
             const li = elt("li");
             li.appendChild(externalLink(doc.url, doc.label || "Source attachment"));
+            li.appendChild(elt("span", doc.url, "source-url"));
             list.appendChild(li);
           }
           if (observation.documents.length > 20)

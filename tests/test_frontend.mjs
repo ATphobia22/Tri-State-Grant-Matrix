@@ -344,3 +344,41 @@ test("official county archive view has nine counties and explicitly flags Wabash
   assert.match(serviceWorker, /public-records-audit\.json/);
   assert.match(serviceWorker, /public-records\.js/);
 });
+
+test("grant and county archive links navigate same-tab with visible source address fallback", async () => {
+  const app = await createApp();
+  assert.doesNotMatch(page, /target=(?:\\)?"_blank(?:\\)?"/);
+  assert.doesNotMatch(commandSource, /target\s*=\s*["_']_blank["']/);
+  assert.doesNotMatch(recordSource, /target\s*=\s*["_']_blank["']/);
+  const htmlLink = vm.runInContext('a("https://sam.gov/","Official program")', app.context);
+  assert.match(htmlLink, /href="https:\/\/sam\.gov\/"/);
+  assert.doesNotMatch(htmlLink, /target=/);
+  assert.match(page, /source-fallback/);
+  assert.match(commandSource, /simpler\.grants\.gov\/search/);
+  const portalCards = app.elements.get("portal-grid").children;
+  assert.equal(portalCards.length, catalog.resources.length);
+  for (const card of portalCards) {
+    const links = card.children.filter(el => el.tagName === "A");
+    assert.ok(links.length > 0);
+    for (const link of links) {
+      assert.equal(link.target, undefined, "portal links must not demand new tabs");
+      assert.equal(new URL(link.href).protocol, "https:");
+    }
+    assert.ok(card.children.some(el => el.className === "source-url"),
+      "publish original portal URL as selectable text");
+  }
+  const cards = app.elements.get("records-list").children;
+  assert.equal(cards.length, 9);
+  for (const card of cards) {
+    const sources = card.children.filter(el => el.className === "record-source");
+    assert.ok(sources.length > 0);
+    for (const item of sources) {
+      const link = item.children.find(el => el.tagName === "A");
+      assert.ok(link && link.href.startsWith("https:"));
+      assert.equal(link.target, undefined, "archive links must not demand new tabs");
+      assert.ok(item.children.some(el => el.className === "source-url"),
+        "show archive URL for copying when embedded browser blocks a source");
+    }
+  }
+  assert.match(serviceWorker, /links-v6/);
+});

@@ -183,13 +183,19 @@ function initCommandCenter(data) {
       article.appendChild(node("span", "pill scope-" + scope.toLowerCase(), names[scope]));
       article.appendChild(node("h3", "", r.label));
       article.appendChild(node("p", "portal-domain", link.hostname));
+      article.appendChild(node("p", "source-url", r.url));
       const state = audit && audit.links ? audit.links[r.url] : null;
       article.appendChild(node("p", "small", state ? "HTTP probe: " + state.status + " · " + (state.checked_at || "").slice(0, 10) : "No HTTP probe on record"));
       const a = node("a", "action primary", "Open official source");
       a.href = r.url;
-      a.target = "_blank";
-      a.rel = "noopener noreferrer";
+      a.rel = "noreferrer";
       article.appendChild(a);
+      if (r.url === "https://www.grants.gov/search-grants") {
+        const alternate = node("a", "action", "Alternative: Simpler.Grants.gov");
+        alternate.href = "https://simpler.grants.gov/search";
+        alternate.rel = "noreferrer";
+        article.appendChild(alternate);
+      }
       box.appendChild(article);
     }
   }

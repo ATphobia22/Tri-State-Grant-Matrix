@@ -86,3 +86,8 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,
 .record-events li{padding:3px 0}
 @media(max-width:700px){.records-grid{grid-template-columns:minmax(0,1fr)}.record-source .action{min-height:44px}}
 @media print{#view-records{display:none!important}}
+
+/* Full, selectable source addresses provide a fallback when external tabs are blocked. */
+.source-url{display:block;margin:6px 0 9px;padding:7px 9px;border:1px solid #dbe5f1;border-radius:7px;background:#f8fafc;color:#334155;font:12px/1.5 ui-monospace,SFMono-Regular,Consolas,monospace;overflow-wrap:anywhere;word-break:break-word;user-select:text;-webkit-user-select:text}
+.source-fallback{margin-top:9px;padding-top:5px;border-top:1px solid #dbe5f1;font-size:12px;color:#1d4ed8}
+.source-fallback summary{cursor:pointer;font-weight:650;padding:8px 0;min-height:38px}
