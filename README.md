@@ -61,6 +61,8 @@ The document generator uses generic **planning** checklists. The daylight interf
 
 Always obtain program-specific forms, certifications, applicant registration instructions, deadlines, matching requirements, and environmental/engineering approvals from the current official solicitation.
 
+On each visit, Source updates searches the public Grants.gov Search2 API for posted opportunities across four topics. Results are session-local. Offline use or an API error shows the unavailable topics. The daily server-side audit checks catalog URLs and fingerprints PDFs for changes. Agency eligibility and state deadlines require review of the governing notice.
+
 ## Testing buttons, links, and exports
 
 The frontend is intentionally a static HTML/CSS/JavaScript site, so no application build is required.
@@ -76,7 +78,7 @@ python -m unittest discover -s tests -v
 
 The deploy workflow runs both test commands before attempting Pages deployment. Passing tests establish **local logic correctness**, not universal compatibility with every browser or proof that external sites remain reachable. In particular, an HTTP `403` or network timeout from a government site can reflect automation blocking rather than a broken user-facing link.
 
-[Source-audit workflow](https://github.com/ATphobia22/Tri-State-Grant-Matrix/actions/workflows/monitor.yml) runs on Mondays and Thursdays and can also be started manually. It monitors source URLs, response status, and page-content fingerprints, writing `site/data/audit.json`. The app can read cached catalog and audit data offline **after successful service-worker installation while hosted on HTTPS**. The audit reload uses the same URL as the offline cache. The command center CSS and JavaScript are also precached. Direct `file://` use is not supported as a full offline application.
+[Source-audit workflow](https://github.com/ATphobia22/Tri-State-Grant-Matrix/actions/workflows/monitor.yml) runs daily at 13:15 UTC and can also be started manually. It monitors source URLs, response status, and page-content fingerprints, writing `site/data/audit.json`. The app can read cached catalog and audit data offline **after successful service-worker installation while hosted on HTTPS**. The audit reload uses the same URL as the offline cache. The command center CSS and JavaScript are also precached. Direct `file://` use is not supported as a full offline application.
 
 **Reachable ≠ verified eligible.** A successful link check confirms a technical HTTP result only. Deadlines, forms, local/state preapplication windows, eligibility, cost shares, and award amounts must be reviewed against the actual agency NOFO. The monitor does not silently rewrite those fields.
 
