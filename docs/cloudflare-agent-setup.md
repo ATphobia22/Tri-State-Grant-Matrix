@@ -2,13 +2,13 @@
 
 **Official source:** https://developers.cloudflare.com/agent-setup/prompt.md (read November 23, 2026). This document prepares MCP configuration for Cloudflare development; **it does not create a Cloudflare account, provision a Worker/D1 database, or authorize paid usage**.
 
-The Cloudflare-authored guide specifies installing the [Cloudflare skills](https://github.com/cloudflare/skills) and connecting its **official remote OAuth MCP server** at `https://mcp.cloudflare.com/mcp`. The repository includes client configuration for Cursor and VS Code/GitHub Copilot. **No credentials, tokens, API keys, or OAuth authorization were committed.**
+The Cloudflare-authored guide specifies installing the [Cloudflare skills](https://github.com/cloudflare/skills) and connecting its **official remote OAuth MCP server** at `https://mcp.cloudflare.com/mcp`. The repository includes client configuration for Cursor and VS Code/GitHub Copilot (including modern workspace-root `.mcp.json` and legacy `.vscode/mcp.json`). **No credentials, tokens, API keys, or OAuth authorization were committed.**
 
 ## Pick the development agent you actually use
 
 ### VS Code / GitHub Copilot
 
-The repository's `.vscode/mcp.json` includes the official MCP remote URL. Open this repository in VS Code with a compatible GitHub Copilot agent/MCP-capable extension. Use its MCP discovery and authorization UI to connect to Cloudflare. Complete OAuth yourself in the Cloudflare browser flow.
+The repository's workspace-root `.mcp.json` follows Cloudflare's published `mcpServers` example. For the VS Code legacy MCP configuration, `.vscode/mcp.json` uses `servers`, as specified in Microsoft's [current VS Code MCP configuration reference](https://code.visualstudio.com/docs/agents/reference/mcp-configuration). Both point to the same official Cloudflare remote URL. Open this repository in VS Code with a compatible GitHub Copilot agent/MCP-capable extension. Use its MCP discovery and authorization UI to connect to Cloudflare. Complete OAuth yourself in the Cloudflare browser flow.
 
 ### Cursor
 

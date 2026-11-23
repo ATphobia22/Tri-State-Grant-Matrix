@@ -10,10 +10,12 @@ class CloudflareAgentSetupTests(unittest.TestCase):
     def test_mcp_uses_official_oauth_endpoint(self):
         vscode = json.loads((ROOT / ".vscode/mcp.json").read_text())
         cursor = json.loads((ROOT / ".cursor/mcp.json").read_text())
+        workspace = json.loads((ROOT / ".mcp.json").read_text())
         self.assertEqual(vscode["servers"]["cloudflare"]["url"], ENDPOINT)
         self.assertEqual(vscode["servers"]["cloudflare"]["type"], "http")
         self.assertEqual(cursor["mcpServers"]["cloudflare"]["url"], ENDPOINT)
-        for cfg in (vscode, cursor):
+        self.assertEqual(workspace["mcpServers"]["cloudflare"]["url"], ENDPOINT)
+        for cfg in (vscode, cursor, workspace):
             self.assertNotIn("token", json.dumps(cfg).lower())
             self.assertNotIn("api_key", json.dumps(cfg).lower())
             self.assertNotIn("authorization", json.dumps(cfg).lower())
