@@ -14,6 +14,15 @@ class SiteContract(unittest.TestCase):
             self.assertIn(x["scope"],("IN","IL","KY","FED"))
             self.assertTrue(monitor.allowed(x["official"]),x["id"])
             self.assertTrue(monitor.allowed(x["documents"]),x["id"])
+    def test_deadline_evidence(self):
+        from datetime import date
+        for program in self.c["programs"]:
+            if program["deadline"]:
+                self.assertTrue(monitor.allowed(program["deadline_source"]), program["id"])
+                date.fromisoformat(program["deadline_checked"])
+        for resource in self.c["resources"]:
+            self.assertTrue(monitor.allowed(resource["url"]), resource["url"])
+
     def test_safe_link_policy(self):
         self.assertFalse(monitor.allowed("http://www.grants.gov/"))
         self.assertFalse(monitor.allowed("https://localhost/"))
