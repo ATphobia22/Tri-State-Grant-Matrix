@@ -30,6 +30,11 @@ def check(pair):
                 cleaned=re.sub(r"(?is)<(script|style|noscript)\b[^>]*>.*?</\1>"," ",content.decode("utf-8","replace"))
                 cleaned=" ".join(cleaned.split())
                 row["fingerprint"]=hashlib.sha256(cleaned.encode()).hexdigest()
+            elif "pdf" in ctype or content.startswith(b"%PDF-"):
+                digest = hashlib.sha256(content)
+                for chunk in iter(lambda: res.read(65536), b""):
+                    digest.update(chunk)
+                row["fingerprint"] = digest.hexdigest()
             row["status"]="REACHABLE" if 200<=res.status<400 else "HTTP_ERROR"
     except urllib.error.HTTPError as e:
         row["http_status"]=e.code
