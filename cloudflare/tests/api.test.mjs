@@ -140,11 +140,13 @@ test("daily ingestion uses only committed audit URLs and keeps dates, errors, so
  env.sqlite.close();
 });
 
-test("configuration cannot imply Cloudflare database has already been created",()=>{
+test("configuration binds the actual non-placeholder D1 database ID without credentials",()=>{
  const cfg=JSON.parse(readFileSync(resolve(cfRoot,"wrangler.jsonc"),"utf8"));
  assert.equal(cfg.name,"tri-state-grants-api");
  assert.equal(cfg.d1_databases[0].binding,"GRANTS_DB");
- assert.match(cfg.d1_databases[0].database_id,/REPLACE_WITH_REAL_D1_UUID/);
+ assert.match(cfg.d1_databases[0].database_id,/^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i);
+ assert.notEqual(cfg.d1_databases[0].database_id,"00000000-0000-0000-0000-000000000000");
+ assert.equal(cfg.d1_databases[0].database_name,"tri-state-grant-matrix");
  assert.equal(cfg.vars.PUBLIC_ORIGIN,"https://atphobia22.github.io");
  assert.ok(cfg.triggers.crons.length>0);
 });

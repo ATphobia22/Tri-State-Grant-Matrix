@@ -23,6 +23,7 @@ jobs:
         working-directory: cloudflare
         run: |
           npm install --no-audit --no-fund
-          # Supply a structurally valid, unmistakably NON-PRODUCTION UUID for dry-run only.
-          node -e 'const f=require("fs");let c=f.readFileSync("wrangler.jsonc","utf8");if(!c.includes("REPLACE_WITH_REAL_D1_UUID"))throw Error("Deployment ID placeholder unexpectedly changed");c=c.replace("REPLACE_WITH_REAL_D1_UUID","00000000-0000-0000-0000-000000000000");f.writeFileSync("wrangler.jsonc",c)'
+          # Dry-run uses the committed D1 UUID but does not connect to Cloudflare.
+          # Never replace the real database binding or store account credentials.
+          node -e 'const c=require("fs").readFileSync("wrangler.jsonc","utf8");const j=JSON.parse(c);if(!/^[0-9a-f]{8}(-[0-9a-f]{4}){3}-[0-9a-f]{12}$/i.test(j.d1_databases[0].database_id))throw Error("D1 UUID not configured")'
           npx wrangler deploy --dry-run --outdir=../cf-dry-run
