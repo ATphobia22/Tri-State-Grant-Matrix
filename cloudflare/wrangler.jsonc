@@ -11,7 +11,7 @@
     {
       "binding": "GRANTS_DB",
       "database_name": "tri-state-grant-matrix",
-      "database_id": "REPLACE_WITH_REAL_D1_UUID",
+      "database_id": "ab4f178b-9d87-42cd-bb70-c871ea909700",
       "migrations_dir": "migrations"
     }
   ],
