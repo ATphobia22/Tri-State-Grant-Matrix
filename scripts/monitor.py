@@ -8,7 +8,7 @@ data=root/"site/data"
 def allowed(url):
     try:
         x=urllib.parse.urlsplit(url);h=(x.hostname or "").lower()
-        return x.scheme=="https" and not x.username and not x.password and not x.port and (h.endswith((".gov",".us",".org",".mil")) or h in ("indianareadi.com","www.indianareadi.com"))
+        return x.scheme=="https" and not x.username and not x.password and not x.port and (h.endswith((".gov",".mil")) or h in ("indianareadi.com","www.indianareadi.com"))
     except (ValueError,TypeError): return False
 class SafeRedirect(urllib.request.HTTPRedirectHandler):
     def redirect_request(self,req,fp,code,msg,headers,newurl):
@@ -39,7 +39,7 @@ def check(pair):
 def run():
     catalog=json.loads((data/"catalog.json").read_text())
     assert len(catalog["counties"])==9
-    urls=sorted({url for p in catalog["programs"] for url in (p["official"],p["documents"])}|{r["url"] for r in catalog["resources"]})
+    urls=sorted({url for p in catalog["programs"] for url in (p["official"],p["documents"],p.get("deadline_source")) if url}|{r["url"] for r in catalog["resources"]})
     path=data/"audit.json"; old=json.loads(path.read_text()) if path.exists() else {}
     stamp=datetime.now(timezone.utc).replace(microsecond=0).isoformat()
     with concurrent.futures.ThreadPoolExecutor(max_workers=6) as pool:
