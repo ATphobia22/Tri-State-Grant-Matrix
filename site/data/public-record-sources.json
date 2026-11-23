@@ -1,0 +1,186 @@
+{
+  "schema": "tristate.public-record-sources.v1",
+  "reviewed_on": "2026-11-23",
+  "scope": "Nine counties only. Official county meeting archives, except where explicitly unavailable.",
+  "counties": [
+    {
+      "fips": "18129",
+      "county": "Posey",
+      "state": "IN",
+      "archive_status": "official_archive_identified",
+      "notes": "County commissioners and council minutes and area planning records.",
+      "sources": [
+        {
+          "id": "posey-meetings",
+          "title": "Posey County Commissioners and Council Minutes",
+          "url": "https://www.poseycountyin.gov/meetings/",
+          "authority": "official_county",
+          "monitor": true
+        },
+        {
+          "id": "posey-area-plan",
+          "title": "Posey Area Plan Commission minutes and agendas",
+          "url": "https://www.poseycountyin.gov/county-offices/area-plan-commission/",
+          "authority": "official_county",
+          "monitor": true
+        }
+      ]
+    },
+    {
+      "fips": "18163",
+      "county": "Vanderburgh",
+      "state": "IN",
+      "archive_status": "official_archive_identified",
+      "notes": "Joint City of Evansville/Vanderburgh County Granicus meeting index; county-specific boards must be filtered by name.",
+      "sources": [
+        {
+          "id": "vanderburgh-granicus",
+          "title": "City of Evansville and Vanderburgh County archived meetings",
+          "url": "https://evansville.granicus.com/ViewPublisher.php?view_id=1",
+          "authority": "official_delegated",
+          "monitor": true
+        }
+      ]
+    },
+    {
+      "fips": "18051",
+      "county": "Gibson",
+      "state": "IN",
+      "archive_status": "official_archive_identified",
+      "notes": "Official county public-meetings and commissioners pages.",
+      "sources": [
+        {
+          "id": "gibson-public",
+          "title": "Gibson County public meetings",
+          "url": "https://gibsoncounty-in.gov/public-meetings/",
+          "authority": "official_county",
+          "monitor": true
+        },
+        {
+          "id": "gibson-council",
+          "title": "Gibson County Council documents",
+          "url": "https://gibsoncounty-in.gov/council/cl-documents/",
+          "authority": "official_county",
+          "monitor": true
+        }
+      ]
+    },
+    {
+      "fips": "18173",
+      "county": "Warrick",
+      "state": "IN",
+      "archive_status": "official_archive_identified",
+      "notes": "County's official commissioners page directs readers to a contracted meeting archive.",
+      "sources": [
+        {
+          "id": "warrick-commissioners",
+          "title": "Warrick County Commissioners and official meeting-archive referral",
+          "url": "https://www.warrickcounty.gov/commissioners",
+          "authority": "official_county",
+          "monitor": true
+        },
+        {
+          "id": "warrick-records",
+          "title": "Warrick Commissioners minutes and agendas (county-linked vendor)",
+          "url": "https://warrickcountymeetings.vivabove.com/commissioner.html",
+          "authority": "official_delegated",
+          "monitor": true
+        }
+      ]
+    },
+    {
+      "fips": "17193",
+      "county": "White",
+      "state": "IL",
+      "archive_status": "official_archive_identified",
+      "notes": "Official county board archives are split into minutes and agendas.",
+      "sources": [
+        {
+          "id": "white-minutes",
+          "title": "White County Board Minutes",
+          "url": "https://www.whitecounty-il.gov/minutes",
+          "authority": "official_county",
+          "monitor": true
+        },
+        {
+          "id": "white-agendas",
+          "title": "White County Board Agendas",
+          "url": "https://www.whitecounty-il.gov/agendas",
+          "authority": "official_county",
+          "monitor": true
+        }
+      ]
+    },
+    {
+      "fips": "17185",
+      "county": "Wabash",
+      "state": "IL",
+      "archive_status": "county_archive_not_located",
+      "notes": "A current official Wabash County Board meeting archive was NOT established. Illinois State Archives is historical and Mount Carmel city materials are municipal, not county-board minutes. Manual county clerk follow-up required.",
+      "sources": [
+        {
+          "id": "wabash-il-state-archives",
+          "title": "Illinois State Archives Wabash County records reference",
+          "url": "https://www.ilsos.gov/departments/archives/irad/wabash.html",
+          "authority": "official_state_historical_only",
+          "monitor": false
+        },
+        {
+          "id": "wabash-il-mtcarmel",
+          "title": "Mount Carmel city council original minutes (municipal supplement)",
+          "url": "https://www.cityofmtcarmel.com/media/14251",
+          "authority": "official_municipal_supplement",
+          "monitor": false
+        }
+      ]
+    },
+    {
+      "fips": "17059",
+      "county": "Gallatin",
+      "state": "IL",
+      "archive_status": "official_archive_identified",
+      "notes": "Gallatin official board page lists monthly agendas and minutes with PDFs and DOCX files.",
+      "sources": [
+        {
+          "id": "gallatin-board",
+          "title": "Gallatin County Board Minutes and Agendas",
+          "url": "https://gallatinco.illinois.gov/departments/board/",
+          "authority": "official_county",
+          "monitor": true
+        }
+      ]
+    },
+    {
+      "fips": "21101",
+      "county": "Henderson",
+      "state": "KY",
+      "archive_status": "official_archive_identified",
+      "notes": "Official county Agenda Center lists fiscal court meetings and agendas; absent minutes on an item do not prove minutes do not exist.",
+      "sources": [
+        {
+          "id": "henderson-fiscal",
+          "title": "Henderson County Fiscal Court Agenda Center",
+          "url": "https://www.hendersoncountyky.gov/AgendaCenter/Fiscal-Court-2",
+          "authority": "official_county",
+          "monitor": true
+        }
+      ]
+    },
+    {
+      "fips": "21225",
+      "county": "Union",
+      "state": "KY",
+      "archive_status": "official_archive_identified",
+      "notes": "Official county Fiscal Court meetings and minutes page; automated HTTP access can be blocked independently of browser availability.",
+      "sources": [
+        {
+          "id": "union-fiscal",
+          "title": "Union County Fiscal Court Meeting Minutes",
+          "url": "https://www.unioncountyky.org/local-government/fiscal-court/meeting-minutes",
+          "authority": "official_county",
+          "monitor": true
+        }
+      ]
+    }
+  ]
+}

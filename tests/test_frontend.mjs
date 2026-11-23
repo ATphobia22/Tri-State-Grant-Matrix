@@ -12,6 +12,10 @@ const audit = JSON.parse(readFileSync(resolve(root, "site/data/audit.json"), "ut
 const serviceWorker = readFileSync(resolve(root, "site/service-worker.js"), "utf8");
 const commandSource = readFileSync(resolve(root, "site/command-center.js"), "utf8");
 const commandCss = readFileSync(resolve(root, "site/command-center.css"), "utf8");
+const recordRegistry = JSON.parse(readFileSync(resolve(root, "site/data/public-record-sources.json"), "utf8"));
+const recordAudit = JSON.parse(readFileSync(resolve(root, "site/data/public-records-audit.json"), "utf8"));
+const recordSource = readFileSync(resolve(root, "site/public-records.js"), "utf8");
+new vm.Script(recordSource, { filename: "site/public-records.js" });
 new vm.Script(commandSource, { filename: "site/command-center.js" });
 const source = page.match(/<script>([\s\S]*?)<\/script>/)?.[1];
 assert.ok(source, "Expected inline application script");
@@ -73,7 +77,7 @@ async function createApp() {
     el.dataset.tab = match[1];
     tabs.push(el);
   }
-  assert.equal(tabs.length, 7);
+  assert.equal(tabs.length, 8);
   elements.get("doc-type").value = "City / town";
   const drafts = [...tags].filter(([id, tag]) => id.startsWith("doc-") && ["input", "textarea"].includes(tag)).map(([id]) => elements.get(id));
   const requests = [], downloads = [], alerts = [], blobs = [], errors = [];
@@ -102,6 +106,8 @@ async function createApp() {
   const fetch = async url => {
     requests.push(url);
     if (url === "./data/catalog.json") return { ok: true, json: async () => catalog };
+    if (url === "./data/public-record-sources.json") return {ok: true, json: async () => recordRegistry};
+    if (url === "./data/public-records-audit.json") return {ok: true, json: async () => recordAudit};
     if (url.startsWith("./data/audit.json")) return { ok: true, json: async () => audit };
     return { ok: false, json: async () => ({}) };
   };
@@ -118,6 +124,7 @@ async function createApp() {
     setTimeout: () => 0
   });
   vm.runInContext(commandSource, context, { timeout: 5000 });
+  vm.runInContext(recordSource, context, { timeout: 5000 });
   vm.runInContext(source, context, { timeout: 5000 });
   await new Promise(done => setImmediate(done));
   await new Promise(done => setImmediate(done));
@@ -314,4 +321,26 @@ test("new interface exposes no hard-coded sample project award totals", () => {
   assert.doesNotMatch(page, /14,850,000|3,325,000|Verified Entity Readiness|SAM UEI Active/);
   assert.match(page, /User-tracked|My application pipeline/);
   assert.match(commandSource, /NOFO/);
+});
+
+test("official county archive view has nine counties and explicitly flags Wabash Illinois", async () => {
+  const app = await createApp();
+  const entries = app.elements.get("records-list").children;
+  assert.equal(entries.length, 9);
+  const missing = entries.find(el => el.children.some(x => x.textContent === "Wabash County, IL"));
+  assert.ok(missing);
+  assert.ok(missing.children.some(x => x.textContent.includes("not yet located")));
+  assert.equal(recordRegistry.counties.length, catalog.counties.length);
+  assert.deepEqual(new Set(recordRegistry.counties.map(c => c.fips)),
+    new Set(catalog.counties.map(c => c.fips)));
+  const auditButton = app.elements.get("records-reload");
+  assert.equal(auditButton.events.get("click").length, 1);
+  auditButton.dispatch("click");
+  await new Promise(done => setImmediate(done));
+  assert.equal(app.requests.at(-1), "./data/public-records-audit.json",
+    "Avoid cache-busting query strings that break the offline snapshot.");
+  assert.equal(app.errors.length, 0);
+  assert.match(serviceWorker, /public-record-sources\.json/);
+  assert.match(serviceWorker, /public-records-audit\.json/);
+  assert.match(serviceWorker, /public-records\.js/);
 });

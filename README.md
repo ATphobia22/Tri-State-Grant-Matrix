@@ -112,3 +112,14 @@ tests/
 - This platform is informational grant decision-support, not grant approval, regulatory certification, agency authorization, or a guarantee of funding.
 
 Official source directories include [Grants.gov](https://www.grants.gov/), [SAM.gov](https://sam.gov/), [Indiana grant opportunities](https://www.in.gov/sba/grants/state-agency-grant-opportunities/), [Illinois GATA](https://gata.illinois.gov/grants/csfa.html), and [Kentucky DLG](https://dlg.ky.gov/grants/federal/Pages/default.aspx).
+
+## Independent public meeting archives
+
+The **Public meeting records** tab now lists each of the **nine** county source directories, shows public-record source check results and document index link candidates, and labels Wabash County, Illinois as an unresolved county-board archive gap. Eight county archive sources were identified independently; this is not a guarantee of complete meeting coverage. The monitoring workflow runs Monday and Thursday at 13:45 UTC and supports manual execution. It does **not** infer grants, awards or eligibility from an agenda or an AI summary.
+
+- [Official record source inventory](site/data/public-record-sources.json)
+- [Latest observed records audit](site/data/public-records-audit.json)
+- [Research, security and repository recommendations](docs/public-records.md)
+- [County meeting records workflow](.github/workflows/public-records.yml)
+
+The check stores SHA-256 hashes of observed **archive index pages** and discovered document link lists, not of attached PDF/DOCX files. On blocked/unavailable requests, the previous good snapshot is retained and explicitly marked stale. Public site visitors cannot trigger remote crawls just by opening GitHub Pages. CitizenPortal content is not ingested, mirrored or reproduced.

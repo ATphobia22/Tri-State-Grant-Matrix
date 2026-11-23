@@ -4,7 +4,7 @@ on:
     branches: [main]
     paths: ['site/**','tests/**','.github/workflows/pages.yml']
   workflow_run:
-    workflows: ['Audit official grant source links']
+    workflows: ['Audit official grant source links','Monitor county public meeting records']
     types: [completed]
   workflow_dispatch:
 permissions:

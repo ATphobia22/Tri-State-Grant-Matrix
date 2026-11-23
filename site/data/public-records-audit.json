@@ -1,0 +1,12 @@
+{
+  "schema": "tristate.public-records-audit.v1",
+  "last_run": null,
+  "registry_reviewed_on": "2026-11-23",
+  "covered_counties": 9,
+  "counties_with_official_archives": 8,
+  "sources_monitored": 12,
+  "sources": {},
+  "changes": [],
+  "events": [],
+  "policy": "Not checked yet. Official archive registry only; no automated claims about meeting contents, grant eligibility, awards, dates, or funding."
+}
