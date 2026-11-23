@@ -1,0 +1,6 @@
+# Optional tooling. Default API Docker image does NOT install these packages.
+# pip install -r backend/requirements-optional-ai.txt
+# python -m backend.model_registry --verify
+# python -m backend.export_audit --table checks --out exports/checks.jsonl --parquet
+huggingface_hub>=0.35,<2
+datasets>=4,<5
