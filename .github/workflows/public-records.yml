@@ -4,7 +4,7 @@ on:
     branches: [main]
     paths: ['site/data/public-record-sources.json','scripts/monitor_public_records.py','tests/test_public_records.py','.github/workflows/public-records.yml']
   schedule:
-    - cron: '45 13 * * 1,4'
+    - cron: '45 13 * * *'
   workflow_dispatch:
 permissions:
   contents: write

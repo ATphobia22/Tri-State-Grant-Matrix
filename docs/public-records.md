@@ -20,7 +20,7 @@ Wabash County, IL: Illinois Secretary of State records information is historical
 
 ## Implemented source monitoring
 
-- Scheduled Mondays/Thursdays at 13:45 UTC plus manual GitHub workflow dispatch. Visitors opening GitHub Pages do not launch server-side crawls.
+- Scheduled daily at 13:45 UTC plus manual GitHub workflow dispatch. Visitors opening GitHub Pages do not launch server-side crawls.
 - Approved, HTTPS-only source URLs and bounded redirects; four parallel reads; size limits; conditional HTTP GET.
 - SHA-256 of retrieved meeting index page bytes and a **separate** SHA-256 of discovered document URLs. These are not hashes of PDF/DOCX attachments: the monitor does **not** download their contents.
 - UTC checks, explicit last successful observation, cached stale evidence on 403/429/timeouts, content changes, newly listed and no-longer-listed documents, and human review flags.

@@ -26,7 +26,7 @@ For local testing, use an HTTP server rather than opening `site/index.html` dire
 python -m http.server 8000 --directory site
 ```
 
-Then open **http://localhost:8000/**. The static site requires no account, server database, or external JavaScript framework.
+Then open **http://localhost:8000/**. The public site requires no account or external JavaScript framework. A separate PostgreSQL/FastAPI backend now exists as deployable code; the live site continues using the static fallback until a real HTTPS backend is hosted and configured.
 
 ## Using the buttons and pages
 
@@ -43,7 +43,7 @@ Then open **http://localhost:8000/**. The static site requires no account, serve
 | **Nine county buttons** | Filter by the chosen county's state and federal pathways. This is a geographic filter, **not an eligibility ruling**. |
 | **Search / County / Department / Funding stage** | Narrow the results. **Clear filters** resets all four filters. |
 | **Show more grants** | Loads the next group of catalog cards, 24 at a time. |
-| **Official program / Forms & guidance** | Opens source links in a separate tab. The actual notice and instructions control eligibility and required documents. |
+| **Official program / Forms & guidance** | Navigates to the source in the same tab; use the browser Back button. The actual notice and instructions control eligibility and required documents. |
 | **Prepare application packet** | Opens the document generator and selects that program. |
 | **Forms & resources** | Lists official application, compliance, and evidence portals. |
 | **Generate / update draft** | Creates an editable project narrative, budget summary, and possible-document checklist. It does **not** file or submit an application. |
@@ -137,7 +137,7 @@ The first [public records audit](site/data/public-records-audit.json) ran at **2
 
 **Baseline limitation:** The first scan establishes reference hashes and should not claim that any new document was published. Future changes are *review leads*, never automatic conclusions that a meeting occurred or a grant was awarded. The index monitor hashes downloaded page bytes (at most 2 MB), tracks observed document URLs, and suppresses link-removal claims when HTML or link discovery was truncated. It does not fetch or hash attachment bodies.
 
-To examine the results, open the **Public meeting records** tab of the live site, select a county archive, and review its last successful check and direct official source links. The new audit runs at **13:45 UTC on Mondays and Thursdays**, or by manual [GitHub Actions dispatch](https://github.com/ATphobia22/Tri-State-Grant-Matrix/actions/workflows/public-records.yml). No personal applicant data is collected. For acquisition, model selection, metadata, security and remaining source gaps, see [the audit implementation notes](docs/public-records.md).
+To examine the results, open the **Public meeting records** tab of the live site, select a county archive, and review its last successful check and direct official source links. The new audit runs **daily at 13:45 UTC**, or by manual [GitHub Actions dispatch](https://github.com/ATphobia22/Tri-State-Grant-Matrix/actions/workflows/public-records.yml). No personal applicant data is collected. For acquisition, model selection, metadata, security and remaining source gaps, see [the audit implementation notes](docs/public-records.md).
 
 
 ## External official links on iOS, Android, tablets and in-app browsers
@@ -145,3 +145,17 @@ To examine the results, open the **Public meeting records** tab of the live site
 **Navigation repair (November 23, 2026):** Official grant, form, source directory and county meeting archive links now navigate in the **same browser tab**, instead of requesting a new popup tab. Use your browser's **Back** button to return to the Grant Matrix. This is intended to avoid in-app mobile-browser new-tab restrictions; every device must still be tested independently. The source directory and all county archives display complete, selectable source addresses. Each grant card also has **Link not opening? Show and copy addresses**. Touch and hold the address, copy it, and open in Safari or Chrome when an embedded browser blocks a third-party site.
 
 For classic Grants.gov search problems, the directory offers the separate official [Simpler.Grants.gov search](https://simpler.grants.gov/search). Some government pages require JavaScript, authentication, cookies or third-party security checks. An automated HTTP 403 is not necessarily a broken public website. This fix does not bypass source restrictions, and independently verified web links may still fail in some in-app browsers.
+
+
+## Database backend, daily audit schedules and optional AI
+
+The repository now includes an actual PostgreSQL / FastAPI backend, a server-side official Grants.gov search worker, a Caddy HTTPS reverse proxy option, and a browser API adapter that falls back to the source-controlled catalog when no backend is online. Review backend/README.md for Docker Compose startup, API endpoints, database backup/restore and publishing steps. The API URL in site/data/backend.json remains intentionally empty because no public server has been verified. GitHub Pages itself cannot run a SQL server.
+
+Daily automation (UTC):
+- 13:15 — .github/workflows/monitor.yml checks official grant resource URLs and refreshes the static source and discovery snapshots; all changes are evidence leads, not verified eligibility updates.
+- 13:45 — .github/workflows/public-records.yml checks official nine-county meeting archive indexes and preserves access errors and partial index evidence. Wabash County, Illinois remains a documented official county-board archive gap.
+- When separately deployed, backend/worker.py runs source checks and Grants.gov discovery every six hours by default. It stores historical receipts and discovered opportunities in PostgreSQL without overwriting curated deadlines or awards.
+
+The model/tooling implementation in backend/model_registry.py identifies official Qwen3.8-27B, Google Gemma 4 31B instruction-tuned, and Qwen3-Embedding-8B model-card identities, licenses and revisions on demand. Install backend/requirements-optional-ai.txt only when operating the optional model metadata and public dataset tools; large model weights are not installed in the default API container. Public audit exports to JSONL/Parquet live in backend/export_audit.py, excluding private applicant drafts. Review docs/ai-tooling-evaluation.md for the evaluated GitHub repository list and decisions. Neither model output nor source HTTP status can certify grant eligibility, funding rates or governmental actions.
+
+A successful GitHub Actions database test is not a live deployment; it proves the API can seed and query a temporary PostgreSQL service in CI.
