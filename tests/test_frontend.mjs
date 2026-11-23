@@ -380,7 +380,7 @@ test("grant and county archive links navigate same-tab with visible source addre
         "show archive URL for copying when embedded browser blocks a source");
     }
   }
-  assert.match(serviceWorker, /backend-v8/);
+  assert.match(serviceWorker, /cloudflare-v9/);
 });
 
 test("backend integration preserves public offline fallback without browser Grants.gov POST", () => {
