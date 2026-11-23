@@ -1,0 +1,18 @@
+{
+  "name": "tristate-grant-matrix-cloudflare",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Public nine-county Cloudflare Worker + D1 read API",
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "seed": "node scripts/generate-seed.mjs",
+    "d1:migrate": "wrangler d1 migrations apply GRANTS_DB --remote",
+    "d1:seed": "npm run seed && wrangler d1 execute GRANTS_DB --remote --file=generated/seed.sql",
+    "deploy": "npm run d1:migrate && npm run d1:seed && wrangler deploy",
+    "dev": "wrangler dev"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
+}

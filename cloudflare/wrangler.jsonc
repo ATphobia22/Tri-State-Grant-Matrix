@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json.schemastore.org/wrangler.json",
+  "name": "tri-state-grants-api",
+  "main": "src/index.mjs",
+  "compatibility_date": "2026-11-20",
+  "workers_dev": true,
+  "vars": {
+    "PUBLIC_ORIGIN": "https://atphobia22.github.io"
+  },
+  "d1_databases": [
+    {
+      "binding": "GRANTS_DB",
+      "database_name": "tri-state-grant-matrix",
+      "database_id": "REPLACE_WITH_REAL_D1_UUID",
+      "migrations_dir": "migrations"
+    }
+  ],
+  "triggers": {
+    "crons": [
+      "30 15 * * *"
+    ]
+  }
+}

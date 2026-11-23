@@ -1,0 +1,4 @@
+# Cloudflare local DB and generated catalog seeds
+.wrangler/
+node_modules/
+generated/
