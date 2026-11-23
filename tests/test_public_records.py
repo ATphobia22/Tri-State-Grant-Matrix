@@ -124,6 +124,15 @@ class PublicRecordDiffTests(unittest.TestCase):
         types = [e["type"] for e in module.compare_source("posey-meetings", old, new, "today")]
         self.assertEqual(types, ["INDEX_CONTENT_CHANGED"])
 
+    def test_byte_truncated_pages_suppress_false_removed_link_flags(self):
+        old = {"status": "REACHABLE", "content_sha256": "old", "content_truncated": False,
+               "documents": [{"url": "https://www.poseycountyin.gov/2026-board-minutes.pdf"}]}
+        new = {"status": "REACHABLE", "content_sha256": "new", "content_truncated": True,
+               "documents": []}
+        types = [e["type"] for e in module.compare_source("posey-meetings", old, new, "today")]
+        self.assertEqual(types, ["INDEX_CONTENT_CHANGED"],
+                         "A partial HTML response must not generate document removal claims.")
+
     def test_change_monitor_does_not_edit_catalog(self):
         source = (ROOT / "scripts/monitor_public_records.py").read_text()
         self.assertIn("MAX_BYTES = 2_000_000", source)

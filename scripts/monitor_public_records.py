@@ -200,7 +200,8 @@ def compare_source(source_id: str, old: dict, new: dict, now: str) -> list[dict]
         emit("INDEX_CONTENT_CHANGED", {"previous_sha256": old["content_sha256"],
                                        "current_sha256": new["content_sha256"],
                                        "note": "Page content changed; no individual document or grant facts verified."})
-    if old.get("document_index_truncated") or new.get("document_index_truncated"):
+    if (old.get("document_index_truncated") or new.get("document_index_truncated")
+            or old.get("content_truncated") or new.get("content_truncated")):
         return events
     before = {x["url"] for x in old.get("documents", [])}
     after = {x["url"] for x in new.get("documents", [])}

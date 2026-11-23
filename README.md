@@ -123,3 +123,19 @@ The **Public meeting records** tab now lists each of the **nine** county source 
 - [County meeting records workflow](.github/workflows/public-records.yml)
 
 The check stores SHA-256 hashes of observed **archive index pages** and discovered document link lists, not of attached PDF/DOCX files. On blocked/unavailable requests, the previous good snapshot is retained and explicitly marked stale. Public site visitors cannot trigger remote crawls just by opening GitHub Pages. CitizenPortal content is not ingested, mirrored or reproduced.
+
+## Initial official meeting-archive monitoring baseline (November 23, 2026)
+
+The first [public records audit](site/data/public-records-audit.json) ran at **2026-11-23 12:52:26 UTC**. It observed **12** official county or delegated meeting-index URLs covering **eight counties with archives identified**, while retaining **nine** county FIPS IDs in the source registry.
+
+| Source-check outcome | Sources | Interpretation |
+| --- | ---: | --- |
+| HTTP reachable | 10 | Index responded; individual meeting attachment content was not verified. |
+| Automation blocked (HTTP 403) | 1 — Union County, KY | May be bot/access protection; do not classify records as unavailable. |
+| Network unavailable | 1 — Gallatin County, IL | Scanner could not read that index, although the official county board page is publicly accessible by other means. |
+| County-board archive not yet located | Wabash County, IL | Not silently replaced by Mount Carmel city or Wabash County, Indiana records. |
+
+**Baseline limitation:** The first scan establishes reference hashes and should not claim that any new document was published. Future changes are *review leads*, never automatic conclusions that a meeting occurred or a grant was awarded. The index monitor hashes downloaded page bytes (at most 2 MB), tracks observed document URLs, and suppresses link-removal claims when HTML or link discovery was truncated. It does not fetch or hash attachment bodies.
+
+To examine the results, open the **Public meeting records** tab of the live site, select a county archive, and review its last successful check and direct official source links. The new audit runs at **13:45 UTC on Mondays and Thursdays**, or by manual [GitHub Actions dispatch](https://github.com/ATphobia22/Tri-State-Grant-Matrix/actions/workflows/public-records.yml). No personal applicant data is collected. For acquisition, model selection, metadata, security and remaining source gaps, see [the audit implementation notes](docs/public-records.md).
+

@@ -46,3 +46,9 @@ Engineering choice: use lightweight stdlib + GitHub Actions and Git commit histo
 Government meeting materials may include official motions, pending resolutions, budgets, contracts, non-final drafts and past records. Their availability does not prove grant submission or receipt. For Kentucky, KRS 61.835 (https://apps.legislature.ky.gov/law/statutes/statute.aspx?id=23051) addresses recording meeting actions and public inspection. The legal rules vary by state and custodian; obtain appropriate review before republication of whole documents. Always preserve county FIPS, source link, date and classification; checked_at is an observation timestamp, not a meeting date.
 
 To run locally: python -m unittest discover -s tests -v ; python scripts/monitor_public_records.py.
+
+## First completed automation run and accuracy repair
+
+The completed initial source check (2026-11-23T12:52:26+00:00) observed 10 reachable archive indexes, one HTTP 403 (Union KY) and one unavailable network result (Gallatin IL); Wabash IL remains without a verified current county-board archive. This is an HTTP/index observation, **not a guarantee that each archive's documents are complete or current**.
+
+The index-size guard limits page reads to 2 MB. A partially downloaded index must never trigger removal or delisting claims for unseen links. The 2026-11-23 reliability test explicitly checks this rule alongside the existing 500-link discovery truncation protection.
