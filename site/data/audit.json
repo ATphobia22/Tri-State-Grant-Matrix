@@ -68,11 +68,6 @@
     {
       "note": "Source text changed. No grant fields auto-modified.",
       "type": "CONTENT_CHANGED_REVIEW_REQUIRED",
-      "url": "https://echo.epa.gov/"
-    },
-    {
-      "note": "Source text changed. No grant fields auto-modified.",
-      "type": "CONTENT_CHANGED_REVIEW_REQUIRED",
       "url": "https://eec.ky.gov/Environmental-Protection/Water/Protection/Pages/Section-319%28h%29-Grant-Program-Funding.aspx"
     },
     {
@@ -101,18 +96,18 @@
       "url": "https://indianareadi.com/about"
     },
     {
-      "note": "Source text changed. No grant fields auto-modified.",
-      "type": "CONTENT_CHANGED_REVIEW_REQUIRED",
+      "note": "UNAVAILABLE (may be anti-bot blocking)",
+      "type": "REACHABILITY_CHANGED",
       "url": "https://kia.ky.gov/FinancialAssistance/Pages/Call-For-Projects.aspx"
     },
     {
-      "note": "Source text changed. No grant fields auto-modified.",
-      "type": "CONTENT_CHANGED_REVIEW_REQUIRED",
+      "note": "UNAVAILABLE (may be anti-bot blocking)",
+      "type": "REACHABILITY_CHANGED",
       "url": "https://kia.ky.gov/FinancialAssistance/Pages/Fund-A---Wastewater.aspx"
     },
     {
-      "note": "Source text changed. No grant fields auto-modified.",
-      "type": "CONTENT_CHANGED_REVIEW_REQUIRED",
+      "note": "UNAVAILABLE (may be anti-bot blocking)",
+      "type": "REACHABILITY_CHANGED",
       "url": "https://kia.ky.gov/FinancialAssistance/Pages/Fund-F---Drinking-Water.aspx"
     },
     {
@@ -134,11 +129,6 @@
       "note": "Source text changed. No grant fields auto-modified.",
       "type": "CONTENT_CHANGED_REVIEW_REQUIRED",
       "url": "https://sam.gov/content/assistance-listings"
-    },
-    {
-      "note": "Source text changed. No grant fields auto-modified.",
-      "type": "CONTENT_CHANGED_REVIEW_REQUIRED",
-      "url": "https://simpler.grants.gov/search"
     },
     {
       "note": "Source text changed. No grant fields auto-modified.",
@@ -201,507 +191,513 @@
       "url": "https://www.usace.army.mil/Missions/Civil-Works/Technical-Assistance/"
     }
   ],
-  "last_run": "2026-11-23T00:52:51+00:00",
+  "last_run": "2026-11-23T00:57:05+00:00",
   "links": {
     "https://apply07.grants.gov/grantsws/rest/opportunity/att/download/355308": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://apply07.grants.gov/grantsws/rest/opportunity/att/download/355308",
       "fingerprint": "9149eca8a2e20734e5688130a8c79678318886a5d177b539e46812a264397524",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://bja.ojp.gov/program/jag/overview": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://bja.ojp.gov/program/jag/overview",
-      "fingerprint": "ca570f87adb55afaaf7517445ec828b0a8fdeee4a95a013fe451e7d9fed1f818",
+      "fingerprint": "97b2726869472b8869247ddea6d1029e350656ed08a4fba0d6ae533d8b11c026",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://catalog.data.gov/dataset/low-to-moderate-income-population-by-block-group": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://catalog.data.gov/dataset/low-to-moderate-income-population-by-block-group",
       "fingerprint": "dc724834f9ccbc7a2fdf14c500562fa3ea10fe37c368bd79b59c469cf9b1a079",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://cops.usdoj.gov/chp": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://cops.usdoj.gov/chp",
-      "fingerprint": "c247df208ccbb2e0304d8f88319d9bee1a652ec292c5e84391eb487b3c726641",
+      "fingerprint": "07195dcc094d268df300ef0e9a7f0f1745c297d3bc551b591604891464b447e6",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://dceo.illinois.gov/aboutdceo/grantopportunities/4025-4300.html": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://dceo.illinois.gov/aboutdceo/grantopportunities/4025-4300.html",
       "fingerprint": "bf91e8407426b0d27647ab9d7de0c153d72f4c552216f34e53850d08025c4927",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://dceo.illinois.gov/aboutdceo/grantopportunities/grants.html": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://dceo.illinois.gov/aboutdceo/grantopportunities/grants.html",
       "fingerprint": "364e51af3e88d18e37d0f1c5f132819652983f968dda2aaff5eb8bd6a7dc073e",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://dceo.illinois.gov/communitydevelopment/cdbg_programs.html": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://dceo.illinois.gov/communitydevelopment/cdbg_programs.html",
       "fingerprint": "aba465d479ed4f114d98369359ec2a96c12657a7d4cece58af87684e5a322652",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://dlg.ky.gov/document-library/Pages/default.aspx": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://dlg.ky.gov/document-library/Pages/default.aspx",
-      "fingerprint": "0df58f61f739e294048d58730cb6cd9dc1fd82b9381bca5a878472f0dbd402b7",
+      "fingerprint": "23ca9ca1802d8f2c75547358fdaf4e357444801c26f5679b84584966f58ca697",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://dlg.ky.gov/grants/federal/cdbg/Pages/CDBG-Guidelines-and-Applications.aspx": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://dlg.ky.gov/grants/federal/cdbg/Pages/CDBG-Guidelines-and-Applications.aspx",
-      "fingerprint": "372d2b73f245fd465d3279b2044cb252b44bf6d68763b670e47d42ffc7f391f9",
+      "fingerprint": "c1641bc85a48d8d8ae4978b004fe981c2e6bc2219dcfb4d983f0b88fd286dc5e",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://dlg.ky.gov/grants/federal/cdbg/Pages/Community-Emergency-Relief-Fund.aspx": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://dlg.ky.gov/grants/federal/cdbg/Pages/Community-Emergency-Relief-Fund.aspx",
-      "fingerprint": "ce4267e841442cae576a541c24368e8d492873ff0d8126677152a66acc0f4e55",
+      "fingerprint": "f0bb8087f50a609520daa7891fc8afc0a1cf5beb7f8dfc37d56cb6ac3bf8d23d",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://dlg.ky.gov/grants/federal/cdbg/Pages/Community-Projects.aspx": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://dlg.ky.gov/grants/federal/cdbg/Pages/Community-Projects.aspx",
-      "fingerprint": "c3d1edfd18ef928a427f811673fc55c13dac330bcee3be62fdf388172f198bd2",
+      "fingerprint": "a1c9a5011b67f56c31bc9969e633bd494e73084aba1f2b05c8cf2a6fdf757fb2",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://dlg.ky.gov/grants/federal/cdbg/Pages/Economic-Development.aspx": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://dlg.ky.gov/grants/federal/cdbg/Pages/Economic-Development.aspx",
-      "fingerprint": "b336181a3e26c7ff6312b7f9b0f235f97d810190493574811682835cb4262ba9",
+      "fingerprint": "82ed2bf69947bef3a1aac10560edb30da504ef87c5dba4fcc58b3167b6be2cc0",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://dlg.ky.gov/grants/federal/cdbg/Pages/Housing-Program.aspx": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://dlg.ky.gov/grants/federal/cdbg/Pages/Housing-Program.aspx",
-      "fingerprint": "41245e5f8fc45bc1244339d710b858385d2baa8d56caf55228b92e386dff6eb4",
+      "fingerprint": "08b2cab47848cd1d0bf77f1829a4ae4719c7dbb27d5a75b41cd8b0b0ec43ae92",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://dlg.ky.gov/grants/federal/cdbg/Pages/Public-Facilities.aspx": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://dlg.ky.gov/grants/federal/cdbg/Pages/Public-Facilities.aspx",
-      "fingerprint": "ca4c0daa0a46b5ac920314ab55818eba27843dc178d3239dfcbde4425a921e66",
+      "fingerprint": "a440e2a537823f9e30d1c62fbcd1f597efa003d57300c1ae7e42b805efb63a8b",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://dlg.ky.gov/grants/federal/cdbg/RKY/Pages/default.aspx": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://dlg.ky.gov/grants/federal/cdbg/RKY/Pages/default.aspx",
-      "fingerprint": "cbfe76f90e3ca200d7760e103f3d8b8bf7c41bb3f9ec508b8092eed2834f1cc5",
+      "fingerprint": "c6e918610927cf5811e19b30976b8701facc00c1ef94a41df605ac4807940118",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://dlg.ky.gov/grants/federal/dra/Pages/default.aspx": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://dlg.ky.gov/grants/federal/dra/Pages/default.aspx",
-      "fingerprint": "c6f52ea936ac87139b73dffb91049c81e99d0112e15c94e1db2d2f415de2a9ff",
+      "fingerprint": "9f2e194d31902f130c119cb541652249f312f3423772ac0c65840e11c8041c7e",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://dlg.ky.gov/grants/federal/lwcf/Pages/default.aspx": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://dlg.ky.gov/grants/federal/lwcf/Pages/default.aspx",
-      "fingerprint": "90fa272816fb178a004101520b963bb531a681d26403cc7ff5e99720595ab06a",
+      "fingerprint": "e88a750630a4c9fc49fd0a448133012f4bba9b1723289554d85fde206227ce9f",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://dlg.ky.gov/grants/state/Pages/default.aspx": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://dlg.ky.gov/grants/state/Pages/default.aspx",
-      "fingerprint": "eb125017fc28e0620ffc8221f5bf392784c8d67f72b5d569a9c0aa7e65c92aef",
+      "fingerprint": "46be42b45d6c1ce557c8431ba5e3d016eda57ad8f30b941c0726331d68cfb448",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://dnr.illinois.gov/grants.html": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://dnr.illinois.gov/grants.html",
       "fingerprint": "abf949c8da47329ca4d6c49863622ceb70ff42f153aa81d97180d661b6c22524",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://dnr.illinois.gov/waterresources/mitigation.html": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://dnr.illinois.gov/waterresources/mitigation.html",
       "fingerprint": "148508ad33be0677cefa952b659aa3ec43497fb24415fd6086743939bddaaf56",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://echo.epa.gov/": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://echo.epa.gov/",
       "fingerprint": "8da943c54bd06b579ba29d925888d66f1f172cf96f62c29e8723fd05af4dba3d",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://eec.ky.gov/Environmental-Protection/Water/Protection/Pages/Section-319%28h%29-Grant-Program-Funding.aspx": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://eec.ky.gov/Environmental-Protection/Water/Protection/Pages/Section-319%28h%29-Grant-Program-Funding.aspx",
-      "fingerprint": "e92aa413ff07e96eef42eaa0e6d1369864a5ead5671f2dff0decda3fb715191a",
+      "fingerprint": "0a6618d08f8f6e0c5a88d3b310872ee5c8ee0d8448f78b91b173cc456955e22a",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://eec.ky.gov/Environmental-Protection/resources/Pages/grants-and-loans.aspx": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://eec.ky.gov/Environmental-Protection/resources/Pages/grants-and-loans.aspx",
-      "fingerprint": "ad5dd3a6c7f37342a8524c2ca901e2a99b593c9f64206b04df2737c54630588d",
+      "fingerprint": "0c247f8e7f48c79912d82033d90e58419ee4b020f56cffdf4b12c7ac39930a0e",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://eec.ky.gov/Natural-Resources/Conservation/Pages/Environmental-Grants.aspx": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://eec.ky.gov/Natural-Resources/Conservation/Pages/Environmental-Grants.aspx",
-      "fingerprint": "7977010541029dbe7146525f19bb50f82b3a117d558d84088f2d6a43bbe5ef22",
+      "fingerprint": "c9ce3e804bdd49a124d0027da50c1a1c5a88b7b3d073ee8a4db0c7f6408b67ee",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://eligibility.sc.egov.usda.gov/eligibility/": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://eligibility.sc.egov.usda.gov/eligibility/",
       "fingerprint": "6f683dfdaeda132c408e919374852346a87e249205017bee017f892095d53d5a",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://epa.illinois.gov/topics/drinking-water/public-water-users/lsli-grant-opportunity.html": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://epa.illinois.gov/topics/drinking-water/public-water-users/lsli-grant-opportunity.html",
       "fingerprint": "33a08b01331c11be4d92a1d98fc68d7cbf3f270f872f3ace3a046eed38608060",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://epa.illinois.gov/topics/grants-loans.html": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://epa.illinois.gov/topics/grants-loans.html",
       "fingerprint": "0a313cac7a5a421b34b9a87936cba1b0c097af9c5ad0a4b2e437be328a16dbda",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://epa.illinois.gov/topics/grants-loans/state-revolving-fund": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://epa.illinois.gov/topics/grants-loans/state-revolving-fund",
       "fingerprint": "2a06917fd8885dbfa9363be493b61e40b0bc0711166c19dbe3e07ca2a4b9071a",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://epa.illinois.gov/topics/grants-loans/water-financial-assistance.html": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://epa.illinois.gov/topics/grants-loans/water-financial-assistance.html",
       "fingerprint": "438ed4fc056bf9c237e4614a2f2267e6989f21d1f2444140da250ef9bf09bcdb",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://epa.illinois.gov/topics/water-quality/watershed-management/nonpoint-sources/grants.html": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://epa.illinois.gov/topics/water-quality/watershed-management/nonpoint-sources/grants.html",
       "fingerprint": "988a5ef990f84ed468dd66a97abca3764cd30c725b304f67f931eb5fd0e14427",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://gata.illinois.gov/grantee.html": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://gata.illinois.gov/grantee.html",
       "fingerprint": "b886e6e60b17850286c7df0c0cda71a0b7ab51c3e78e2110fd1364f4ebb65f7a",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://gata.illinois.gov/grants/csfa.html": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://gata.illinois.gov/grants/csfa.html",
       "fingerprint": "5545963eb8063f3532d23d5b781d2dec9a2c6b27cbcd5303718b0eadb93021dc",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://go.fema.gov/": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://go.fema.gov/",
       "fingerprint": "0a6ea1f480c1ff757f17805c8c18cb3c873db5752525c6f13e2b120946eb05c9",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://homelandsecurity.ky.gov/Pages/Grants.aspx": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://homelandsecurity.ky.gov/Pages/Grants.aspx",
-      "fingerprint": "9b00b2181574be1d66c6612c86660c262bdc48f7232688579376b3816be7d692",
+      "fingerprint": "dc67001b220baf9484bb7ddd1e7b8cd1abf04e6154a9ae1d609e35d9d2634b55",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://idot.illinois.gov/programs-and-projects/trails-and-active-transportation/itep.html": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://idot.illinois.gov/programs-and-projects/trails-and-active-transportation/itep.html",
       "fingerprint": "2556d0a032a2798fa559f4105eee320b34b32dd3bec331f0a07a4c1b71edb6b2",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://iedc.in.gov/indiana-advantages/investments/redevelopment-tax-credit/eligibility": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://iedc.in.gov/indiana-advantages/investments/redevelopment-tax-credit/eligibility",
-      "fingerprint": "5ddf93d322bb0eb923d2b964551d45fc51059c58c3c87d9caaa06b675e78c71f",
+      "fingerprint": "f7d45875d2e0703b44894d5bea506c6ef5dab198e9ffae2ed4f4b5fdc1bb34cc",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://indianareadi.com/about": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://www.indianareadi.com/about",
-      "fingerprint": "d9d09179fe5fb55c871a5210d7e51c5c6dee94d0af1480f649977182676aed33",
+      "fingerprint": "a32908ded6972b3e5a06d0c201a3e8348807de3e95703dcf9c0f227de113273b",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://kia.ky.gov/FinancialAssistance/Pages/Call-For-Projects.aspx": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
+      "error_type": "TimeoutError",
       "final_url": "https://kia.ky.gov/FinancialAssistance/Pages/Call-For-Projects.aspx",
-      "fingerprint": "a8da46fa7bb6c7b6208ce5aaea7fa016a2f44bb3d4de4bbe9570bc3895e8a699",
-      "http_status": 200,
-      "status": "REACHABLE"
+      "fingerprint": null,
+      "http_status": null,
+      "last_known_fingerprint": "a8da46fa7bb6c7b6208ce5aaea7fa016a2f44bb3d4de4bbe9570bc3895e8a699",
+      "status": "UNAVAILABLE"
     },
     "https://kia.ky.gov/FinancialAssistance/Pages/Fund-A---Wastewater.aspx": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
+      "error_type": "TimeoutError",
       "final_url": "https://kia.ky.gov/FinancialAssistance/Pages/Fund-A---Wastewater.aspx",
-      "fingerprint": "5257f180a0515c0de9f718959e899139dc69e4c4cb3ca37fcfcdc6ce01a4a263",
-      "http_status": 200,
-      "status": "REACHABLE"
+      "fingerprint": null,
+      "http_status": null,
+      "last_known_fingerprint": "5257f180a0515c0de9f718959e899139dc69e4c4cb3ca37fcfcdc6ce01a4a263",
+      "status": "UNAVAILABLE"
     },
     "https://kia.ky.gov/FinancialAssistance/Pages/Fund-F---Drinking-Water.aspx": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
+      "error_type": "TimeoutError",
       "final_url": "https://kia.ky.gov/FinancialAssistance/Pages/Fund-F---Drinking-Water.aspx",
-      "fingerprint": "fc81c1497c476c9a97bbb241d278907672938028e2d100d175dfd994512eec87",
-      "http_status": 200,
-      "status": "REACHABLE"
+      "fingerprint": null,
+      "http_status": null,
+      "last_known_fingerprint": "fc81c1497c476c9a97bbb241d278907672938028e2d100d175dfd994512eec87",
+      "status": "UNAVAILABLE"
     },
     "https://kia.ky.gov/Pages/index.aspx": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://kia.ky.gov/Pages/index.aspx",
-      "fingerprint": "fdb8448df01372e5abb40bc198b6c2bd1544b27f0ee4967c39b2a48b8a6239f3",
+      "fingerprint": "e9cd09f1ce6e2b07d5b8b8c8b484244e5901713c516899421db9142127ad4f69",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://msc.fema.gov/portal/home": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://msc.fema.gov/portal/home",
       "fingerprint": "3cfd38fd39152ca3f2ad652efd4d86a462f4246e04d5e9279e74ec1487bc2dcf",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://omb.illinois.gov/public/gata/csfa/OpportunityList.aspx": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://omb.illinois.gov/public/gata/csfa/OpportunityList.aspx",
-      "fingerprint": "73a74fe02a40a6e7681823dcc42c7793fa3c8b3258ea318fe91df3affe9a5db2",
+      "fingerprint": "a459cc940524083c32d6354db95ce5e08dcae4f5189e26fe2ae8dd78ef6ad61b",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://railroads.dot.gov/grants-loans/consolidated-rail-infrastructure-and-safety-improvements-crisi-program": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://railroads.dot.gov/grants-loans/consolidated-rail-infrastructure-and-safety-improvements-crisi-program",
       "fingerprint": "647afbeefb3ef1ad4ba43acacbe661c867af44f66474bfe6864f0ad2dba0989b",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://ready.illinois.gov/": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://ready.illinois.gov/",
       "fingerprint": "36253041901000b09297da2b37c0de2a9f21cb05c1bf3048a65f185a3817ef94",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://sam.gov/": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://sam.gov/",
-      "fingerprint": "9b9b863188397db00df5f3fd7c4b6e7f5c3bc25a2eaf9af775d2e7c51183450c",
+      "fingerprint": "5119c08eb53cbd1729112b8a292735a6df448bffa1c277ea40ad836995371546",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://sam.gov/content/assistance-listings": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://sam.gov/assistance-listings",
-      "fingerprint": "42fc4b83977f5b5a5b828105f10ea925a5d42f0b21f0332aa53d07a2ed743dae",
+      "fingerprint": "8e266d2c0be1ee42b0f0130d5adc08011c1ba50d420ae37923c5f183c40e5ca2",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://secure.in.gov/ifa/srf/applications-guidance-and-documents/": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://secure.in.gov/ifa/srf/applications-guidance-and-documents/",
       "fingerprint": "11b6e1eb5d3a3fbb7f1a9cfdc7668847b0667450801980dbfeb307e0cee14269",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://secure.in.gov/ifa/srf/reports-and-ppls/": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://secure.in.gov/ifa/srf/reports-and-ppls/",
       "fingerprint": "b16570c3abe7b22aeb8546e108e6df5e2ce6ef9bb2d09898ef0dec30c1720221",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://sfm.illinois.gov/currentfocus/fy-27-small-equipment-grant-.html": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://sfm.illinois.gov/currentfocus/fy-27-small-equipment-grant-.html",
       "fingerprint": "7c3e5b9da6b79189cfc66741c12c214ab402864a6a9a37db90ab43f6b9cf53d2",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://sfm.illinois.gov/iam/firedepartment/grants-and-loans.html": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://sfm.illinois.gov/iam/firedepartment/grants-and-loans.html",
       "fingerprint": "1d1508008bb6fccded074c86413c0b9f58e0b0d42568cd02915821178f98f789",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://simpler.grants.gov/search": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://simpler.grants.gov/search",
       "fingerprint": "4a9c4a048c620ee6000b8776cb6d84b5a1641eb5af9a96f5fae1d1a0c5b98632",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://transportation.ky.gov/LocalPrograms/Pages/TAP.aspx": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://transportation.ky.gov/LocalPrograms/Pages/TAP.aspx",
       "fingerprint": "f889959ca42400d922a85cb10f6d2f9448b643a605a7ea8c1de78487eefb70b3",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://transportation.ky.gov/RuralandMunicipalAid/Pages/default.aspx": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://transportation.ky.gov/RuralandMunicipalAid/Pages/default.aspx",
       "fingerprint": "069470050ee8b1af41f8c03a16274411e148d968a0043a3e856f82d9c6b58dea",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://transportation.ky.gov/TransportationDelivery/Pages/5311-Nonurbanized-%28Rural%29-Area-Program.aspx": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://transportation.ky.gov/TransportationDelivery/Pages/5311-Nonurbanized-%28Rural%29-Area-Program.aspx",
-      "fingerprint": "bb19b86452bd8ee08418cf17e7953043c54ca4877d0302a6e4d6eebb3b447b6b",
+      "fingerprint": "a02df1d5d31523d931e960726a0eeddbcfd299b6e6aee9b6d72843fd0ed63298",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://waterdata.usgs.gov/": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://waterdata.usgs.gov/",
       "fingerprint": null,
       "http_status": 403,
       "status": "BLOCKED"
     },
     "https://www.eda.gov/funding/programs": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://www.eda.gov/funding/programs",
       "fingerprint": null,
       "http_status": 403,
       "status": "BLOCKED"
     },
     "https://www.eda.gov/funding/programs/planning": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://www.eda.gov/funding/programs/planning",
       "fingerprint": null,
       "http_status": 403,
       "status": "BLOCKED"
     },
     "https://www.energy.gov/cmei/scep/office-state-and-community-energy-programs": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://www.energy.gov/cmei/scep/office-state-and-community-energy-programs",
-      "fingerprint": "12223864c5262dede803fbb3a7703884b17a6876e23361cd9224ace0e9188b35",
+      "fingerprint": "9dbc8b29c030b52c00b05d6ba3129c3240673834592bfdbca8188ef5805dd096",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://www.epa.gov/brownfields/brownfields-revolving-loan-fund-rlf-grants": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://www.epa.gov/brownfields/brownfields-revolving-loan-fund-rlf-grants",
       "fingerprint": "a9ff19d42ac2731d2bf8c4737608cc32656f4e8f6b5a04e41c9b702516ae6c6d",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://www.epa.gov/brownfields/fy-2027-brownfields-assessment-revolving-loan-fund-and-cleanup-grant-competition": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://www.epa.gov/brownfields/fy-2027-brownfields-assessment-revolving-loan-fund-and-cleanup-grant-competition",
       "fingerprint": "4da8d7312457ff5e5be312ed179b0a2f0bab78aa3b18caeadabc441a9960ae69",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://www.epa.gov/brownfields/marc-grant-application-resources": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://www.epa.gov/brownfields/marc-grant-application-resources",
       "fingerprint": "b0eca477c61acc9517b404c070b548cccdd1ae66a5d4d11896bafcfd1bc89389",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://www.epa.gov/dwsrf": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://www.epa.gov/dwsrf",
       "fingerprint": "aefb1aa774598c1a633babc6d9ec99f8b75ada3f192dd78aa76f22540d155d76",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://www.fema.gov/assistance/public": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://www.fema.gov/assistance/public",
-      "fingerprint": "26611f7bec2331f91a4034fbf3839ee78b15f59373bdd538505ca93ad3885a65",
+      "fingerprint": "335c30b63e47daa558a136b4fe12a6584d62ff0579cad6d1bbc6f3614c227b6e",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://www.fema.gov/grants/mitigation/learn/building-resilient-infrastructure-communities": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://www.fema.gov/grants/mitigation/learn/building-resilient-infrastructure-communities",
-      "fingerprint": "48b6241f27b0ecda089688a17c2b3d4df584f9f268185a10c17a81cbebb768c2",
+      "fingerprint": "87d16b3745ec206ec3b7087e6abef294c0055197b734d7f74f1fe3380c3611e1",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://www.fema.gov/grants/mitigation/learn/flood-mitigation-assistance": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://www.fema.gov/grants/mitigation/learn/flood-mitigation-assistance",
-      "fingerprint": "2bf4b8cbff2bdf8b1164fe16d3e96961c274be3a6c5ed2b6c755cd7d0e72ab40",
+      "fingerprint": "9486a91a50e43e8e35ab3e356716ddd2eb2ff0ed928a619e9af05d1a134683a9",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://www.fema.gov/grants/mitigation/learn/flood-mitigation-assistance/swift-current": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://www.fema.gov/grants/mitigation/learn/flood-mitigation-assistance/swift-current",
-      "fingerprint": "7843158083bf6806157bb4fc895bd770c422d1b1ed25883880f493b322596a15",
+      "fingerprint": "a27c54bc9e193398d746e0752e0fcee3bb0ea6aeabbac6c3e0e55dbef15b9592",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://www.fema.gov/grants/mitigation/learn/hazard-mitigation": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://www.fema.gov/grants/mitigation/learn/hazard-mitigation",
-      "fingerprint": "6944718f6383903e0cb9cbca4ff813e50b94975e109db562623ebe9074c2601d",
+      "fingerprint": "a11abb68de1b40b2712f3f09af4e1cb20b70b3809190445e29a3c5bb2dd5b1c5",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://www.fema.gov/grants/preparedness/firefighters": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://www.fema.gov/grants/preparedness/firefighters",
-      "fingerprint": "ce3f2515039c04d91d95592493b63ef266787532cc198d8adcaaa179f4a717b2",
+      "fingerprint": "b264c57dd423b7248d394bfeaaf0c57e4bac7b7cfb51d3e58a9a5a1bd7669888",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://www.fema.gov/grants/preparedness/nonprofit-security": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://www.fema.gov/grants/preparedness/nonprofit-security",
-      "fingerprint": "304bbe0d580e5270d9cf2524bd8fdeda6957c1e21ca073c2803516cce28543c6",
+      "fingerprint": "d80619e500f15a0e064408a1389c241a2ed36ce65e361850dd8404c9ec2054dc",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://www.fisheries.noaa.gov/grant/coastal-habitat-restoration-and-resilience-grants": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://www.fisheries.noaa.gov/grant/transformational-habitat-restoration-and-coastal-resilience-grants",
       "fingerprint": "2de3e589ddc481c798bd66d489f47c13befa4145bf98d50eb96b062feab77ff6",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://www.grants.gov/forms/forms-repository/sf-424-family": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "error_type": "URLError",
       "final_url": "https://www.grants.gov/forms/forms-repository/sf-424-family",
       "fingerprint": null,
@@ -709,7 +705,7 @@
       "status": "UNAVAILABLE"
     },
     "https://www.grants.gov/help/manage-workspaces/fill-out-webforms": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "error_type": "URLError",
       "final_url": "https://www.grants.gov/help/manage-workspaces/fill-out-webforms",
       "fingerprint": null,
@@ -717,7 +713,7 @@
       "status": "UNAVAILABLE"
     },
     "https://www.grants.gov/search-grants": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "error_type": "URLError",
       "final_url": "https://www.grants.gov/search-grants",
       "fingerprint": null,
@@ -725,7 +721,7 @@
       "status": "UNAVAILABLE"
     },
     "https://www.grants.gov/search-results-detail/363151": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "error_type": "URLError",
       "final_url": "https://www.grants.gov/search-results-detail/363151",
       "fingerprint": null,
@@ -733,303 +729,303 @@
       "status": "UNAVAILABLE"
     },
     "https://www.hrsa.gov/rural-health/grants/rural-community": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://www.hrsa.gov/rural-health/grants/rural-community",
       "fingerprint": "720c3a5922a67b23bc6372b36279b97f9b183cf2cfaccba4e1de2effc591c191",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://www.hud.gov/program_offices/comm_planning/cdbg-dr": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://www.hud.gov/program_offices/comm_planning/cdbg-dr",
       "fingerprint": "86d01f76da2b08939e9001cc7e165658cf52dbdbcc2309a9778747b8d5fa4340",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://www.in.gov/dhs/emergency-management-and-preparedness/mitigation-and-recovery/": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://www.in.gov/dhs/emergency-management-and-preparedness/mitigation-and-recovery/",
       "fingerprint": "3d6aac7dbb69414afb23699a0ef24083c9c28c5c1db2905a6cab4fa09cc53445",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://www.in.gov/dhs/files/2026%20FMA%20Swift%20Current%20program%20info.pdf": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://www.in.gov/dhs/files/2026%20FMA%20Swift%20Current%20program%20info.pdf",
       "fingerprint": "9437269d07cc1ac6286fa21f870f55d1e955cd0a7e7fac275061d973e59632b9",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://www.in.gov/dhs/grants-management/": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://www.in.gov/dhs/grants-management/",
       "fingerprint": "5832ff2ebc792cd86eebbeb1b279df35a5a18a28d89646653818687e195d326e",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://www.in.gov/dhs/grants-management/state-homeland-security-program/": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://www.in.gov/dhs/grants-management/state-homeland-security-program/",
       "fingerprint": "20dddd0c48e04b0abb8ce804fbf7dabe10647ebaa0eb7b7887b692c82a5285d1",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://www.in.gov/dnr/fish-and-wildlife/wildlife-resources/lake-and-river-enhancement/lare-program-manual": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://www.in.gov/dnr/fish-and-wildlife/wildlife-resources/lake-and-river-enhancement/lare-program-manual",
       "fingerprint": "6e62b2167322db4629ec0aa43438ec7dc4c5177e0a5d3eae5702c588b5fb9d28",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://www.in.gov/dnr/historic-preservation/financial-assistance/grants/": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://www.in.gov/dnr/historic-preservation/financial-assistance/grants/",
       "fingerprint": "29fa07dc3221c9a3a4035ef4bd5398b91caca9b04dc5ed8e9bd67c365f3a4dda",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://www.in.gov/dnr/state-parks/recreation/grants/": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://www.in.gov/dnr/state-parks/recreation/grants/",
       "fingerprint": "989190fe875a6357945f6f4d320de03e5341d5e36a09c840c404c8ef3318a357",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://www.in.gov/dnr/state-parks/recreation/grants/indiana-trails-program/": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://www.in.gov/dnr/state-parks/recreation/grants/indiana-trails-program/",
       "fingerprint": "29085ee058dc92f4e63f2ab85e9a121cbcd8194a88b7dd09c5ea6fd299d8e4ff",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://www.in.gov/dnr/state-parks/recreation/grants/land-and-water-conservation-fund/": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://www.in.gov/dnr/state-parks/recreation/grants/land-and-water-conservation-fund/",
       "fingerprint": "b79a80930646f6c960561138fd0dbf36e53303cee2ad68158df3819ce14e0971",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://www.in.gov/idem/nps/funding/": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://www.in.gov/idem/nps/funding/",
       "fingerprint": "0b8f317ff4fdb0dee371ecf1c780f31a339baf0b0a228bbba62d5b301830c751",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://www.in.gov/idem/resources/funding/": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://www.in.gov/idem/resources/funding/",
       "fingerprint": "134c7078af5cf2aa38a8c45f2d84b79f5c4194649d5a8444aed419facb46987b",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://www.in.gov/ihcda/": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://www.in.gov/ihcda/",
       "fingerprint": "91463bfba8840e20df8001fceecb8db0213e74c9872b649fd40e4f71d4647531",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://www.in.gov/indianabroadband/bead/bead-final-proposal/": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://www.in.gov/indianabroadband/bead/bead-final-proposal/",
       "fingerprint": "1e80a71694997fe6c7b0f8e0de18e83fb0f2d5a9aa5c6c976d7b57e9275e481b",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://www.in.gov/indianabroadband/indiana-connectivity-program/": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://www.in.gov/indianabroadband/indiana-connectivity-program/",
       "fingerprint": "a898199f6ac108905c867e299a1db979e3a25da4f9d2336c3c9627a4a69cd3d9",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://www.in.gov/indot/doing-business-with-indot/local-public-agency-programs/community-crossing-matching-grant-program/": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://www.in.gov/indot/doing-business-with-indot/local-public-agency-programs/community-crossing-matching-grant-program/",
       "fingerprint": "51bcaf13245dde55fb288f574bfa13fda6eadead7619e12667d50532e436d087",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://www.in.gov/indot/doing-business-with-indot/local-public-agency-programs/federal-grant-opportunities/": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://www.in.gov/indot/doing-business-with-indot/local-public-agency-programs/federal-grant-opportunities/",
       "fingerprint": "44fbc37f5e8fc5780b14985f9b6f3039ba485cefe7e9c45e6506428e6ee40790",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://www.in.gov/indot/files/NOFA%20for%202026%20-%20Posted%20October%202026.pdf": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://www.in.gov/indot/files/NOFA%20for%202026%20-%20Posted%20October%202026.pdf",
       "fingerprint": "e3f8945504f48e0168443d99f152ce0de5f2e465166c0e59c3c86576b8e1403c",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://www.in.gov/ocra/cdbg/Construction%20Instructions-R2-2026.pdf": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://www.in.gov/ocra/cdbg/Construction%20Instructions-R2-2026.pdf",
       "fingerprint": "cbf54a8624b316c6244595fec9ece425ff2b67dfea77c322bca3653c1c3652e1",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://www.in.gov/ocra/cdbg/cdbg-construction-grants/": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://www.in.gov/ocra/cdbg/cdbg-construction-grants/",
       "fingerprint": "1dc73acc2e8a053163de7eb88b001c31db12db3f1859614c549de6134a976458",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://www.in.gov/ocra/cdbg/cdbg-resources/": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://www.in.gov/ocra/cdbg/cdbg-resources/",
       "fingerprint": "bf085b01268777113ab8a47c125399cca17a3def72a2c77b058d4e836bd81197",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://www.in.gov/ocra/cdbg/owner-occupied-rehabilitation-program/": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://www.in.gov/ocra/cdbg/owner-occupied-rehabilitation-program/",
       "fingerprint": "2ab267a9b1922b899892a55d4be72ae75c7384d37fde9fc16fa56ac7d044f175",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://www.in.gov/ocra/cdbg/planning-grants/": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://www.in.gov/ocra/cdbg/planning-grants/",
       "fingerprint": "10fb9fb50faafcf699b751fd87d727d54b580157e425290596f645285411b604",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://www.in.gov/sba/grants/state-agency-grant-opportunities/": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://www.in.gov/sba/grants/state-agency-grant-opportunities/",
       "fingerprint": "209003db0799bcd87d064d4e185569addf896d8213ab386fcb21649fc0ecb79b",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://www.kyem.ky.gov/recover-mitigate": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://www.kyem.ky.gov/recover-mitigate",
-      "fingerprint": "75bd0bbec6d3f370dd88dfb33e2d28f0779f80fca5cd9d081529a2213314f8c1",
+      "fingerprint": "f85a8b0f53a5224c72d6075784d3e49569d84e806a1af06806e2d3690afd0f46",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://www.maritime.dot.gov/PIDPgrants": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://www.maritime.dot.gov/PIDPgrants",
       "fingerprint": "373bb1584a4cf8d649737f9a3381f9d431e0b8ef052e3abfa317763edbcf162e",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://www.nrcs.usda.gov/programs-initiatives/eqip-environmental-quality-incentives": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://www.nrcs.usda.gov/programs-initiatives/environmental-quality-incentives-program",
       "fingerprint": "b1c7fd245dae8da6bb7ed08c8093ba8508b4e166ac006f8c3fdb4b68d607a9e3",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://www.nrcs.usda.gov/programs-initiatives/watershed-and-flood-prevention-operations-wfpo-program": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://www.nrcs.usda.gov/programs-initiatives/watershed-protection-and-flood-prevention-operations-program",
       "fingerprint": "fbf35ad26f8ea63876425c8d5d73fb303b7d7b9fca31ba28692ad6cc28bd38ae",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://www.rd.usda.gov/programs-services/business-industry-loan-guarantees": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://www.rd.usda.gov/programs-services/business-programs/business-and-industry-guaranteed-loan",
       "fingerprint": "1460c9d587172da92078ba364c2dff8401d111d2f01d9afb686306882c0a4e60",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://www.rd.usda.gov/programs-services/business-programs/rural-business-development-grants": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://www.rd.usda.gov/programs-services/business-programs/rural-business-development-grants",
       "fingerprint": "f4cf60b1e5de297dbb5b134a1675e48fc596ea952bc23218900aee2cfac15c33",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://www.rd.usda.gov/programs-services/business-programs/rural-economic-development-loan-grant-programs": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://www.rd.usda.gov/programs-services/business-programs/rural-economic-development-loan-grant-programs",
       "fingerprint": "271d7d12fead949214deac11d07c5e667af719bc9c49b358a32f746da2a1de7b",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://www.rd.usda.gov/programs-services/community-facilities/community-facilities-direct-loan-grant-program": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://www.rd.usda.gov/programs-services/community-facilities/community-facilities-direct-loan-grant-program",
       "fingerprint": "74a2517cdccd34040ee931ffe744d0901e04b7552fe84fa6cea5c556d00f9e74",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://www.rd.usda.gov/programs-services/energy-programs/rural-energy-america-program-renewable-energy-systems-energy-efficiency-improvement-guaranteed-loans": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://www.rd.usda.gov/programs-services/energy-programs/rural-energy-america-program-renewable-energy-systems-energy-efficiency-improvement-guaranteed-loans",
       "fingerprint": "9731b0e2e06f8ddd8f4dad1701d567895abca1eddddb80bc55c0c3763ca9f8f6",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://www.rd.usda.gov/programs-services/single-family-housing-programs/single-family-housing-repair-loans-grants": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://www.rd.usda.gov/programs-services/single-family-housing-programs/single-family-housing-repair-loans-grants",
       "fingerprint": "9c4f611671e1e3a47509a13afc0f354355042c1a129e2111c836b89a752bf5eb",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://www.rd.usda.gov/programs-services/water-environmental-programs": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://www.rd.usda.gov/programs-services/water-environmental-programs",
       "fingerprint": "e8ad7ccd8e87caf523894c1ec86330483cf92323f17dc521b5071877f1f243b9",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://www.transit.dot.gov/funding/grants/enhanced-mobility-seniors-individuals-disabilities-section-5310": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://www.transit.dot.gov/funding/grants/enhanced-mobility-seniors-individuals-disabilities-section-5310",
       "fingerprint": "2b38cf3bb790ce43c3e07c342f8f61911855d04e3d2efbf2fe289cbc11538f27",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://www.transportation.gov/grants": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://www.transportation.gov/grants",
       "fingerprint": "83708c87b150b7129ac5586a9016582cd01bdd53ee427c2f67009bf52b4bfe5a",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://www.transportation.gov/grants/SS4A": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://www.transportation.gov/grants/SS4A",
       "fingerprint": "602ea5867e114a38d29141933067b33a6f20f5566fcf5b84af880e84b581e2e3",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://www.transportation.gov/grants/mpdg-how-apply": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://www.transportation.gov/grants/mpdg-how-apply",
       "fingerprint": "d925cfd0617ee8edcb3acddf61035b2e311af28b57f8dc0ef3eb2ae94d212bce",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://www.transportation.gov/rural/grant-toolkit/bridge-investment-program": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://www.transportation.gov/rural/grant-toolkit/bridge-investment-program",
       "fingerprint": "52186b5c3d912e17a9fd3d1e6ecf5124a58629ff4626d89ebb24847e5765192d",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://www.usace.army.mil/Missions/Civil-Works/Project-Planning/Continuing-Authorities-Program/": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://www.usace.army.mil/Missions/Civil-Works/Project-Planning/Continuing-Authorities-Program/",
-      "fingerprint": "ed46dd0450032b02f63e95275d7131194f8d8ca3e4d80e025d557dc29970ffc3",
+      "fingerprint": "5721bc90fac0be77b76daf2c17c02fc4f95c099d224fbb438557e8f2aacb46fe",
       "http_status": 200,
       "status": "REACHABLE"
     },
     "https://www.usace.army.mil/Missions/Civil-Works/Technical-Assistance/": {
-      "checked_at": "2026-11-23T00:52:51+00:00",
+      "checked_at": "2026-11-23T00:57:05+00:00",
       "final_url": "https://www.usace.army.mil/Missions/Civil-Works/Technical-Assistance/",
-      "fingerprint": "56e045e7c2c79452c360f4909c1a749b1845504a1eb563253c399f1d40ff2014",
+      "fingerprint": "ef85bb9ed83701204f91eba1629bc0bf3ab96e42d7eb46101e4348bd9e4f9a7a",
       "http_status": 200,
       "status": "REACHABLE"
     }
