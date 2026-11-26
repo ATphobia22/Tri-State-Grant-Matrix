@@ -2,185 +2,72 @@
   "changes": [
     {
       "details": {
-        "current_sha256": "506754a046c97b7566b4ace57d1dbd5a466746c74d43a0e040ce79b5e05fe848",
+        "current_sha256": "ad206aa7a9e856064c1a0894b6d156a6d6fb892918533396324d17e6d7938fa6",
         "note": "Page content changed; no individual document or grant facts verified.",
-        "previous_sha256": "4c0c7bff7dc72daa697694db8b6133410bbc6a3bf8985032bed6f6148eabb713"
+        "previous_sha256": "3b75d5ed7942146fe9a695d08ecd70d93b91f94bd57f968134087dda01347c7b"
       },
-      "detected_at": "2026-11-25T22:46:42+00:00",
-      "id": "43d2ac8a4962c60a77a56178",
-      "requires_human_review": true,
-      "source_id": "posey-meetings",
-      "type": "INDEX_CONTENT_CHANGED"
-    },
-    {
-      "details": {
-        "note": "Linked from indexed public source; contents not downloaded.",
-        "url": "https://www.poseycountyin.gov/udo-documents-for-11-30-commissioners-meeting/"
-      },
-      "detected_at": "2026-11-25T22:46:42+00:00",
-      "id": "d54c9db6c1ca1ea498305bd5",
-      "requires_human_review": true,
-      "source_id": "posey-meetings",
-      "type": "NEW_DOCUMENT_LINK_REVIEW"
-    },
-    {
-      "details": {
-        "note": "Not in current index; may still be online.",
-        "url": "https://www.poseycountyin.gov/udo-documents-for-11-4-commissioners-meeting/"
-      },
-      "detected_at": "2026-11-25T22:46:42+00:00",
-      "id": "b0b0d68964b732f0394033e0",
-      "requires_human_review": true,
-      "source_id": "posey-meetings",
-      "type": "DOCUMENT_LINK_NO_LONGER_LISTED"
-    },
-    {
-      "details": {
-        "current_sha256": "3b75d5ed7942146fe9a695d08ecd70d93b91f94bd57f968134087dda01347c7b",
-        "note": "Page content changed; no individual document or grant facts verified.",
-        "previous_sha256": "a628feeb4ef30cba5b429727acda5deaca73bcdc74a80dbb6b36e07d84bbe555"
-      },
-      "detected_at": "2026-11-25T22:46:42+00:00",
-      "id": "6fed3ff3c3bd8cde4ef990a5",
+      "detected_at": "2026-11-26T22:36:10+00:00",
+      "id": "2dda15aebb8ce4ba55e68b8d",
       "requires_human_review": true,
       "source_id": "posey-area-plan",
       "type": "INDEX_CONTENT_CHANGED"
     },
     {
       "details": {
-        "note": "Linked from indexed public source; contents not downloaded.",
-        "url": "https://www.poseycountyin.gov/udo-documents-for-11-30-commissioners-meeting/"
-      },
-      "detected_at": "2026-11-25T22:46:42+00:00",
-      "id": "6ef31273353b0e1d4b43ff53",
-      "requires_human_review": true,
-      "source_id": "posey-area-plan",
-      "type": "NEW_DOCUMENT_LINK_REVIEW"
-    },
-    {
-      "details": {
-        "note": "Linked from indexed public source; contents not downloaded.",
-        "url": "https://www.poseycountyin.gov/wp-content/uploads/2026/11/POSEY-v5-Data-Center-Ordinance-REDLINED.pdf"
-      },
-      "detected_at": "2026-11-25T22:46:42+00:00",
-      "id": "5c2512301cf0b92381857a44",
-      "requires_human_review": true,
-      "source_id": "posey-area-plan",
-      "type": "NEW_DOCUMENT_LINK_REVIEW"
-    },
-    {
-      "details": {
-        "note": "Linked from indexed public source; contents not downloaded.",
-        "url": "https://www.poseycountyin.gov/wp-content/uploads/2026/11/POSEY-v5-Noise-Transportation-Ordinance-REDLINED.pdf"
-      },
-      "detected_at": "2026-11-25T22:46:42+00:00",
-      "id": "3bdf69bf27118a377a22d57d",
-      "requires_human_review": true,
-      "source_id": "posey-area-plan",
-      "type": "NEW_DOCUMENT_LINK_REVIEW"
-    },
-    {
-      "details": {
-        "note": "Not in current index; may still be online.",
-        "url": "https://www.poseycountyin.gov/udo-documents-for-11-4-commissioners-meeting/"
-      },
-      "detected_at": "2026-11-25T22:46:42+00:00",
-      "id": "d3322cd6e7eacd012bb9bbb4",
-      "requires_human_review": true,
-      "source_id": "posey-area-plan",
-      "type": "DOCUMENT_LINK_NO_LONGER_LISTED"
-    },
-    {
-      "details": {
-        "current_sha256": "f5d109178479a8c737d67f3b3ff1569abdd844f5f6ced88e3bb7470a3498d4d0",
+        "current_sha256": "2bd8d1117b87bdb67c1524dffd0cf35c51e0fd61398fe7e33702f31b746d2e98",
         "note": "Page content changed; no individual document or grant facts verified.",
-        "previous_sha256": "b4074d8bdfe8a1c5db269cffd1bb9176e3d73ad4ba2064b98fa3653b7a34b973"
+        "previous_sha256": "f5d109178479a8c737d67f3b3ff1569abdd844f5f6ced88e3bb7470a3498d4d0"
       },
-      "detected_at": "2026-11-25T22:46:42+00:00",
-      "id": "7290e043f59e47434460a6bc",
+      "detected_at": "2026-11-26T22:36:10+00:00",
+      "id": "e7e0b72cb01223f484c09636",
       "requires_human_review": true,
       "source_id": "vanderburgh-granicus",
       "type": "INDEX_CONTENT_CHANGED"
     },
     {
       "details": {
-        "note": "Linked from indexed public source; contents not downloaded.",
-        "url": "https://evansville.granicus.com/AgendaViewer.php?view_id=1&event_id=9868"
-      },
-      "detected_at": "2026-11-25T22:46:42+00:00",
-      "id": "c38081147c1e60906b914826",
-      "requires_human_review": true,
-      "source_id": "vanderburgh-granicus",
-      "type": "NEW_DOCUMENT_LINK_REVIEW"
-    },
-    {
-      "details": {
-        "current_sha256": "883e60fae646bcee44fa13eb95ca484c8964518015a9027c70c77cab87b2821a",
+        "current_sha256": "84c796bb6182e312626ec94f9948a51947d70a0ca3a566560e9ef60aab77cc0e",
         "note": "Page content changed; no individual document or grant facts verified.",
-        "previous_sha256": "aa619617c4660a27a94fbaf4dd544fd0708a3f34a0dafab6f74495c288855a63"
+        "previous_sha256": "883e60fae646bcee44fa13eb95ca484c8964518015a9027c70c77cab87b2821a"
       },
-      "detected_at": "2026-11-25T22:46:42+00:00",
-      "id": "e8e2061ad81caa86b20df4a4",
+      "detected_at": "2026-11-26T22:36:10+00:00",
+      "id": "bc9d112be845a01c8d569dc8",
       "requires_human_review": true,
       "source_id": "gibson-public",
       "type": "INDEX_CONTENT_CHANGED"
     },
     {
       "details": {
-        "current_sha256": "0a2fa7408cb7859102963c52ed90fb61d12a88b592682d2f0c11ef7ac9a9e1cc",
+        "current_sha256": "d129f538b3a9b07b6e38b5e0755cd55806c956233a7a65da65c3ecb821a68cd7",
         "note": "Page content changed; no individual document or grant facts verified.",
-        "previous_sha256": "323c345788c52447aafb15d7d7346de0aa625e3036d156f88e21281730ad9041"
+        "previous_sha256": "0a2fa7408cb7859102963c52ed90fb61d12a88b592682d2f0c11ef7ac9a9e1cc"
       },
-      "detected_at": "2026-11-25T22:46:42+00:00",
-      "id": "1f823c304a133ec6b3d08576",
+      "detected_at": "2026-11-26T22:36:10+00:00",
+      "id": "a9f37abf415c6ffcef904ec0",
       "requires_human_review": true,
       "source_id": "gibson-council",
       "type": "INDEX_CONTENT_CHANGED"
     },
     {
       "details": {
-        "current_sha256": "1c7465cd0ef4e4b09c7ed747db3f24fa3384e94a1a012a3ef807064b6ddd182a",
+        "current_sha256": "d46e94b65d1e68fe6a1c57fa56ffe84058c84f8fd6ae005f322846078ed8e777",
         "note": "Page content changed; no individual document or grant facts verified.",
-        "previous_sha256": "f7b60b29de0ceb7c02f12e54dfa6f2b5b7e4211e2cbef96fa1b09910382c52dd"
+        "previous_sha256": "23b3c905f0a290fc7e0afa8684e1f2755f45981edccaa57ab149bbf514c75991"
       },
-      "detected_at": "2026-11-25T22:46:42+00:00",
-      "id": "118db9e6b9361109999db237",
-      "requires_human_review": true,
-      "source_id": "warrick-commissioners",
-      "type": "INDEX_CONTENT_CHANGED"
-    },
-    {
-      "details": {
-        "current_sha256": "23b3c905f0a290fc7e0afa8684e1f2755f45981edccaa57ab149bbf514c75991",
-        "note": "Page content changed; no individual document or grant facts verified.",
-        "previous_sha256": "d6937f619c444904de9d4de472aadba6f716749a67c097304bd7ebdc0521f69f"
-      },
-      "detected_at": "2026-11-25T22:46:42+00:00",
-      "id": "5b35b930d8b3846954600ee3",
+      "detected_at": "2026-11-26T22:36:10+00:00",
+      "id": "14b5dacd3f79bf2f7ce64af4",
       "requires_human_review": true,
       "source_id": "white-minutes",
       "type": "INDEX_CONTENT_CHANGED"
     },
     {
       "details": {
-        "current_sha256": "0fc0c0fa2510198fa41fc5b990bdb809fe071c2325b3cfcc82b45a660627ddc6",
+        "current_sha256": "c71e0ddf32e477ff3dc5c63ab546a09c1f337483549fb88f1a917feead0b32ea",
         "note": "Page content changed; no individual document or grant facts verified.",
-        "previous_sha256": "8a816edc423ddd999190b0e8f8d0391937a35d310782f2bcc018e310eb494b9c"
+        "previous_sha256": "16e84caa554c153ebc5c73f21d3742d68b76a8d635513eb14142aa52031359d5"
       },
-      "detected_at": "2026-11-25T22:46:42+00:00",
-      "id": "1d7bc4c256abca75deaf1e46",
-      "requires_human_review": true,
-      "source_id": "white-agendas",
-      "type": "INDEX_CONTENT_CHANGED"
-    },
-    {
-      "details": {
-        "current_sha256": "16e84caa554c153ebc5c73f21d3742d68b76a8d635513eb14142aa52031359d5",
-        "note": "Page content changed; no individual document or grant facts verified.",
-        "previous_sha256": "097d283700e7b1ecb0a2f38c6aab842f8c82a2ad955decf7ca5c15ef7570759a"
-      },
-      "detected_at": "2026-11-25T22:46:42+00:00",
-      "id": "741a0c8aa917866d5c3a09b5",
+      "detected_at": "2026-11-26T22:36:10+00:00",
+      "id": "9728e0d9284a1be716aea24f",
       "requires_human_review": true,
       "source_id": "henderson-fiscal",
       "type": "INDEX_CONTENT_CHANGED"
@@ -189,6 +76,78 @@
   "counties_with_official_archives": 8,
   "covered_counties": 9,
   "events": [
+    {
+      "details": {
+        "current_sha256": "ad206aa7a9e856064c1a0894b6d156a6d6fb892918533396324d17e6d7938fa6",
+        "note": "Page content changed; no individual document or grant facts verified.",
+        "previous_sha256": "3b75d5ed7942146fe9a695d08ecd70d93b91f94bd57f968134087dda01347c7b"
+      },
+      "detected_at": "2026-11-26T22:36:10+00:00",
+      "id": "2dda15aebb8ce4ba55e68b8d",
+      "requires_human_review": true,
+      "source_id": "posey-area-plan",
+      "type": "INDEX_CONTENT_CHANGED"
+    },
+    {
+      "details": {
+        "current_sha256": "2bd8d1117b87bdb67c1524dffd0cf35c51e0fd61398fe7e33702f31b746d2e98",
+        "note": "Page content changed; no individual document or grant facts verified.",
+        "previous_sha256": "f5d109178479a8c737d67f3b3ff1569abdd844f5f6ced88e3bb7470a3498d4d0"
+      },
+      "detected_at": "2026-11-26T22:36:10+00:00",
+      "id": "e7e0b72cb01223f484c09636",
+      "requires_human_review": true,
+      "source_id": "vanderburgh-granicus",
+      "type": "INDEX_CONTENT_CHANGED"
+    },
+    {
+      "details": {
+        "current_sha256": "84c796bb6182e312626ec94f9948a51947d70a0ca3a566560e9ef60aab77cc0e",
+        "note": "Page content changed; no individual document or grant facts verified.",
+        "previous_sha256": "883e60fae646bcee44fa13eb95ca484c8964518015a9027c70c77cab87b2821a"
+      },
+      "detected_at": "2026-11-26T22:36:10+00:00",
+      "id": "bc9d112be845a01c8d569dc8",
+      "requires_human_review": true,
+      "source_id": "gibson-public",
+      "type": "INDEX_CONTENT_CHANGED"
+    },
+    {
+      "details": {
+        "current_sha256": "d129f538b3a9b07b6e38b5e0755cd55806c956233a7a65da65c3ecb821a68cd7",
+        "note": "Page content changed; no individual document or grant facts verified.",
+        "previous_sha256": "0a2fa7408cb7859102963c52ed90fb61d12a88b592682d2f0c11ef7ac9a9e1cc"
+      },
+      "detected_at": "2026-11-26T22:36:10+00:00",
+      "id": "a9f37abf415c6ffcef904ec0",
+      "requires_human_review": true,
+      "source_id": "gibson-council",
+      "type": "INDEX_CONTENT_CHANGED"
+    },
+    {
+      "details": {
+        "current_sha256": "d46e94b65d1e68fe6a1c57fa56ffe84058c84f8fd6ae005f322846078ed8e777",
+        "note": "Page content changed; no individual document or grant facts verified.",
+        "previous_sha256": "23b3c905f0a290fc7e0afa8684e1f2755f45981edccaa57ab149bbf514c75991"
+      },
+      "detected_at": "2026-11-26T22:36:10+00:00",
+      "id": "14b5dacd3f79bf2f7ce64af4",
+      "requires_human_review": true,
+      "source_id": "white-minutes",
+      "type": "INDEX_CONTENT_CHANGED"
+    },
+    {
+      "details": {
+        "current_sha256": "c71e0ddf32e477ff3dc5c63ab546a09c1f337483549fb88f1a917feead0b32ea",
+        "note": "Page content changed; no individual document or grant facts verified.",
+        "previous_sha256": "16e84caa554c153ebc5c73f21d3742d68b76a8d635513eb14142aa52031359d5"
+      },
+      "detected_at": "2026-11-26T22:36:10+00:00",
+      "id": "9728e0d9284a1be716aea24f",
+      "requires_human_review": true,
+      "source_id": "henderson-fiscal",
+      "type": "INDEX_CONTENT_CHANGED"
+    },
     {
       "details": {
         "current_sha256": "506754a046c97b7566b4ace57d1dbd5a466746c74d43a0e040ce79b5e05fe848",
@@ -697,7 +656,7 @@
       "type": "INDEX_CONTENT_CHANGED"
     }
   ],
-  "last_run": "2026-11-25T22:46:42+00:00",
+  "last_run": "2026-11-26T22:36:10+00:00",
   "policy": "Source-index HTTP and SHA-256 observation only; not verification of grant eligibility, amounts, meeting actions, or document contents. Failed requests preserve previous evidence as stale.",
   "registry_reviewed_on": "2026-11-23",
   "schema": "tristate.public-records-audit.v1",
@@ -705,7 +664,7 @@
     "gallatin-board": {
       "authority": "official_county",
       "cached_evidence_only": true,
-      "checked_at": "2026-11-25T22:46:42+00:00",
+      "checked_at": "2026-11-26T22:36:10+00:00",
       "content_sha256": null,
       "county_fips": "17059",
       "document_index_truncated": false,
@@ -722,9 +681,9 @@
     "gibson-council": {
       "authority": "official_county",
       "cached_evidence_only": false,
-      "checked_at": "2026-11-25T22:46:42+00:00",
+      "checked_at": "2026-11-26T22:36:10+00:00",
       "content_hash_scope": "complete_response",
-      "content_sha256": "0a2fa7408cb7859102963c52ed90fb61d12a88b592682d2f0c11ef7ac9a9e1cc",
+      "content_sha256": "d129f538b3a9b07b6e38b5e0755cd55806c956233a7a65da65c3ecb821a68cd7",
       "content_truncated": false,
       "content_type": "text/html",
       "county_fips": "18051",
@@ -883,8 +842,8 @@
       "etag": null,
       "final_url": "https://gibsoncounty-in.gov/council/cl-documents/",
       "http_status": 200,
-      "last_modified": "Wed, 25 Nov 2026 14:50:42 GMT",
-      "last_success_at": "2026-11-25T22:46:42+00:00",
+      "last_modified": "Thu, 26 Nov 2026 20:03:46 GMT",
+      "last_success_at": "2026-11-26T22:36:10+00:00",
       "source_id": "gibson-council",
       "status": "REACHABLE",
       "title": "Gibson County Council documents",
@@ -893,9 +852,9 @@
     "gibson-public": {
       "authority": "official_county",
       "cached_evidence_only": false,
-      "checked_at": "2026-11-25T22:46:42+00:00",
+      "checked_at": "2026-11-26T22:36:10+00:00",
       "content_hash_scope": "complete_response",
-      "content_sha256": "883e60fae646bcee44fa13eb95ca484c8964518015a9027c70c77cab87b2821a",
+      "content_sha256": "84c796bb6182e312626ec94f9948a51947d70a0ca3a566560e9ef60aab77cc0e",
       "content_truncated": false,
       "content_type": "text/html",
       "county_fips": "18051",
@@ -930,8 +889,8 @@
       "etag": null,
       "final_url": "https://gibsoncounty-in.gov/public-meetings/",
       "http_status": 200,
-      "last_modified": "Wed, 25 Nov 2026 13:36:52 GMT",
-      "last_success_at": "2026-11-25T22:46:42+00:00",
+      "last_modified": "Thu, 26 Nov 2026 18:58:54 GMT",
+      "last_success_at": "2026-11-26T22:36:10+00:00",
       "source_id": "gibson-public",
       "status": "REACHABLE",
       "title": "Gibson County public meetings",
@@ -940,9 +899,9 @@
     "henderson-fiscal": {
       "authority": "official_county",
       "cached_evidence_only": false,
-      "checked_at": "2026-11-25T22:46:42+00:00",
+      "checked_at": "2026-11-26T22:36:10+00:00",
       "content_hash_scope": "complete_response",
-      "content_sha256": "16e84caa554c153ebc5c73f21d3742d68b76a8d635513eb14142aa52031359d5",
+      "content_sha256": "c71e0ddf32e477ff3dc5c63ab546a09c1f337483549fb88f1a917feead0b32ea",
       "content_truncated": false,
       "content_type": "text/html",
       "county_fips": "21101",
@@ -1198,7 +1157,7 @@
       "final_url": "https://www.hendersoncountyky.gov/AgendaCenter/Fiscal-Court-2",
       "http_status": 200,
       "last_modified": null,
-      "last_success_at": "2026-11-25T22:46:42+00:00",
+      "last_success_at": "2026-11-26T22:36:10+00:00",
       "source_id": "henderson-fiscal",
       "status": "REACHABLE",
       "title": "Henderson County Fiscal Court Agenda Center",
@@ -1207,9 +1166,9 @@
     "posey-area-plan": {
       "authority": "official_county",
       "cached_evidence_only": false,
-      "checked_at": "2026-11-25T22:46:42+00:00",
+      "checked_at": "2026-11-26T22:36:10+00:00",
       "content_hash_scope": "complete_response",
-      "content_sha256": "3b75d5ed7942146fe9a695d08ecd70d93b91f94bd57f968134087dda01347c7b",
+      "content_sha256": "ad206aa7a9e856064c1a0894b6d156a6d6fb892918533396324d17e6d7938fa6",
       "content_truncated": false,
       "content_type": "text/html",
       "county_fips": "18129",
@@ -2533,7 +2492,7 @@
       "final_url": "https://www.poseycountyin.gov/county-offices/area-plan-commission/",
       "http_status": 200,
       "last_modified": null,
-      "last_success_at": "2026-11-25T22:46:42+00:00",
+      "last_success_at": "2026-11-26T22:36:10+00:00",
       "source_id": "posey-area-plan",
       "status": "REACHABLE",
       "title": "Posey Area Plan Commission minutes and agendas",
@@ -2541,12 +2500,9 @@
     },
     "posey-meetings": {
       "authority": "official_county",
-      "cached_evidence_only": false,
-      "checked_at": "2026-11-25T22:46:42+00:00",
-      "content_hash_scope": "complete_response",
+      "cached_evidence_only": true,
+      "checked_at": "2026-11-26T22:36:10+00:00",
       "content_sha256": "506754a046c97b7566b4ace57d1dbd5a466746c74d43a0e040ce79b5e05fe848",
-      "content_truncated": false,
-      "content_type": "text/html",
       "county_fips": "18129",
       "document_index_truncated": false,
       "document_links_sha256": "44a73723a2ebb2c4d1e555e6eed17480ca9311fa71c61b4ef76aafee2fb7a0c7",
@@ -4029,10 +3985,10 @@
         }
       ],
       "etag": "\"197351-1795633282;;;\"",
-      "final_url": "https://www.poseycountyin.gov/meetings/",
-      "http_status": 200,
+      "http_status": 304,
       "last_modified": null,
       "last_success_at": "2026-11-25T22:46:42+00:00",
+      "observation": "NOT_MODIFIED",
       "source_id": "posey-meetings",
       "status": "REACHABLE",
       "title": "Posey County Commissioners and Council Minutes",
@@ -4041,7 +3997,7 @@
     "union-fiscal": {
       "authority": "official_county",
       "cached_evidence_only": true,
-      "checked_at": "2026-11-25T22:46:42+00:00",
+      "checked_at": "2026-11-26T22:36:10+00:00",
       "content_sha256": null,
       "county_fips": "21225",
       "document_index_truncated": false,
@@ -4057,9 +4013,9 @@
     "vanderburgh-granicus": {
       "authority": "official_delegated",
       "cached_evidence_only": false,
-      "checked_at": "2026-11-25T22:46:42+00:00",
+      "checked_at": "2026-11-26T22:36:10+00:00",
       "content_hash_scope": "complete_response",
-      "content_sha256": "f5d109178479a8c737d67f3b3ff1569abdd844f5f6ced88e3bb7470a3498d4d0",
+      "content_sha256": "2bd8d1117b87bdb67c1524dffd0cf35c51e0fd61398fe7e33702f31b746d2e98",
       "content_truncated": false,
       "content_type": "text/html",
       "county_fips": "18163",
@@ -4083,7 +4039,7 @@
       "final_url": "https://evansville.granicus.com/ViewPublisher.php?view_id=1",
       "http_status": 200,
       "last_modified": null,
-      "last_success_at": "2026-11-25T22:46:42+00:00",
+      "last_success_at": "2026-11-26T22:36:10+00:00",
       "source_id": "vanderburgh-granicus",
       "status": "REACHABLE",
       "title": "City of Evansville and Vanderburgh County archived meetings",
@@ -4092,7 +4048,7 @@
     "warrick-commissioners": {
       "authority": "official_county",
       "cached_evidence_only": false,
-      "checked_at": "2026-11-25T22:46:42+00:00",
+      "checked_at": "2026-11-26T22:36:10+00:00",
       "content_hash_scope": "complete_response",
       "content_sha256": "1c7465cd0ef4e4b09c7ed747db3f24fa3384e94a1a012a3ef807064b6ddd182a",
       "content_truncated": false,
@@ -4202,7 +4158,7 @@
       "final_url": "https://www.warrickcounty.gov/commissioners",
       "http_status": 200,
       "last_modified": null,
-      "last_success_at": "2026-11-25T22:46:42+00:00",
+      "last_success_at": "2026-11-26T22:36:10+00:00",
       "source_id": "warrick-commissioners",
       "status": "REACHABLE",
       "title": "Warrick County Commissioners and official meeting-archive referral",
@@ -4211,7 +4167,7 @@
     "warrick-records": {
       "authority": "official_delegated",
       "cached_evidence_only": true,
-      "checked_at": "2026-11-25T22:46:42+00:00",
+      "checked_at": "2026-11-26T22:36:10+00:00",
       "content_sha256": "73fe973ca99913fd225e9e967d86c5857d1417a237945ce739f680fbd2b87671",
       "county_fips": "18173",
       "document_index_truncated": false,
@@ -5111,7 +5067,7 @@
     "white-agendas": {
       "authority": "official_county",
       "cached_evidence_only": false,
-      "checked_at": "2026-11-25T22:46:42+00:00",
+      "checked_at": "2026-11-26T22:36:10+00:00",
       "content_hash_scope": "complete_response",
       "content_sha256": "0fc0c0fa2510198fa41fc5b990bdb809fe071c2325b3cfcc82b45a660627ddc6",
       "content_truncated": false,
@@ -5321,11 +5277,11 @@
           "url": "https://www.whitecounty-il.gov/white-county-budget"
         }
       ],
-      "etag": "W/\"-1122753683\"",
+      "etag": "W/\"-2048279489\"",
       "final_url": "https://www.whitecounty-il.gov/agendas",
       "http_status": 200,
       "last_modified": null,
-      "last_success_at": "2026-11-25T22:46:42+00:00",
+      "last_success_at": "2026-11-26T22:36:10+00:00",
       "source_id": "white-agendas",
       "status": "REACHABLE",
       "title": "White County Board Agendas",
@@ -5334,9 +5290,9 @@
     "white-minutes": {
       "authority": "official_county",
       "cached_evidence_only": false,
-      "checked_at": "2026-11-25T22:46:42+00:00",
+      "checked_at": "2026-11-26T22:36:10+00:00",
       "content_hash_scope": "complete_response",
-      "content_sha256": "23b3c905f0a290fc7e0afa8684e1f2755f45981edccaa57ab149bbf514c75991",
+      "content_sha256": "d46e94b65d1e68fe6a1c57fa56ffe84058c84f8fd6ae005f322846078ed8e777",
       "content_truncated": false,
       "content_type": "text/html",
       "county_fips": "17193",
@@ -5596,11 +5552,11 @@
           "url": "https://www.whitecounty-il.gov/white-county-budget"
         }
       ],
-      "etag": "W/\"1303657619\"",
+      "etag": "W/\"1003256830\"",
       "final_url": "https://www.whitecounty-il.gov/minutes",
       "http_status": 200,
       "last_modified": null,
-      "last_success_at": "2026-11-25T22:46:42+00:00",
+      "last_success_at": "2026-11-26T22:36:10+00:00",
       "source_id": "white-minutes",
       "status": "REACHABLE",
       "title": "White County Board Minutes",
